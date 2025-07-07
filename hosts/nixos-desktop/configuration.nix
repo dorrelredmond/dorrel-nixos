@@ -120,14 +120,6 @@
     ];
   };
 
-  home-manager = {
-    # also pass inputs to home-manager modules
-    specialArgs = {inherit inputs; };
-    users = {
-      "dorrel" = import ./home.nix;
-    };
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
