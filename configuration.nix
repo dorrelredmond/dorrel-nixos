@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 
 {
   imports =
@@ -17,12 +17,8 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  # Define Hostname
+  networking.hostName = "nixos";
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -55,6 +51,9 @@
   nix.gc.options = "--delete-older-than 10d";
   nix.settings.auto-optimise-store = true;
 
+  # Enable Flakes Support
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
@@ -81,16 +80,8 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+    jack.enable = true;
+    };
 
   # Enable Logitech Hardware Support
   hardware.logitech.wireless.enable = true;
@@ -125,11 +116,11 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Install firefox.
+  programs.firefox.enable = true;
 
   # Install Steam
   programs.steam = {
@@ -156,6 +147,7 @@
     protonup
     heroic
     bottles
+
     kdePackages.kcalc # Calculator
     kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
     kdePackages.kcolorchooser # A small utility to select a color
@@ -168,18 +160,20 @@
     hardinfo2 # System information and benchmarks for Linux systems
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
-   (discord.override {
+
+    (discord.override {
       withVencord = true;
     })
+
     (prismlauncher.override {
       # Add binary required by some mod
       additionalPrograms = [ ffmpeg ];
 
       # Change Java runtimes available to Prism Launcher
       jdks = [
-        temurin-jre-bin-8 #Eclipse Teurmin openJDK version 8
-        temurin-jre-bin-17 #Eclipse Teurmin openJDK version 17
-        temurin-jre-bin #Eclipse Teurmin openJDK version 21
+        temurin-jre-bin-8 # Eclipse Teurmin openJDK version 8
+        temurin-jre-bin-17 # Eclipse Teurmin openJDK version 17
+        temurin-jre-bin # Eclipse Teurmin openJDK version 21
       ];
     })
   ];
