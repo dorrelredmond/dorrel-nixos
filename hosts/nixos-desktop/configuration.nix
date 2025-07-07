@@ -105,6 +105,7 @@
     powerManagement.enable = true;
     powerManagement.finegrained = false;
     nvidiaSettings = true; # Nvidia Settings Menu accessible via `nvidia-settings`
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
