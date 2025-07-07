@@ -101,12 +101,10 @@
 
   hardware.nvidia = {
     open = true;
-    # Modesetting is required.
-    modesetting.enable = true;
-
-    # Enable the Nvidia settings menu,
-    # accessible via `nvidia-settings`.
-    nvidiaSettings = true;
+    modesetting.enable = true; # Modesetting is required.
+    powerManagement.enable = true;
+    powerManagement.finegrained = false;
+    nvidiaSettings = true; # Nvidia Settings Menu accessible via `nvidia-settings`
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
