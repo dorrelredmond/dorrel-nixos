@@ -1,14 +1,18 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, inputs, lib, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -52,7 +56,7 @@
   nix.settings.auto-optimise-store = true;
 
   # Enable Flakes Support
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
@@ -62,7 +66,7 @@
   services.displayManager.sddm.wayland.enable = true;
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
-  
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -81,7 +85,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-    };
+  };
 
   # Enable Logitech Hardware Support
   hardware.logitech.wireless.enable = true;
@@ -109,11 +113,19 @@
   users.users.dorrel = {
     isNormalUser = true;
     description = "Dorrel Redmond";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
+      #  thunderbird
     ];
+  };
+
+  home-manager = {
+    # also pass inputs to home-manager modules
+    specialArgs = {inherit inputs; };
+    users = {
+      "dorrel" = import ./home.nix;
+    };
   };
 
   # Allow unfree packages
@@ -147,6 +159,7 @@
     protonup
     heroic
     bottles
+    alejandra
 
     kdePackages.kcalc # Calculator
     kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
@@ -167,7 +180,7 @@
 
     (prismlauncher.override {
       # Add binary required by some mod
-      additionalPrograms = [ ffmpeg ];
+      additionalPrograms = [ffmpeg];
 
       # Change Java runtimes available to Prism Launcher
       jdks = [
@@ -208,5 +221,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.05"; # Did you read the comment?
-
 }
