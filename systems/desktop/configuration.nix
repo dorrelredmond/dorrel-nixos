@@ -12,7 +12,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ./users.nix
+    ./local-packages.nix
   ];
 
   # Bootloader.

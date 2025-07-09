@@ -2,7 +2,6 @@
   description = "NixOS Configuration";
 
   inputs = {
-
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
     home-manager = {
@@ -16,37 +15,41 @@
     nixpkgs,
     home-manager,
     ...
-  } @ inputs: 
-  
-  let
+  } @ inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "dorrel";
     hosts = [
-      { hostname = "desktop"; stateVersion = "25.05"; }
+      {
+        hostname = "desktop";
+        stateVersion = "25.05";
+      }
       # { hostname = "macbook"; stateVersion = "25.05"; }
     ];
 
-    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
-      system = system;
-      specialArgs = {
-        inherit inputs stateVersion hostname user;
+    makeSystem = {
+      hostname,
+      stateVersion,
+    }:
+      nixpkgs.lib.nixosSystem {
+        system = system;
+        specialArgs = {
+          inherit inputs stateVersion hostname user;
+        };
+
+        modules = [
+          ./systems/${hostname}/configuration.nix
+        ];
       };
-
-      modules = [
-        ./systems/${hostname}/configuration.nix
-      ];
-    };
-
-  in
-
-  {
+  in {
     nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
-      configs // {
+      configs
+      // {
         "${host.hostname}" = makeSystem {
           inherit (host) hostname stateVersion;
         };
-      }) {} hosts;
+      }) {}
+    hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
