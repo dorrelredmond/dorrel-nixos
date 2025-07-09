@@ -21,7 +21,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Define Hostname
-  networking.hostName = "nixos";
+  networking.hostName = "desktop";
 
   # Enable networking
   networking.networkmanager.enable = true;
