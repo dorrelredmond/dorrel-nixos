@@ -51,8 +51,8 @@
 
   # Automatic Cleanup
   nix.gc.automatic = true;
-  nix.gc.dates = "daily";
-  nix.gc.options = "--delete-older-than 10d";
+  nix.gc.dates = "weekly";
+  nix.gc.options = "--delete-older-than 30d";
   nix.settings.auto-optimise-store = true;
 
   # Enable Flakes Support
