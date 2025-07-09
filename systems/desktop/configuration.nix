@@ -6,6 +6,8 @@
   pkgs,
   inputs,
   lib,
+  stateVersion,
+  hostname,
   ...
 }: {
   imports = [
@@ -21,7 +23,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Define Hostname
-  networking.hostName = "desktop";
+  networking.hostName = hostname;
 
   # Enable networking
   networking.networkmanager.enable = true;
