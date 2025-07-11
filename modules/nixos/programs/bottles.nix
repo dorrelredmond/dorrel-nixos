@@ -1,6 +1,6 @@
 { config, pkgs, ...}:
 {
-    programs.bottles = {
-        enable = true;
-    };
+  environment.systemPackages = [
+    pkgs.bottles
+  ];
 }
