@@ -2,10 +2,11 @@
 
   programs = {
     gamemode.enable = true;
-    heroic.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
+
+    heroic
 
     kdePackages.kate
     kdePackages.kcalc # Calculator
