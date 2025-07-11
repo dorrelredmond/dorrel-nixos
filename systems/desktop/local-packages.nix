@@ -2,10 +2,12 @@
 
   programs = {
     gamemode.enable = true;
+    firefox.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
 
+    git
     heroic
 
     kdePackages.kate
