@@ -9,7 +9,7 @@
 
     git
     gh
-    nvim
+    neovim
 
     heroic
 
