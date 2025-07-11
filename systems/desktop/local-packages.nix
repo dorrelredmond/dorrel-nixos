@@ -9,6 +9,8 @@
 
     git
     gh
+    nvim
+
     heroic
 
     kdePackages.kate
