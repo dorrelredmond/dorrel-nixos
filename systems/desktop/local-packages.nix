@@ -8,6 +8,7 @@
   environment.systemPackages = with pkgs; [
 
     git
+    gh
     heroic
 
     kdePackages.kate
