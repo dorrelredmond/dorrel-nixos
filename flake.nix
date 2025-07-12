@@ -10,46 +10,34 @@
     };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    home-manager,
-    ...
-  } @ inputs: let
+  outputs = { self, nixpkgs, home-manager, ... } @ inputs:
+  let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "dorrel";
     hosts = [
-      {
-        hostname = "desktop";
-        stateVersion = "25.05";
-      }
+      { hostname = "desktop"; stateVersion = "25.05"; }
       # { hostname = "macbook"; stateVersion = "25.05"; }
     ];
 
-    makeSystem = {
-      hostname,
-      stateVersion,
-    }:
-      nixpkgs.lib.nixosSystem {
-        system = system;
-        specialArgs = {
-          inherit inputs stateVersion hostname user;
-        };
-
-        modules = [
-          ./systems/${hostname}/configuration.nix
-        ];
+     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
+      system = system;
+      specialArgs = {
+        inherit inputs stateVersion hostname user;
       };
+
+      modules = [
+        ./hosts/${hostname}/configuration.nix
+      ];
+    };
+
   in {
     nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
-      configs
-      // {
+      configs // {
         "${host.hostname}" = makeSystem {
           inherit (host) hostname stateVersion;
         };
-      }) {}
-    hosts;
+      }) {} hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
@@ -58,7 +46,7 @@
       };
 
       modules = [
-        ./modules/home/home.nix
+        ./home-manager/home.nix
       ];
     };
   };

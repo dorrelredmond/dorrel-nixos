@@ -18,6 +18,9 @@
     ../../modules/nixos
   ];
 
+  # Enable Home-Manager
+  environment.systemPackages = [ pkgs.home-manager ];
+
   # Define Hostname
   networking.hostName = hostname;
 
