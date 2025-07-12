@@ -1,5 +1,10 @@
 { pkgs, user, ... }: {
-  programs.fish.enable = true;
+
+  home-manager.users.${user} = {
+    programs = {
+      fish.enable = true;
+    };
+  };
 
   users = {
     defaultUserShell = pkgs.fish;
@@ -8,4 +13,5 @@
       extraGroups = [ "wheel" "networkmanager" ];
     };
   };
+
 }
