@@ -38,16 +38,16 @@
           inherit (host) hostname stateVersion;
         };
       }) {} hosts;
-
-    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
-      };
-
       modules = [
-        ./modules/home/home.nix
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            verbose = true;
+            useUserPackages = true;
+            useGlobalPkgs = true;
+            backupFileExtension = "bak";
+            users.${user} = ./modules/home/home.nix;
+          };
+        };
       ];
-    };
-  };
 }

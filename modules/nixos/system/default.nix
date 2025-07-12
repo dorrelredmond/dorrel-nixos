@@ -5,7 +5,6 @@
         ./boot.nix
         ./desktop.nix
         ./garbage-collector.nix
-        ./home-manager.nix
         ./kernel.nix
         ./keyboard.nix
         ./network.nix
