@@ -48,6 +48,6 @@
             backupFileExtension = "bak";
             users.${user} = ./modules/home/home.nix;
           };
-        };
+        }
       ];
 }
