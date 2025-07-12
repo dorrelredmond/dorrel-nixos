@@ -1,7 +1,6 @@
 {
     imports = [
-        ./hyprland
         ./system
-        ./wofi
+        ./nixos-packages.nix
     ];
 }
