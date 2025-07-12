@@ -1,4 +1,4 @@
-{ nixpkgs, home-manager, ... }: @ inputs
+{ nixpkgs, home-manager, ... } @ inputs:
 {
   imports = [ inputs.home-manager.nixosModules.default ];
 
