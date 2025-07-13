@@ -1,6 +1,117 @@
-{
+{ pkgs, user, home-manager, ... }: {
     imports = [
-        ./system
         ./nixos-packages.nix
     ];
+
+    # Boot Configurations
+    boot =
+    {
+        # Bootloader.
+        loader = {
+            systemd-boot.enable = true;
+            efi.canTouchEfiVariables = true;
+        };
+
+        # NTFS Support
+        supportedFilesystems = ["ntfs"];
+
+        # Select Kernel
+        kernelPackages = pkgs.linuxPackages_latest;
+    };
+
+    # Enable Flakes Support
+    nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+    # Enable networking
+    networking.networkmanager.enable = true;
+
+    # Automatic Updating
+    system = {
+        autoUpgrade.enable = true;
+        autoUpgrade.dates = "weekly";
+    };
+
+    # Automatic Cleanup
+    nix = {
+        gc = {
+            automatic = true;
+            dates = "weekly";
+            options = "--delete-older-than 30d";
+        };
+        settings.auto-optimise-store = true;
+    };
+
+    # Set your time zone.
+    time.timeZone = "America/Chicago";
+
+    # Select internationalisation properties.
+    i18n.defaultLocale = "en_US.UTF-8";
+
+    i18n.extraLocaleSettings = {
+        LC_ADDRESS = "en_US.UTF-8";
+        LC_IDENTIFICATION = "en_US.UTF-8";
+        LC_MEASUREMENT = "en_US.UTF-8";
+        LC_MONETARY = "en_US.UTF-8";
+        LC_NAME = "en_US.UTF-8";
+        LC_NUMERIC = "en_US.UTF-8";
+        LC_PAPER = "en_US.UTF-8";
+        LC_TELEPHONE = "en_US.UTF-8";
+        LC_TIME = "en_US.UTF-8";
+    };
+
+    # Configure keymap in X11
+    services.xserver.xkb = {
+        layout = "us";
+        variant = "";
+    };
+
+    # User Configuration
+    programs.fish.enable = true;
+    users = {
+        defaultUserShell = pkgs.fish;
+        users.${user} = {
+        isNormalUser = true;
+        extraGroups = [ "wheel" "networkmanager" ];
+        };
+    };
+
+    # Bluetooth Configuration
+    hardware = {
+        bluetooth.enable = true;
+        bluetooth.powerOnBoot = false;
+        };
+
+    # System Services Configuration
+    services = {
+        # Bluetooth Support
+        blueman.enable = true;
+
+        # Enable the X11 windowing system.
+        # You can disable this if you're only using the Wayland session.
+        xserver.enable = true;
+
+        # Enable the KDE Plasma Desktop Environment.
+        displayManager.sddm.wayland.enable = true;
+        displayManager.sddm.enable = true;
+        desktopManager.plasma6.enable = true;
+
+        # Enable Printing.
+        printing.enable = true;
+
+        # Enable pulseaudio for Audio
+        pulseaudio.enable = false;
+
+        # Enable Pipewire for Audio
+        pipewire = {
+            enable = true;
+            alsa.enable = true;
+            alsa.support32Bit = true;
+            pulse.enable = true;
+            jack.enable = true;
+        };
+    };
+
+    #security Configuration
+    security.rtkit.enable = true;
+
 }
