@@ -10,7 +10,7 @@
 
   environment.systemPackages = [ pkgs.home-manager ];
 
-  networking.hostName = desktop;
+  networking.hostName = "desktop";
 
   system.stateVersion = 25.05;
 }
