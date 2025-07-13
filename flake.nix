@@ -54,9 +54,9 @@
         inherit inputs homeStateVersion user;
       };
 
-      #modules = [
-      #  ./modules/home/home.nix
-      #];
+      modules = [
+        ./modules/home/home.nix
+      ];
     };
   };
 }
