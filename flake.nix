@@ -28,6 +28,14 @@
 
       modules = [
         ./systems/${hostname}/configuration.nix
+        home-manager.nixosModules.home-manager {
+          home-manager = {
+            verbose = true;
+            useUserPackages = true;
+            useGlobalPkgs = true;
+            backupFileExtension = "bak";
+          };
+        }
       ];
     };
 

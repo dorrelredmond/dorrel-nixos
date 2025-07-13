@@ -1,15 +1,7 @@
-{ homeStateVersion, user, inputs, ... }: {
+{ homeStateVersion, user, ... }: {
   imports = [
     ./home-packages.nix
-    inputs.home-manager.nixosModules.default
   ];
-
-  home-manager = {
-    verbose = true;
-    useUserPackages = true;
-    useGlobalPkgs = true;
-    backupFileExtension = "bak";
-  };
 
   home = {
     username = user;
