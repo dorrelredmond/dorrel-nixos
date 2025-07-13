@@ -21,12 +21,12 @@
   # General Packages
   environment.systemPackages = with pkgs; [
 
+    # CLI
     git
     gh
     neovim
 
-    heroic
-
+    # KDE
     kdePackages.kate
     kdePackages.kcalc # Calculator
     kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
@@ -40,6 +40,10 @@
     hardinfo2 # System information and benchmarks for Linux systems
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
+
+    # Games
+    heroic
+    r2modman
 
     (prismlauncher.override {
      # Add binary required by some mod
