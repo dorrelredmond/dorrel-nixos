@@ -9,6 +9,7 @@
     vesktop
     discord
     pavucontrol
+    vesktop
 
     # CLI Tools
     protonup
