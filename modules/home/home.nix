@@ -1,10 +1,17 @@
-{ homeStateVersion, user, ... }: {
+{ homeStateVersion, user, inputs, ... }: {
   imports = [
     ./environment # environment variables & path
     ./programs # ways to configure packages
     ./themes # themes for applications
-    ./home-manager.nix # home manager specific options
+    inputs.home-manager.nixosModules.default
   ];
+
+  home-manager = {
+    verbose = true;
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    backupFileExtension = "bak";
+  };
 
   home = {
     username = user;
