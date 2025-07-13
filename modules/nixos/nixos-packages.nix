@@ -7,7 +7,15 @@
   hardware.logitech.wireless.enable = true;
 
   environment.systemPackages = with pkgs; [
+    # CLI Tools
+    git
+    gh
+    neovim
+
+    # GUI Applications & Tools
     solaar
     bottles
+    pavucontrol
+
   ];
 }

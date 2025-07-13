@@ -1,8 +1,6 @@
 { homeStateVersion, user, inputs, ... }: {
   imports = [
-    ./environment # environment variables & path
-    ./programs # ways to configure packages
-    ./themes # themes for applications
+    ./home-packages.nix
     inputs.home-manager.nixosModules.default
   ];
 

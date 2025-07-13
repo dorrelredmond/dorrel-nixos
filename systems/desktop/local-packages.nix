@@ -21,12 +21,7 @@
   # General Packages
   environment.systemPackages = with pkgs; [
 
-    # CLI
-    git
-    gh
-    neovim
-
-    # KDE
+    # KDE Tools
     kdePackages.kate
     kdePackages.kcalc # Calculator
     kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
@@ -41,7 +36,8 @@
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
 
-    # Games
+    # Gaming Applications & Tools
+    protonup
     heroic
     r2modman
 

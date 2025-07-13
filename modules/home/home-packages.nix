@@ -8,8 +8,11 @@
     obsidian
     vesktop
     discord
-    pavucontrol
     vesktop
+    alacritty
+    chromium
+    firefox
+
 
     # CLI Tools
     protonup
@@ -20,5 +23,18 @@
     yt-dlp
     zip
     ntfs3g
+    bat
+    eza
+    fastfetch
+    fish
+    gh
+    git
+    starship
+
+    # TUI Tools
+    btop
+    lazygit
+    neovim
+
     ];
 }
