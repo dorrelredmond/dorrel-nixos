@@ -11,51 +11,47 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs:
+
   let
-    system = "x86_64-linux";
-    homeStateVersion = "25.05";
     user = "dorrel";
-    hosts = [
-      { hostname = "desktop"; stateVersion = "25.05"; }
-      # { hostname = "macbook"; stateVersion = "25.05"; }
-    ];
-
-     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
-      system = system;
-      specialArgs = {
-        inherit inputs stateVersion hostname user;
-      };
-
-      modules = [
-        ./systems/${hostname}/configuration.nix
-        home-manager.nixosModules.home-manager {
-          home-manager = {
-            verbose = true;
-            useUserPackages = true;
-            useGlobalPkgs = true;
-            backupFileExtension = "bak";
-          };
-        }
-      ];
-    };
-
   in {
-    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
-      configs // {
-        "${host.hostname}" = makeSystem {
-          inherit (host) hostname stateVersion;
+
+    # NixOS Configurations
+    nixosConfigurations = {
+      desktop = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {
+        inherit inputs user;
         };
-      }) {} hosts;
-
-    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
+        modules = [
+          ./systems/desktop/configuration.nix
+          home-manager.nixosModules.home-manager {
+            home-manager = {
+              verbose = true;
+              useUserPackages = true;
+              useGlobalPkgs = true;
+              backupFileExtension = "bak";
+            };
+          }
+        ];
       };
-
-      modules = [
-        ./modules/home/home.nix
-      ];
     };
+
+    # TODO Darwin Configurations
+
+    # Home Manager Configurations for Unix Systems
+    homeConfigurations = {
+      desktop = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x84_64-linux;
+        extraSpecialArgs = {
+        inherit inputs user;
+        };
+        modules = [
+          ./modules/home/home.nix
+        ];
+      };
+    };
+
+    # TODO MacOS Home Configs
   };
 }

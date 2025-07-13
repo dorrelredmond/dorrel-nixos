@@ -1,4 +1,4 @@
-{ pkgs, stateVersion, hostname, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -10,7 +10,7 @@
 
   environment.systemPackages = [ pkgs.home-manager ];
 
-  networking.hostName = hostname;
+  networking.hostName = desktop;
 
-  system.stateVersion = stateVersion;
+  system.stateVersion = 25.05;
 }
