@@ -42,7 +42,7 @@
     # Home Manager Configurations for Unix Systems
     homeConfigurations = {
       dorrel = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x84_64-linux;
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {
         inherit inputs user;
         };
