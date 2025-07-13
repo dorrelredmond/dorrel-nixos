@@ -7,3 +7,4 @@ While I am attempting to primarily only take inspiration from other people's dot
 
 - [isabelroses](https://github.com/isabelroses)
 - [Andrey0189 (Andrew)](https://github.com/Andrey0189)
+- [lukejcollins (Luke)](https://github.com/lukejcollins)
