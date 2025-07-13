@@ -10,4 +10,11 @@
     homeDirectory = "/home/${user}";
     stateVersion = homeStateVersion;
   };
+
+  home-manager = {
+    verbose = true;
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    backupFileExtension = "bak";
+  };
 }
