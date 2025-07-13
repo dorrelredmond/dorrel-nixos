@@ -34,6 +34,7 @@
             useUserPackages = true;
             useGlobalPkgs = true;
             backupFileExtension = "bak";
+            users.${user} = ./modules/home/home.nix;
           };
         }
       ];
@@ -53,9 +54,9 @@
         inherit inputs homeStateVersion user;
       };
 
-      modules = [
-        ./modules/home/home.nix
-      ];
+      #modules = [
+      #  ./modules/home/home.nix
+      #];
     };
   };
 }

@@ -5,7 +5,7 @@
     home.packages = with pkgs; [
 
     # Desktop Apps
-    #obsidian
+    obsidian
     vesktop
     discord
     vesktop
