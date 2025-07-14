@@ -11,6 +11,8 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
+    waybar.url = "github:Alexays/Waybar/master";
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs:
@@ -26,6 +28,11 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./systems/desktop/configuration.nix
+          ({ pkgs, ... }:{
+              nixpkgs.overlays = [
+                  (_: _: { waybar_git = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.waybar; })
+              ];
+          })
           home-manager.nixosModules.home-manager {
             home-manager = {
               verbose = true;

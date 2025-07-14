@@ -8,6 +8,10 @@
       enable = true;
       binfmt = true;
     };
+    waybar = {
+      enable = true;
+      package = pkgs.waybar_git;
+    };
   };
 
   xdg.portal = {
@@ -35,10 +39,6 @@
     kdePackages.qtstyleplugin-kvantum # kavantum manager for styling
 
     # Hyprland Tools & Applications
-    (waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental = true" ];
-      }) # system panel
-    )
     mako # notification daemon
     libnotify # required by mako
     swww # wallpaper manager
