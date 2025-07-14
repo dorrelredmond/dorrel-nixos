@@ -3,6 +3,13 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  programs = {
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     # CLI Tools
     git
