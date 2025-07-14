@@ -48,6 +48,7 @@
     wl-clipboard # Command-line copy/paste utilities for Wayland
     cliphist #clipboard manager
     kdePackages.dolphin # GUI File Manager
+    networkmanagerapplet
 
   ];
 }
