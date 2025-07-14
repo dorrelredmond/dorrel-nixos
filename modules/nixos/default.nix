@@ -1,4 +1,4 @@
-{ pkgs, user, home-manager, ... }: {
+{ pkgs, lib, inputs, user, home-manager, ... }: {
     imports = [
         ./nixos-packages.nix
     ];
@@ -21,6 +21,13 @@
 
     # Enable Flakes Support
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+    # substituters
+    nix.settings = {
+        substituters = ["https://hyprland.cachix.org"];
+        trusted-substituters = ["https://hyprland.cachix.org"];
+        trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+    };
 
     # Enable networking
     networking.networkmanager.enable = true;
@@ -88,6 +95,10 @@
         logitech.wireless.enable = true;
 
     };
+
+    # Window Manager Configuration
+    #programs.hyprland.enable = true;
+    #programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
     # System Services Configuration
     services = {
