@@ -12,6 +12,7 @@
         alacritty
         chromium
         firefox
+	krita
 
         # CLI Tools
         protonup
@@ -34,6 +35,7 @@
         btop
         lazygit
         neovim
+	cava
 
     ];
 }
