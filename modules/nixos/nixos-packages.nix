@@ -34,10 +34,15 @@
     bottles
     pavucontrol # audio controls
     hardinfo2 # System information and benchmarks for Linux systems
-    kdePackages.kate
+    vscodium # text editor
     kdePackages.qt6ct
     libsForQt5.qt5ct
     kdePackages.qtstyleplugin-kvantum # kavantum manager for styling
+    nomacs-qt6 # image viewer
+    feh # minimal image viewer
+    flameshot # screenshots
+    mpv # video player
+    strawberry # audio player
 
     # Hyprland Tools & Applications
     mako # notification daemon

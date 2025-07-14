@@ -13,6 +13,7 @@
         chromium
         firefox
         krita
+	dropbox
 
         # CLI Tools
         protonup
@@ -30,6 +31,7 @@
         gh
         git
         starship
+	imagemagick
 
         # TUI Tools
         btop
