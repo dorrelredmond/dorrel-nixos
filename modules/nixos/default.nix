@@ -97,8 +97,14 @@
     };
 
     # Window Manager Configuration
-    #programs.hyprland.enable = true;
-    #programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+    programs.hyprland = {
+        enable = true;
+        # set the flake package
+        package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+        # make sure to also set the portal package, so that they are in sync
+        portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+        xwayland.enable = true;
+    };
 
     # System Services Configuration
     services = {
@@ -131,6 +137,10 @@
     };
 
     #security Configuration
-    security.rtkit.enable = true;
+    security = {
+        rtkit.enable = true;
+        polkit.enable = true;
+        pam.services.hyprlock = {};
+    };
 
 }
