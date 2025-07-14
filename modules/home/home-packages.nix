@@ -14,6 +14,7 @@
         firefox
         krita
 	dropbox
+	spotify
 
         # CLI Tools
         protonup
