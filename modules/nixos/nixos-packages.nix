@@ -8,10 +8,10 @@
       enable = true;
       binfmt = true;
     };
-    waybar = {
-      enable = true;
-      package = pkgs.waybar_git;
-    };
+    #waybar = {
+    #  enable = true;
+    #  package = pkgs.waybar_git;
+    #};
   };
 
   xdg.portal = {
@@ -24,6 +24,7 @@
     git
     gh
     wireplumber
+    waybar_git
 
     # TUI Tools
     neovim
