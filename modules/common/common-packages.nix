@@ -17,6 +17,7 @@
         vscodium # text editor
         mpv # video player
         speedcrunch # Calculator
+	qbittorrent
 
         # CLI Tools
         git
