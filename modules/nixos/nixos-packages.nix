@@ -19,6 +19,7 @@
     # CLI Tools
     wireplumber
     ntfs3g
+    gvfs
 
     # GUI Applications & Tools
     solaar # logitech unified receiver settings
