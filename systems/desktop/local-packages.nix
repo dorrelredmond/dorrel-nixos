@@ -34,6 +34,7 @@
 
     # Gaming Applications & Tools
     protonup
+    protonup-qt
     heroic
     r2modman
 

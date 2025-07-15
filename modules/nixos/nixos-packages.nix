@@ -43,6 +43,7 @@
     flameshot # screenshots
     mpv # video player
     strawberry # audio player
+    protonvpn-gui # VPN Service
 
     # Hyprland Tools & Applications
     hyprpolkitagent
