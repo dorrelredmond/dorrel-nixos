@@ -5,26 +5,29 @@
     environment.systemPackages = with pkgs; [
 
         # Desktop Apps
-        obsidian
-        vesktop
+        obsidian # note taking
+        vesktop #discord alternative client
         discord
-        vesktop
-        alacritty
-        chromium
-        firefox
+        alacritty #terminal
+        chromium # browser
+        firefox # browser
         krita
 	    dropbox
 	    spotify
+        vscodium # text editor
+        mpv # video player
+        speedcrunch # Calculator
+        flameshot # screenshots
 
         # CLI Tools
-        protonup
+        git
+        gh
         wget
         alejandra
         ffmpeg
         unzip
         yt-dlp
         zip
-        ntfs3g
         bat
         eza
         fastfetch
