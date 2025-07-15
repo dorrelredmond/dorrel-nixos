@@ -25,23 +25,25 @@
     bottles
     pavucontrol # audio controls
     hardinfo2 # System information and benchmarks for Linux systems
-    kdePackages.qt6ct
-    libsForQt5.qt5ct
-    kdePackages.qtstyleplugin-kvantum # kavantum manager for styling
     nomacs-qt6 # image viewer
     feh # minimal image viewer
     strawberry # audio player
     protonvpn-gui # VPN Service
     kdePackages.isoimagewriter # Write hybrid ISO files onto USB disks
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
-    kdePackages.sddm-kcm # Configuration module for SDDM
 
+    # User Styles
+    kdePackages.qt6ct
+    libsForQt5.qt5ct
+    kdePackages.qtstyleplugin-kvantum # kavantum manager for styling
+    nwg-look
 
     # Hyprland Tools & Applications
     hyprpolkitagent # PolicyKit
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
+    hyprshot # screenshot utility
     hyprsysteminfo
     hyprcursor
     waybar_git

@@ -19,18 +19,11 @@
   };
 
   # General Packages
-  environment.systemPackages = with pkgs; [
-
-    # KDE Tools
-    kdePackages.kcalc # Calculator
-    kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
-    kdePackages.kcolorchooser # A small utility to select a color
-    kdePackages.kolourpaint # Easy-to-use paint program
-    kdePackages.ksystemlog # KDE SystemLog Application
-    kdiff3 # Compares and merges 2 or 3 files or directories
+  environment.systemPackages = with pkgs; [    
+    # CLI
+    protonup
     
     # Gaming Applications & Tools
-    protonup
     protonup-qt
     heroic
     r2modman

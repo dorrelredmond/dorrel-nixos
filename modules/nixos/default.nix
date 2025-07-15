@@ -97,7 +97,7 @@
 
     };
 
-    # Window Manager Configuration
+    # Hyprland Window Manager Configuration
     programs.hyprland = {
         enable = true;
         # set the flake package
@@ -112,14 +112,9 @@
         # Bluetooth Support
         blueman.enable = true;
 
-        # Enable the X11 windowing system.
-        # You can disable this if you're only using the Wayland session.
-        xserver.enable = true;
-
-        # Enable the KDE Plasma Desktop Environment.
+        # Enable the SDDM Display Manager
         displayManager.sddm.wayland.enable = true;
         displayManager.sddm.enable = true;
-        desktopManager.plasma6.enable = true;
 
         # Enable Printing
         printing.enable = true;

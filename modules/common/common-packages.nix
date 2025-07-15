@@ -17,7 +17,6 @@
         vscodium # text editor
         mpv # video player
         speedcrunch # Calculator
-        flameshot # screenshots
 
         # CLI Tools
         git
