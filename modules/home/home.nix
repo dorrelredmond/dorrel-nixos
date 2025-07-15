@@ -1,6 +1,6 @@
 { user, ... }: {
   imports = [
-    ./home-packages.nix
+    
   ];
 
   home = {
