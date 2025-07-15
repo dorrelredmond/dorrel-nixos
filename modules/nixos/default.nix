@@ -1,6 +1,7 @@
 { pkgs, lib, inputs, user, home-manager, ... }: {
     imports = [
         ./nixos-packages.nix
+        ../common
     ];
 
     # Boot Configurations

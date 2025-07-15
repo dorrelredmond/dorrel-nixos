@@ -8,10 +8,6 @@
       enable = true;
       binfmt = true;
     };
-    #waybar = {
-    #  enable = true;
-    #  package = pkgs.waybar_git;
-    #};
   };
 
   xdg.portal = {
@@ -44,12 +40,17 @@
     mpv # video player
     strawberry # audio player
     protonvpn-gui # VPN Service
+    speedcrunch # Calculator
+    kdePackages.isoimagewriter # Write hybrid ISO files onto USB disks
+    kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
+    kdePackages.sddm-kcm # Configuration module for SDDM
+
 
     # Hyprland Tools & Applications
-    hyprpolkitagent
-    hyprlock
-    hypridle
-    hyprpicker
+    hyprpolkitagent # PolicyKit
+    hyprlock # lock screen
+    hypridle # idle daemon
+    hyprpicker # color picker
     hyprsysteminfo
     hyprcursor
     mako # notification daemon

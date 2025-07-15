@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ config, lib, pkgs, ... }:
 {
     nixpkgs.config.allowUnfree = true;
 
-    home.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
 
         # Desktop Apps
         obsidian
@@ -13,8 +13,8 @@
         chromium
         firefox
         krita
-	dropbox
-	spotify
+	    dropbox
+	    spotify
 
         # CLI Tools
         protonup
@@ -32,7 +32,7 @@
         gh
         git
         starship
-	imagemagick
+	    imagemagick
 
         # TUI Tools
         btop

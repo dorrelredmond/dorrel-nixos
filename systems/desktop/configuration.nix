@@ -7,6 +7,15 @@
     ../../modules/nixos
   ];
 
+  # Add Media Drive
+  fileSystems."/mnt/media" = { 
+    device = "/dev/disk/by-uuid/5BEA62CB-F420-88BC-EAE2-50F3780C9616";
+    fsType = "none";
+    options = [
+      "nofail"
+    ];
+  };
+
   environment.systemPackages = [ pkgs.home-manager ];
 
   networking.hostName = "desktop";
