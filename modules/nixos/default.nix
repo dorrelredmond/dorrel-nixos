@@ -126,11 +126,6 @@
         # Enable pulseaudio for Audio
         pulseaudio.enable = false;
 
-        # Disk Services
-        devmon.enable = true;
-        gvfs.enable = true;
-        udsisk2.enable = true;
-
         # Enable Pipewire for Audio
         pipewire = {
             enable = true;
