@@ -107,6 +107,8 @@
         xwayland.enable = true;
     };
 
+    services.udisks2.enable = true;
+    
     # System Services Configuration
     services = {
         # Bluetooth Support
