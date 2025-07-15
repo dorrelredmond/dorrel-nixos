@@ -120,11 +120,16 @@
         displayManager.sddm.enable = true;
         desktopManager.plasma6.enable = true;
 
-        # Enable Printing.
+        # Enable Printing
         printing.enable = true;
 
         # Enable pulseaudio for Audio
         pulseaudio.enable = false;
+
+        # Disk Services
+        devmon.enable = true;
+        gvfs.enable = true;
+        udsisk2.enable = true;
 
         # Enable Pipewire for Audio
         pipewire = {

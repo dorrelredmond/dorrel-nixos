@@ -45,6 +45,12 @@
     strawberry # audio player
 
     # Hyprland Tools & Applications
+    hyprpolkitagent
+    hyprlock
+    hypridle
+    hyprpicker
+    hyprsysteminfo
+    hyprcursor
     mako # notification daemon
     libnotify # required by mako
     swww # wallpaper manager
