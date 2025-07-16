@@ -13,6 +13,8 @@
 
     waybar.url = "github:Alexays/Waybar/master";
 
+    catppuccin.url = "github:catppuccin/nix";
+
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, ... } @ inputs:
@@ -28,6 +30,7 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./systems/desktop/configuration.nix
+          catppuccin.nixosModules.catppuccin
           ({ pkgs, ... }:{
               nixpkgs.overlays = [
                   (_: _: { waybar_git = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.waybar; })
@@ -53,8 +56,8 @@
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs user; };
         modules = [
-          # Set Home.nix path
           ./modules/home/home.nix
+          catppuccin.homeModules.catppuccin
         ];
       };
     };

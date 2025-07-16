@@ -97,6 +97,10 @@
 
     };
 
+    # Global Catppuccin Configuration
+    catppuccin.flavor = "mocha";
+    catppuccin.enable = true;
+
     # Hyprland Window Manager Configuration
     programs.hyprland = {
         enable = true;
