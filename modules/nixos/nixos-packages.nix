@@ -32,7 +32,10 @@
     protonvpn-gui # VPN Service
     kdePackages.isoimagewriter # Write hybrid ISO files onto USB disks
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
+    kdePackages.kcharselect
     font-manager
+    emote
+
 
     # User Styles
     kdePackages.qt6ct
