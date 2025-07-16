@@ -13,5 +13,6 @@
     nerd-fonts.sauce-code-pro
     nerd-fonts.mononoki
     nerd-fonts.fantasque-sans-mono
+    nerd-fonts.hack
   ];
 }
