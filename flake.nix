@@ -17,7 +17,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, ... } @ inputs:
 
   let
     user = "dorrel";
