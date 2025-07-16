@@ -15,5 +15,8 @@
     nerd-fonts.mononoki
     nerd-fonts.fantasque-sans-mono
     nerd-fonts.hack
+
+    # Misc Fonts
+    font-awesome
   ];
 }
