@@ -65,6 +65,5 @@
     cliphist #clipboard manager
     kdePackages.dolphin # GUI File Manager
     networkmanagerapplet
-    kdePackages.sddm
   ];
 }

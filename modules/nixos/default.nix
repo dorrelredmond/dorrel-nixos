@@ -124,6 +124,10 @@
         # Enable pulseaudio for Audio
         pulseaudio.enable = false;
 
+	displayManager.sddm.enable = true;
+	displayManager.sddm.wayland.enable = true;
+	displayManager.sddm.package = pkgs.kdePackages.sddm;
+
         # Enable Pipewire for Audio
         pipewire = {
             enable = true;
