@@ -1,5 +1,0 @@
-2025/03/22-00:17:12.961 bc45 Creating DB /home/dorrel/.config/heroic/Partitions/epicstore/Local Storage/leveldb since it was missing.
-2025/03/22-00:17:12.979 bc45 Reusing MANIFEST /home/dorrel/.config/heroic/Partitions/epicstore/Local Storage/leveldb/MANIFEST-000001
-2025/03/22-00:19:41.001 bc46 Level-0 table #5: started
-2025/03/22-00:19:41.007 bc46 Level-0 table #5: 14923 bytes OK
-2025/03/22-00:19:41.012 bc46 Delete type=0 #3
