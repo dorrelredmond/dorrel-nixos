@@ -118,10 +118,6 @@
         # Bluetooth Support
         blueman.enable = true;
 
-        # Enable the SDDM Display Manager
-        displayManager.sddm.wayland.enable = true;
-        displayManager.sddm.enable = true;
-
         # Enable Printing
         printing.enable = true;
 

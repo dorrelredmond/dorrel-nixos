@@ -38,13 +38,14 @@
     emote
 
 
+
     # User Styles
     kdePackages.qt6ct
     libsForQt5.qt5ct
     kdePackages.qtstyleplugin-kvantum # kavantum manager for styling
     nwg-look
 
-    # Hyprland Tools & Applications
+    # System Packages
     hyprpolkitagent # PolicyKit
     hyprlock # lock screen
     hypridle # idle daemon
@@ -64,6 +65,6 @@
     cliphist #clipboard manager
     kdePackages.dolphin # GUI File Manager
     networkmanagerapplet
-
+    kdePackages.sddm
   ];
 }
