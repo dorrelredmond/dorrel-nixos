@@ -20,6 +20,7 @@
     wireplumber
     ntfs3g
     gvfs
+    pamixer
 
     # GUI Applications & Tools
     solaar # logitech unified receiver settings
