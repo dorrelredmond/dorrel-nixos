@@ -54,7 +54,7 @@
     wlogout
     playerctl
     waybar_git
-    mako # notification daemon
+    swaynotificationcenter # notification daemon
     libnotify # required by mako
     swww # wallpaper manager
     rofi-wayland
