@@ -52,6 +52,7 @@
     hyprsysteminfo
     hyprcursor
     wlogout
+    playerctl
     waybar_git
     mako # notification daemon
     libnotify # required by mako
