@@ -51,6 +51,7 @@
     hyprshot # screenshot utility
     hyprsysteminfo
     hyprcursor
+    wlogout
     waybar_git
     mako # notification daemon
     libnotify # required by mako
