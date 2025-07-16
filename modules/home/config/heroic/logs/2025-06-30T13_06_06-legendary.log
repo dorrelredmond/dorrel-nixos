@@ -1,0 +1,4 @@
+[6/30/2025, 8:06:07 AM] LEGENDARY_CONFIG_PATH=/home/dorrel/.config/heroic/legendaryConfig/legendary /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary --version
+legendary version "0.20.37", codename "Exit 17 (Heroic)"
+[6/30/2025, 8:06:09 AM] LEGENDARY_CONFIG_PATH=/home/dorrel/.config/heroic/legendaryConfig/legendary /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary cleanup
+[cli] INFO: Cleanup complete! Removed 0.00 MiB.

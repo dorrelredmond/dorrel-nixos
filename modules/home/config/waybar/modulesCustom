@@ -1,0 +1,59 @@
+{
+	"custom/lock": {
+        "tooltip": false,
+        "on-click": "hyprlock & disown",
+        "format": "",
+    },
+
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "wlogout &",
+        "format": ""
+    },
+
+    "custom/swaync": {
+	    "tooltip": true,
+	    "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
+	    "format": "{} {icon} ",
+	    "format-icons": {
+    		"notification": "<span foreground='red'><sup></sup></span>",
+		    "none": "",
+		    "dnd-notification": "<span foreground='red'><sup></sup></span>",
+		    "dnd-none": "",
+		    "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+		    "inhibited-none": "",
+		    "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+		    "dnd-inhibited-none": ""
+	    },
+	    "return-type": "json",
+	    "exec-if": "which swaync-client",
+	    "exec": "swaync-client -swb",
+	    "on-click": "sleep 0.1 && swaync-client -t -sw",
+	    "on-click-right": "swaync-client -d -sw",
+	    "escape": true,
+    },
+
+	"custom/playerctl": {
+		"format": "<span>{}</span>",
+		"return-type": "json",
+		"max-length": 25,
+		"exec": "playerctl -a metadata --format '{\"text\": \"{{artist}}  {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+		"on-click-middle": "playerctl play-pause",
+		"on-click": "playerctl previous",
+		"on-click-right": "playerctl next",
+		"scroll-step": 5.0,
+		"on-scroll-up": "pamixer -i 5 --allow-bost --set-limit 150",
+		"on-scroll-down": "pamixer -d 5",
+		"smooth-scrolling-threshold": 1,
+	},
+	    
+	"custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ title }}'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
+}

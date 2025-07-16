@@ -1,0 +1,34 @@
+{
+	"installed": [
+		{
+			"platform": "windows",
+			"executable": "",
+			"install_path": "/media/gaming/Heroic/Journey to the Savage Planet",
+			"install_size": "6.12 GiB",
+			"is_dlc": false,
+			"version": "1.0.10",
+			"appName": "1519147341",
+			"installedDLCs": [
+				"1240193021"
+			],
+			"language": "en-US",
+			"versionEtag": "\"22aa0084d3c323e0e5528ddbc5771500\"",
+			"buildId": "54102244257232737",
+			"pinnedVersion": false
+		},
+		{
+			"platform": "linux",
+			"executable": "",
+			"install_path": "/media/gaming/Heroic/Crypt of the NecroDancer",
+			"install_size": "1.51 GiB",
+			"is_dlc": false,
+			"version": "4.1.1-b5421",
+			"appName": "1432297044",
+			"installedDLCs": [],
+			"language": "en",
+			"versionEtag": "",
+			"buildId": "",
+			"pinnedVersion": false
+		}
+	]
+}

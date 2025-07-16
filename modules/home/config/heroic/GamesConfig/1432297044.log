@@ -1,0 +1,1059 @@
+[GENERIC DOWNLOAD_MANAGER] INFO: Platform is Linux, redirecting download to Linux Native installer manager
+[LINUX] INFO: Initialized Linux Download Manager
+[API] INFO: Getting info from products endpoint for id: 1432297044
+New/changed files 24507
+Deleted 0
+Total files 24507
+(1.3590269982814789, 'GB') 1459244128
+(1.5081841684877872, 'GB') 1619400420
+[PROGRESS] INFO: = Progress: 0.00 0/1534397908, Running for: 00:00:00, ETA: 00:00:00
+[PROGRESS] INFO: = Downloaded: 0.00 MiB, Written: 0.00 MiB
+[PROGRESS] INFO:  + Download	- 0.00 MiB/s (raw) / 0.00 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 0.09 1375742/1534397908, Running for: 00:00:01, ETA: 00:33:00
+[PROGRESS] INFO: = Downloaded: 1.98 MiB, Written: 1.31 MiB
+[PROGRESS] INFO:  + Download	- 1.02 MiB/s (raw) / 1.02 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 1.17 MiB/s (write) / 0.40 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:03, ETA: 00:03:46
+[PROGRESS] INFO: = Downloaded: 11.81 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 3.65 MiB/s (raw) / 3.65 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.20 MiB/s (write) / 4.53 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:04, ETA: 00:04:53
+[PROGRESS] INFO: = Downloaded: 16.61 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.00 MiB/s (raw) / 0.00 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:05, ETA: 00:06:00
+[PROGRESS] INFO: = Downloaded: 16.61 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.34 MiB/s (raw) / 0.34 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:06, ETA: 00:07:07
+[PROGRESS] INFO: = Downloaded: 21.43 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.50 MiB/s (raw) / 0.50 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:07, ETA: 00:08:14
+[PROGRESS] INFO: = Downloaded: 21.43 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.00 MiB/s (raw) / 0.00 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:08, ETA: 00:09:21
+[PROGRESS] INFO: = Downloaded: 36.17 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.00 MiB/s (raw) / 0.00 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:09, ETA: 00:10:29
+[PROGRESS] INFO: = Downloaded: 48.72 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.50 MiB/s (raw) / 0.50 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:10, ETA: 00:11:36
+[PROGRESS] INFO: = Downloaded: 48.72 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.01 MiB/s (raw) / 0.01 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 1.47 22535878/1534397908, Running for: 00:00:11, ETA: 00:12:43
+[PROGRESS] INFO: = Downloaded: 48.72 MiB, Written: 21.49 MiB
+[PROGRESS] INFO:  + Download	- 0.50 MiB/s (raw) / 0.50 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 4.58 70251697/1534397908, Running for: 00:00:12, ETA: 00:04:18
+[PROGRESS] INFO: = Downloaded: 88.73 MiB, Written: 67.00 MiB
+[PROGRESS] INFO:  + Download	- 26.08 MiB/s (raw) / 26.08 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 88.13 MiB/s (write) / 37.92 MiB/s (read)
+[PROGRESS] INFO: = Progress: 8.43 129292802/1534397908, Running for: 00:00:13, ETA: 00:02:25
+[PROGRESS] INFO: = Downloaded: 89.17 MiB, Written: 123.30 MiB
+[PROGRESS] INFO:  + Download	- 53.00 MiB/s (raw) / 53.00 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 92.97 MiB/s (write) / 42.42 MiB/s (read)
+[PROGRESS] INFO: = Progress: 8.47 130038609/1534397908, Running for: 00:00:14, ETA: 00:02:35
+[PROGRESS] INFO: = Downloaded: 89.68 MiB, Written: 124.02 MiB
+[PROGRESS] INFO:  + Download	- 0.51 MiB/s (raw) / 0.51 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.81 MiB/s (write) / 0.33 MiB/s (read)
+[PROGRESS] INFO: = Progress: 8.50 130401358/1534397908, Running for: 00:00:15, ETA: 00:02:45
+[PROGRESS] INFO: = Downloaded: 89.98 MiB, Written: 124.36 MiB
+[PROGRESS] INFO:  + Download	- 0.30 MiB/s (raw) / 0.30 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.62 MiB/s (write) / 0.19 MiB/s (read)
+[PROGRESS] INFO: = Progress: 8.51 130555234/1534397908, Running for: 00:00:16, ETA: 00:02:57
+[PROGRESS] INFO: = Downloaded: 90.52 MiB, Written: 124.51 MiB
+[PROGRESS] INFO:  + Download	- 1.91 MiB/s (raw) / 1.91 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.18 MiB/s (write) / 0.07 MiB/s (read)
+[PROGRESS] INFO: = Progress: 8.51 130555234/1534397908, Running for: 00:00:17, ETA: 00:03:08
+[PROGRESS] INFO: = Downloaded: 92.58 MiB, Written: 124.51 MiB
+[PROGRESS] INFO:  + Download	- 7.48 MiB/s (raw) / 7.48 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.08 MiB/s (write) / 0.04 MiB/s (read)
+[PROGRESS] INFO: = Progress: 8.51 130555234/1534397908, Running for: 00:00:18, ETA: 00:03:19
+[PROGRESS] INFO: = Downloaded: 99.64 MiB, Written: 124.51 MiB
+[PROGRESS] INFO:  + Download	- 8.27 MiB/s (raw) / 8.27 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.19 MiB/s (write) / 0.09 MiB/s (read)
+[PROGRESS] INFO: = Progress: 8.51 130555234/1534397908, Running for: 00:00:19, ETA: 00:03:30
+[PROGRESS] INFO: = Downloaded: 99.64 MiB, Written: 124.51 MiB
+[PROGRESS] INFO:  + Download	- 8.87 MiB/s (raw) / 8.87 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 11.63 178494129/1534397908, Running for: 00:00:20, ETA: 00:02:37
+[PROGRESS] INFO: = Downloaded: 117.40 MiB, Written: 170.23 MiB
+[PROGRESS] INFO:  + Download	- 8.39 MiB/s (raw) / 8.39 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.02 MiB/s (read)
+[PROGRESS] INFO: = Progress: 12.49 191697391/1534397908, Running for: 00:00:21, ETA: 00:02:32
+[PROGRESS] INFO: = Downloaded: 128.43 MiB, Written: 182.82 MiB
+[PROGRESS] INFO:  + Download	- 8.31 MiB/s (raw) / 8.31 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.01 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 12.67 194434937/1534397908, Running for: 00:00:22, ETA: 00:02:37
+[PROGRESS] INFO: = Downloaded: 135.63 MiB, Written: 185.43 MiB
+[PROGRESS] INFO:  + Download	- 8.73 MiB/s (raw) / 8.73 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 13.71 210311810/1534397908, Running for: 00:00:23, ETA: 00:02:30
+[PROGRESS] INFO: = Downloaded: 148.95 MiB, Written: 200.57 MiB
+[PROGRESS] INFO:  + Download	- 8.35 MiB/s (raw) / 8.35 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.01 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 14.43 221368646/1534397908, Running for: 00:00:25, ETA: 00:02:28
+[PROGRESS] INFO: = Downloaded: 154.92 MiB, Written: 211.11 MiB
+[PROGRESS] INFO:  + Download	- 8.16 MiB/s (raw) / 8.16 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.01 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 14.59 223844360/1534397908, Running for: 00:00:26, ETA: 00:02:32
+[PROGRESS] INFO: = Downloaded: 162.49 MiB, Written: 213.47 MiB
+[PROGRESS] INFO:  + Download	- 8.85 MiB/s (raw) / 8.85 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 15.75 241667438/1534397908, Running for: 00:00:27, ETA: 00:02:24
+[PROGRESS] INFO: = Downloaded: 175.02 MiB, Written: 230.47 MiB
+[PROGRESS] INFO:  + Download	- 8.94 MiB/s (raw) / 8.94 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.03 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.44 252228394/1534397908, Running for: 00:00:28, ETA: 00:02:22
+[PROGRESS] INFO: = Downloaded: 184.04 MiB, Written: 240.54 MiB
+[PROGRESS] INFO:  + Download	- 7.93 MiB/s (raw) / 7.93 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.04 MiB/s (write) / 0.02 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.62 254960653/1534397908, Running for: 00:00:29, ETA: 00:02:25
+[PROGRESS] INFO: = Downloaded: 186.59 MiB, Written: 243.15 MiB
+[PROGRESS] INFO:  + Download	- 7.96 MiB/s (raw) / 7.96 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.01 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:30, ETA: 00:02:28
+[PROGRESS] INFO: = Downloaded: 189.84 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.51 MiB/s (raw) / 8.51 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:31, ETA: 00:02:33
+[PROGRESS] INFO: = Downloaded: 189.84 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.31 MiB/s (raw) / 8.31 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:32, ETA: 00:02:38
+[PROGRESS] INFO: = Downloaded: 189.84 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.68 MiB/s (raw) / 8.68 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.01 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:33, ETA: 00:02:44
+[PROGRESS] INFO: = Downloaded: 189.84 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 7.84 MiB/s (raw) / 7.84 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.01 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:34, ETA: 00:02:49
+[PROGRESS] INFO: = Downloaded: 189.84 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.92 MiB/s (raw) / 8.92 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:35, ETA: 00:02:55
+[PROGRESS] INFO: = Downloaded: 202.64 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.21 MiB/s (raw) / 8.21 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.01 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:36, ETA: 00:03:00
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.69 MiB/s (raw) / 8.69 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:37, ETA: 00:03:05
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.44 MiB/s (raw) / 8.44 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:38, ETA: 00:03:11
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 7.98 MiB/s (raw) / 7.98 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:39, ETA: 00:03:16
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.31 MiB/s (raw) / 8.31 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 21.39 MiB/s (write) / 6.05 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:40, ETA: 00:03:21
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 9.24 MiB/s (raw) / 9.24 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 12.93 MiB/s (write) / 4.36 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:41, ETA: 00:03:26
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.42 MiB/s (raw) / 8.42 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.84 MiB/s (write) / 2.89 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:42, ETA: 00:03:31
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.47 MiB/s (raw) / 8.47 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 13.41 MiB/s (write) / 6.63 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:44, ETA: 00:03:37
+[PROGRESS] INFO: = Downloaded: 211.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.36 MiB/s (raw) / 8.36 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.69 MiB/s (write) / 8.28 MiB/s (read)
+[PROGRESS] INFO: = Progress: 16.85 258587087/1534397908, Running for: 00:00:45, ETA: 00:03:42
+[PROGRESS] INFO: = Downloaded: 251.62 MiB, Written: 246.61 MiB
+[PROGRESS] INFO:  + Download	- 8.60 MiB/s (raw) / 8.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.06 MiB/s (write) / 8.21 MiB/s (read)
+[PROGRESS] INFO: = Progress: 20.67 317099054/1534397908, Running for: 00:00:46, ETA: 00:02:57
+[PROGRESS] INFO: = Downloaded: 282.73 MiB, Written: 302.41 MiB
+[PROGRESS] INFO:  + Download	- 8.43 MiB/s (raw) / 8.43 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 13.29 MiB/s (write) / 6.47 MiB/s (read)
+[PROGRESS] INFO: = Progress: 23.17 355582968/1534397908, Running for: 00:00:47, ETA: 00:02:36
+[PROGRESS] INFO: = Downloaded: 319.34 MiB, Written: 339.11 MiB
+[PROGRESS] INFO:  + Download	- 8.29 MiB/s (raw) / 8.29 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.06 MiB/s (write) / 6.54 MiB/s (read)
+[PROGRESS] INFO: = Progress: 24.99 383425593/1534397908, Running for: 00:00:48, ETA: 00:02:25
+[PROGRESS] INFO: = Downloaded: 322.36 MiB, Written: 365.66 MiB
+[PROGRESS] INFO:  + Download	- 8.61 MiB/s (raw) / 8.61 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.58 MiB/s (write) / 6.94 MiB/s (read)
+[PROGRESS] INFO: = Progress: 24.99 383425593/1534397908, Running for: 00:00:49, ETA: 00:02:28
+[PROGRESS] INFO: = Downloaded: 322.36 MiB, Written: 365.66 MiB
+[PROGRESS] INFO:  + Download	- 8.61 MiB/s (raw) / 8.61 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.45 MiB/s (write) / 7.80 MiB/s (read)
+[PROGRESS] INFO: = Progress: 24.99 383425593/1534397908, Running for: 00:00:50, ETA: 00:02:31
+[PROGRESS] INFO: = Downloaded: 322.36 MiB, Written: 365.66 MiB
+[PROGRESS] INFO:  + Download	- 8.53 MiB/s (raw) / 8.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.72 MiB/s (write) / 6.59 MiB/s (read)
+[PROGRESS] INFO: = Progress: 24.99 383425593/1534397908, Running for: 00:00:51, ETA: 00:02:34
+[PROGRESS] INFO: = Downloaded: 322.36 MiB, Written: 365.66 MiB
+[PROGRESS] INFO:  + Download	- 7.81 MiB/s (raw) / 7.81 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 12.34 MiB/s (write) / 7.58 MiB/s (read)
+[PROGRESS] INFO: = Progress: 24.99 383425593/1534397908, Running for: 00:00:52, ETA: 00:02:37
+[PROGRESS] INFO: = Downloaded: 330.13 MiB, Written: 365.66 MiB
+[PROGRESS] INFO:  + Download	- 8.41 MiB/s (raw) / 8.41 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 12.71 MiB/s (write) / 5.37 MiB/s (read)
+[PROGRESS] INFO: = Progress: 24.99 383425593/1534397908, Running for: 00:00:53, ETA: 00:02:40
+[PROGRESS] INFO: = Downloaded: 330.13 MiB, Written: 365.66 MiB
+[PROGRESS] INFO:  + Download	- 8.76 MiB/s (raw) / 8.76 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 13.51 MiB/s (write) / 6.67 MiB/s (read)
+[PROGRESS] INFO: = Progress: 24.99 383425593/1534397908, Running for: 00:00:54, ETA: 00:02:43
+[PROGRESS] INFO: = Downloaded: 330.13 MiB, Written: 365.66 MiB
+[PROGRESS] INFO:  + Download	- 7.75 MiB/s (raw) / 7.75 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 4.39 MiB/s (write) / 3.15 MiB/s (read)
+[PROGRESS] INFO: = Progress: 29.03 445510067/1534397908, Running for: 00:00:55, ETA: 00:02:16
+[PROGRESS] INFO: = Downloaded: 370.13 MiB, Written: 424.87 MiB
+[PROGRESS] INFO:  + Download	- 8.52 MiB/s (raw) / 8.52 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.02 MiB/s (write) / 0.01 MiB/s (read)
+[PROGRESS] INFO: = Progress: 29.03 445510067/1534397908, Running for: 00:00:56, ETA: 00:02:18
+[PROGRESS] INFO: = Downloaded: 370.13 MiB, Written: 424.87 MiB
+[PROGRESS] INFO:  + Download	- 9.35 MiB/s (raw) / 9.35 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.23 MiB/s (write) / 0.11 MiB/s (read)
+[PROGRESS] INFO: = Progress: 29.03 445510067/1534397908, Running for: 00:00:57, ETA: 00:02:21
+[PROGRESS] INFO: = Downloaded: 370.13 MiB, Written: 424.87 MiB
+[PROGRESS] INFO:  + Download	- 8.26 MiB/s (raw) / 8.26 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 4.96 MiB/s (write) / 0.05 MiB/s (read)
+[PROGRESS] INFO: = Progress: 29.03 445510067/1534397908, Running for: 00:00:58, ETA: 00:02:23
+[PROGRESS] INFO: = Downloaded: 370.13 MiB, Written: 424.87 MiB
+[PROGRESS] INFO:  + Download	- 8.33 MiB/s (raw) / 8.33 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.67 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 29.03 445510067/1534397908, Running for: 00:00:59, ETA: 00:02:26
+[PROGRESS] INFO: = Downloaded: 391.16 MiB, Written: 424.87 MiB
+[PROGRESS] INFO:  + Download	- 7.94 MiB/s (raw) / 7.94 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.35 MiB/s (write) / 11.86 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:00, ETA: 00:02:17
+[PROGRESS] INFO: = Downloaded: 417.63 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 8.95 MiB/s (raw) / 8.95 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.56 MiB/s (write) / 13.68 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:01, ETA: 00:02:20
+[PROGRESS] INFO: = Downloaded: 431.73 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 8.20 MiB/s (raw) / 8.20 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.17 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:02, ETA: 00:02:22
+[PROGRESS] INFO: = Downloaded: 431.73 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 8.58 MiB/s (raw) / 8.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.21 MiB/s (write) / 10.48 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:03, ETA: 00:02:24
+[PROGRESS] INFO: = Downloaded: 431.73 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 8.90 MiB/s (raw) / 8.90 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.88 MiB/s (write) / 17.78 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:04, ETA: 00:02:27
+[PROGRESS] INFO: = Downloaded: 431.73 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 7.84 MiB/s (raw) / 7.84 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.67 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:05, ETA: 00:02:29
+[PROGRESS] INFO: = Downloaded: 431.73 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 8.45 MiB/s (raw) / 8.45 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.11 MiB/s (write) / 12.92 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:06, ETA: 00:02:31
+[PROGRESS] INFO: = Downloaded: 441.00 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 8.74 MiB/s (raw) / 8.74 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.09 MiB/s (write) / 6.11 MiB/s (read)
+[PROGRESS] INFO: = Progress: 30.62 469774080/1534397908, Running for: 00:01:08, ETA: 00:02:34
+[PROGRESS] INFO: = Downloaded: 442.23 MiB, Written: 448.01 MiB
+[PROGRESS] INFO:  + Download	- 8.07 MiB/s (raw) / 8.07 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.20 MiB/s (write) / 10.16 MiB/s (read)
+[PROGRESS] INFO: = Progress: 33.73 517517579/1534397908, Running for: 00:01:09, ETA: 00:02:15
+[PROGRESS] INFO: = Downloaded: 469.98 MiB, Written: 493.54 MiB
+[PROGRESS] INFO:  + Download	- 8.73 MiB/s (raw) / 8.73 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.47 MiB/s (write) / 6.46 MiB/s (read)
+[PROGRESS] INFO: = Progress: 33.73 517517579/1534397908, Running for: 00:01:10, ETA: 00:02:17
+[PROGRESS] INFO: = Downloaded: 469.98 MiB, Written: 493.54 MiB
+[PROGRESS] INFO:  + Download	- 8.35 MiB/s (raw) / 8.35 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.05 MiB/s (write) / 0.98 MiB/s (read)
+[PROGRESS] INFO: = Progress: 37.60 576883827/1534397908, Running for: 00:01:11, ETA: 00:01:58
+[PROGRESS] INFO: = Downloaded: 509.98 MiB, Written: 550.16 MiB
+[PROGRESS] INFO:  + Download	- 7.92 MiB/s (raw) / 7.92 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.93 MiB/s (write) / 15.85 MiB/s (read)
+[PROGRESS] INFO: = Progress: 37.60 576883827/1534397908, Running for: 00:01:12, ETA: 00:01:59
+[PROGRESS] INFO: = Downloaded: 509.98 MiB, Written: 550.16 MiB
+[PROGRESS] INFO:  + Download	- 9.28 MiB/s (raw) / 9.28 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.93 MiB/s (write) / 8.13 MiB/s (read)
+[PROGRESS] INFO: = Progress: 37.60 576883827/1534397908, Running for: 00:01:13, ETA: 00:02:01
+[PROGRESS] INFO: = Downloaded: 512.97 MiB, Written: 550.16 MiB
+[PROGRESS] INFO:  + Download	- 8.49 MiB/s (raw) / 8.49 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.00 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 37.60 576883827/1534397908, Running for: 00:01:14, ETA: 00:02:03
+[PROGRESS] INFO: = Downloaded: 512.97 MiB, Written: 550.16 MiB
+[PROGRESS] INFO:  + Download	- 8.33 MiB/s (raw) / 8.33 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.85 MiB/s (write) / 12.74 MiB/s (read)
+[PROGRESS] INFO: = Progress: 37.60 576883827/1534397908, Running for: 00:01:15, ETA: 00:02:05
+[PROGRESS] INFO: = Downloaded: 519.66 MiB, Written: 550.16 MiB
+[PROGRESS] INFO:  + Download	- 7.76 MiB/s (raw) / 7.76 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.36 MiB/s (write) / 15.30 MiB/s (read)
+[PROGRESS] INFO: = Progress: 37.60 576883827/1534397908, Running for: 00:01:16, ETA: 00:02:07
+[PROGRESS] INFO: = Downloaded: 530.02 MiB, Written: 550.16 MiB
+[PROGRESS] INFO:  + Download	- 9.33 MiB/s (raw) / 9.33 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 18.92 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 39.61 607740240/1534397908, Running for: 00:01:17, ETA: 00:01:58
+[PROGRESS] INFO: = Downloaded: 550.02 MiB, Written: 579.59 MiB
+[PROGRESS] INFO:  + Download	- 7.78 MiB/s (raw) / 7.78 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.37 MiB/s (write) / 7.78 MiB/s (read)
+[PROGRESS] INFO: = Progress: 39.61 607740240/1534397908, Running for: 00:01:18, ETA: 00:01:59
+[PROGRESS] INFO: = Downloaded: 550.02 MiB, Written: 579.59 MiB
+[PROGRESS] INFO:  + Download	- 9.48 MiB/s (raw) / 9.48 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 18.88 MiB/s (write) / 18.74 MiB/s (read)
+[PROGRESS] INFO: = Progress: 41.52 637029552/1534397908, Running for: 00:01:19, ETA: 00:01:52
+[PROGRESS] INFO: = Downloaded: 570.02 MiB, Written: 607.52 MiB
+[PROGRESS] INFO:  + Download	- 7.25 MiB/s (raw) / 7.25 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.50 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 41.52 637029552/1534397908, Running for: 00:01:20, ETA: 00:01:53
+[PROGRESS] INFO: = Downloaded: 570.02 MiB, Written: 607.52 MiB
+[PROGRESS] INFO:  + Download	- 8.53 MiB/s (raw) / 8.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.19 MiB/s (write) / 9.48 MiB/s (read)
+[PROGRESS] INFO: = Progress: 41.52 637029552/1534397908, Running for: 00:01:21, ETA: 00:01:55
+[PROGRESS] INFO: = Downloaded: 570.02 MiB, Written: 607.52 MiB
+[PROGRESS] INFO:  + Download	- 8.61 MiB/s (raw) / 8.61 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.39 MiB/s (write) / 11.80 MiB/s (read)
+[PROGRESS] INFO: = Progress: 43.68 670298759/1534397908, Running for: 00:01:22, ETA: 00:01:46
+[PROGRESS] INFO: = Downloaded: 590.03 MiB, Written: 639.25 MiB
+[PROGRESS] INFO:  + Download	- 9.12 MiB/s (raw) / 9.12 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 26.86 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 43.68 670298759/1534397908, Running for: 00:01:23, ETA: 00:01:48
+[PROGRESS] INFO: = Downloaded: 590.03 MiB, Written: 639.25 MiB
+[PROGRESS] INFO:  + Download	- 7.91 MiB/s (raw) / 7.91 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 34.96 MiB/s (write) / 33.72 MiB/s (read)
+[PROGRESS] INFO: = Progress: 43.68 670298759/1534397908, Running for: 00:01:24, ETA: 00:01:49
+[PROGRESS] INFO: = Downloaded: 590.08 MiB, Written: 639.25 MiB
+[PROGRESS] INFO:  + Download	- 8.50 MiB/s (raw) / 8.50 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 27.31 MiB/s (write) / 11.12 MiB/s (read)
+[PROGRESS] INFO: = Progress: 43.68 670298759/1534397908, Running for: 00:01:25, ETA: 00:01:50
+[PROGRESS] INFO: = Downloaded: 606.57 MiB, Written: 639.25 MiB
+[PROGRESS] INFO:  + Download	- 8.96 MiB/s (raw) / 8.96 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.94 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 43.68 670298759/1534397908, Running for: 00:01:27, ETA: 00:01:52
+[PROGRESS] INFO: = Downloaded: 606.57 MiB, Written: 639.25 MiB
+[PROGRESS] INFO:  + Download	- 8.43 MiB/s (raw) / 8.43 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.75 MiB/s (write) / 11.24 MiB/s (read)
+[PROGRESS] INFO: = Progress: 43.68 670298759/1534397908, Running for: 00:01:28, ETA: 00:01:53
+[PROGRESS] INFO: = Downloaded: 650.27 MiB, Written: 639.25 MiB
+[PROGRESS] INFO:  + Download	- 9.02 MiB/s (raw) / 9.02 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 18.57 MiB/s (write) / 17.50 MiB/s (read)
+[PROGRESS] INFO: = Progress: 45.26 694514754/1534397908, Running for: 00:01:29, ETA: 00:01:47
+[PROGRESS] INFO: = Downloaded: 670.27 MiB, Written: 662.34 MiB
+[PROGRESS] INFO:  + Download	- 4.88 MiB/s (raw) / 4.88 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 11.71 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 51.23 786020358/1534397908, Running for: 00:01:30, ETA: 00:01:25
+[PROGRESS] INFO: = Downloaded: 690.28 MiB, Written: 749.61 MiB
+[PROGRESS] INFO:  + Download	- 4.30 MiB/s (raw) / 4.30 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 13.83 MiB/s (write) / 0.96 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.47 805052849/1534397908, Running for: 00:01:31, ETA: 00:01:22
+[PROGRESS] INFO: = Downloaded: 708.16 MiB, Written: 767.76 MiB
+[PROGRESS] INFO:  + Download	- 2.37 MiB/s (raw) / 2.37 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 37.41 MiB/s (write) / 25.32 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.52 805862355/1534397908, Running for: 00:01:32, ETA: 00:01:23
+[PROGRESS] INFO: = Downloaded: 708.93 MiB, Written: 768.53 MiB
+[PROGRESS] INFO:  + Download	- 0.76 MiB/s (raw) / 0.76 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 196.46 MiB/s (write) / 96.48 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.56 806427939/1534397908, Running for: 00:01:33, ETA: 00:01:24
+[PROGRESS] INFO: = Downloaded: 709.47 MiB, Written: 769.07 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 186.40 MiB/s (write) / 99.08 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.59 806994781/1534397908, Running for: 00:01:34, ETA: 00:01:24
+[PROGRESS] INFO: = Downloaded: 710.01 MiB, Written: 769.61 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 38.87 MiB/s (write) / 20.71 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.63 807625355/1534397908, Running for: 00:01:35, ETA: 00:01:25
+[PROGRESS] INFO: = Downloaded: 710.60 MiB, Written: 770.21 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.90 MiB/s (write) / 0.15 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.67 808196319/1534397908, Running for: 00:01:36, ETA: 00:01:26
+[PROGRESS] INFO: = Downloaded: 711.15 MiB, Written: 770.76 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.71 808769694/1534397908, Running for: 00:01:37, ETA: 00:01:27
+[PROGRESS] INFO: = Downloaded: 711.70 MiB, Written: 771.30 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.75 809403078/1534397908, Running for: 00:01:38, ETA: 00:01:27
+[PROGRESS] INFO: = Downloaded: 712.30 MiB, Written: 771.91 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.79 809973325/1534397908, Running for: 00:01:39, ETA: 00:01:28
+[PROGRESS] INFO: = Downloaded: 712.84 MiB, Written: 772.45 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.83 810549013/1534397908, Running for: 00:01:40, ETA: 00:01:29
+[PROGRESS] INFO: = Downloaded: 713.40 MiB, Written: 773.00 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.88 811424199/1534397908, Running for: 00:01:41, ETA: 00:01:30
+[PROGRESS] INFO: = Downloaded: 714.01 MiB, Written: 773.83 MiB
+[PROGRESS] INFO:  + Download	- 0.61 MiB/s (raw) / 0.61 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.93 812178706/1534397908, Running for: 00:01:42, ETA: 00:01:30
+[PROGRESS] INFO: = Downloaded: 714.72 MiB, Written: 774.55 MiB
+[PROGRESS] INFO:  + Download	- 0.71 MiB/s (raw) / 0.71 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.52 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 52.97 812750455/1534397908, Running for: 00:01:43, ETA: 00:01:31
+[PROGRESS] INFO: = Downloaded: 715.27 MiB, Written: 775.10 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.53 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.01 813376620/1534397908, Running for: 00:01:44, ETA: 00:01:32
+[PROGRESS] INFO: = Downloaded: 715.86 MiB, Written: 775.70 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.62 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.05 813946421/1534397908, Running for: 00:01:45, ETA: 00:01:33
+[PROGRESS] INFO: = Downloaded: 716.41 MiB, Written: 776.24 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 1.07 MiB/s (write) / 0.16 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.08 814508382/1534397908, Running for: 00:01:46, ETA: 00:01:33
+[PROGRESS] INFO: = Downloaded: 716.95 MiB, Written: 776.78 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.12 815137619/1534397908, Running for: 00:01:47, ETA: 00:01:34
+[PROGRESS] INFO: = Downloaded: 717.55 MiB, Written: 777.38 MiB
+[PROGRESS] INFO:  + Download	- 0.59 MiB/s (raw) / 0.59 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.59 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.16 815713337/1534397908, Running for: 00:01:48, ETA: 00:01:35
+[PROGRESS] INFO: = Downloaded: 718.10 MiB, Written: 777.92 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.20 816303742/1534397908, Running for: 00:01:49, ETA: 00:01:36
+[PROGRESS] INFO: = Downloaded: 718.66 MiB, Written: 778.49 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.24 816888422/1534397908, Running for: 00:01:50, ETA: 00:01:36
+[PROGRESS] INFO: = Downloaded: 719.22 MiB, Written: 779.05 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.30 817853292/1534397908, Running for: 00:01:51, ETA: 00:01:37
+[PROGRESS] INFO: = Downloaded: 719.89 MiB, Written: 779.97 MiB
+[PROGRESS] INFO:  + Download	- 0.67 MiB/s (raw) / 0.67 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.35 818573866/1534397908, Running for: 00:01:52, ETA: 00:01:38
+[PROGRESS] INFO: = Downloaded: 720.57 MiB, Written: 780.65 MiB
+[PROGRESS] INFO:  + Download	- 0.68 MiB/s (raw) / 0.68 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.53 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.39 819151441/1534397908, Running for: 00:01:53, ETA: 00:01:38
+[PROGRESS] INFO: = Downloaded: 721.12 MiB, Written: 781.20 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.43 819783559/1534397908, Running for: 00:01:54, ETA: 00:01:39
+[PROGRESS] INFO: = Downloaded: 721.72 MiB, Written: 781.81 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.93 MiB/s (write) / 0.03 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.46 820345204/1534397908, Running for: 00:01:55, ETA: 00:01:40
+[PROGRESS] INFO: = Downloaded: 722.27 MiB, Written: 782.35 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.84 MiB/s (write) / 0.14 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.50 820916445/1534397908, Running for: 00:01:56, ETA: 00:01:41
+[PROGRESS] INFO: = Downloaded: 722.81 MiB, Written: 782.89 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.53 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.54 821544031/1534397908, Running for: 00:01:57, ETA: 00:01:41
+[PROGRESS] INFO: = Downloaded: 723.40 MiB, Written: 783.49 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.58 822172680/1534397908, Running for: 00:01:58, ETA: 00:01:42
+[PROGRESS] INFO: = Downloaded: 724.01 MiB, Written: 784.08 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.62 822735808/1534397908, Running for: 00:01:59, ETA: 00:01:43
+[PROGRESS] INFO: = Downloaded: 724.54 MiB, Written: 784.62 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.67 823577856/1534397908, Running for: 00:02:00, ETA: 00:01:43
+[PROGRESS] INFO: = Downloaded: 725.11 MiB, Written: 785.43 MiB
+[PROGRESS] INFO:  + Download	- 0.57 MiB/s (raw) / 0.57 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.73 824380714/1534397908, Running for: 00:02:01, ETA: 00:01:44
+[PROGRESS] INFO: = Downloaded: 725.86 MiB, Written: 786.19 MiB
+[PROGRESS] INFO:  + Download	- 0.73 MiB/s (raw) / 0.73 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.52 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.77 825012662/1534397908, Running for: 00:02:02, ETA: 00:01:45
+[PROGRESS] INFO: = Downloaded: 726.46 MiB, Written: 786.79 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.80 825580306/1534397908, Running for: 00:02:03, ETA: 00:01:46
+[PROGRESS] INFO: = Downloaded: 727.00 MiB, Written: 787.33 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.84 826144428/1534397908, Running for: 00:02:04, ETA: 00:01:46
+[PROGRESS] INFO: = Downloaded: 727.54 MiB, Written: 787.87 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 1.17 MiB/s (write) / 0.17 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.88 826774544/1534397908, Running for: 00:02:05, ETA: 00:01:47
+[PROGRESS] INFO: = Downloaded: 728.14 MiB, Written: 788.47 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.92 827353005/1534397908, Running for: 00:02:06, ETA: 00:01:48
+[PROGRESS] INFO: = Downloaded: 728.69 MiB, Written: 789.03 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 53.96 827930715/1534397908, Running for: 00:02:07, ETA: 00:01:48
+[PROGRESS] INFO: = Downloaded: 729.24 MiB, Written: 789.58 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.00 828500671/1534397908, Running for: 00:02:08, ETA: 00:01:49
+[PROGRESS] INFO: = Downloaded: 729.81 MiB, Written: 790.12 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.06 829455433/1534397908, Running for: 00:02:09, ETA: 00:01:50
+[PROGRESS] INFO: = Downloaded: 730.46 MiB, Written: 791.03 MiB
+[PROGRESS] INFO:  + Download	- 0.67 MiB/s (raw) / 0.67 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.11 830203641/1534397908, Running for: 00:02:10, ETA: 00:01:50
+[PROGRESS] INFO: = Downloaded: 731.16 MiB, Written: 791.74 MiB
+[PROGRESS] INFO:  + Download	- 0.70 MiB/s (raw) / 0.70 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.14 830791404/1534397908, Running for: 00:02:11, ETA: 00:01:51
+[PROGRESS] INFO: = Downloaded: 731.72 MiB, Written: 792.30 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.19 831438639/1534397908, Running for: 00:02:12, ETA: 00:01:52
+[PROGRESS] INFO: = Downloaded: 732.34 MiB, Written: 792.92 MiB
+[PROGRESS] INFO:  + Download	- 0.62 MiB/s (raw) / 0.62 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.91 MiB/s (write) / 0.03 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.23 832038822/1534397908, Running for: 00:02:13, ETA: 00:01:52
+[PROGRESS] INFO: = Downloaded: 732.91 MiB, Written: 793.49 MiB
+[PROGRESS] INFO:  + Download	- 0.57 MiB/s (raw) / 0.57 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.85 MiB/s (write) / 0.14 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.26 832630896/1534397908, Running for: 00:02:14, ETA: 00:01:53
+[PROGRESS] INFO: = Downloaded: 733.47 MiB, Written: 794.06 MiB
+[PROGRESS] INFO:  + Download	- 0.56 MiB/s (raw) / 0.56 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.56 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.31 833292696/1534397908, Running for: 00:02:15, ETA: 00:01:54
+[PROGRESS] INFO: = Downloaded: 734.10 MiB, Written: 794.69 MiB
+[PROGRESS] INFO:  + Download	- 0.63 MiB/s (raw) / 0.63 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.62 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.35 833883004/1534397908, Running for: 00:02:16, ETA: 00:01:54
+[PROGRESS] INFO: = Downloaded: 734.66 MiB, Written: 795.25 MiB
+[PROGRESS] INFO:  + Download	- 0.56 MiB/s (raw) / 0.56 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.57 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.38 834476123/1534397908, Running for: 00:02:17, ETA: 00:01:55
+[PROGRESS] INFO: = Downloaded: 735.25 MiB, Written: 795.82 MiB
+[PROGRESS] INFO:  + Download	- 0.58 MiB/s (raw) / 0.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.57 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.43 835114289/1534397908, Running for: 00:02:18, ETA: 00:01:56
+[PROGRESS] INFO: = Downloaded: 735.84 MiB, Written: 796.43 MiB
+[PROGRESS] INFO:  + Download	- 0.56 MiB/s (raw) / 0.56 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.49 836074557/1534397908, Running for: 00:02:19, ETA: 00:01:56
+[PROGRESS] INFO: = Downloaded: 736.51 MiB, Written: 797.34 MiB
+[PROGRESS] INFO:  + Download	- 0.67 MiB/s (raw) / 0.67 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.62 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.54 836833971/1534397908, Running for: 00:02:20, ETA: 00:01:57
+[PROGRESS] INFO: = Downloaded: 737.23 MiB, Written: 798.07 MiB
+[PROGRESS] INFO:  + Download	- 0.71 MiB/s (raw) / 0.71 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.57 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.57 837387383/1534397908, Running for: 00:02:21, ETA: 00:01:57
+[PROGRESS] INFO: = Downloaded: 737.75 MiB, Written: 798.59 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.61 837932731/1534397908, Running for: 00:02:22, ETA: 00:01:58
+[PROGRESS] INFO: = Downloaded: 738.28 MiB, Written: 799.11 MiB
+[PROGRESS] INFO:  + Download	- 0.52 MiB/s (raw) / 0.52 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.55 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.65 838556099/1534397908, Running for: 00:02:23, ETA: 00:01:59
+[PROGRESS] INFO: = Downloaded: 738.87 MiB, Written: 799.71 MiB
+[PROGRESS] INFO:  + Download	- 0.58 MiB/s (raw) / 0.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 1.19 MiB/s (write) / 0.16 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.69 839121512/1534397908, Running for: 00:02:24, ETA: 00:01:59
+[PROGRESS] INFO: = Downloaded: 739.41 MiB, Written: 800.25 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.73 839703669/1534397908, Running for: 00:02:25, ETA: 00:02:00
+[PROGRESS] INFO: = Downloaded: 739.97 MiB, Written: 800.80 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.77 840331837/1534397908, Running for: 00:02:26, ETA: 00:02:01
+[PROGRESS] INFO: = Downloaded: 740.56 MiB, Written: 801.40 MiB
+[PROGRESS] INFO:  + Download	- 0.59 MiB/s (raw) / 0.59 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.59 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.80 840894104/1534397908, Running for: 00:02:27, ETA: 00:02:01
+[PROGRESS] INFO: = Downloaded: 741.10 MiB, Written: 801.94 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.53 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.86 841759339/1534397908, Running for: 00:02:28, ETA: 00:02:02
+[PROGRESS] INFO: = Downloaded: 741.72 MiB, Written: 802.76 MiB
+[PROGRESS] INFO:  + Download	- 0.61 MiB/s (raw) / 0.61 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.91 842500462/1534397908, Running for: 00:02:29, ETA: 00:02:03
+[PROGRESS] INFO: = Downloaded: 742.41 MiB, Written: 803.47 MiB
+[PROGRESS] INFO:  + Download	- 0.68 MiB/s (raw) / 0.68 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.94 843070279/1534397908, Running for: 00:02:30, ETA: 00:02:03
+[PROGRESS] INFO: = Downloaded: 742.95 MiB, Written: 804.01 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 54.99 843704183/1534397908, Running for: 00:02:31, ETA: 00:02:04
+[PROGRESS] INFO: = Downloaded: 743.56 MiB, Written: 804.62 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.87 MiB/s (write) / 0.03 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.02 844265587/1534397908, Running for: 00:02:32, ETA: 00:02:04
+[PROGRESS] INFO: = Downloaded: 744.09 MiB, Written: 805.15 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.84 MiB/s (write) / 0.14 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.06 844832613/1534397908, Running for: 00:02:33, ETA: 00:02:05
+[PROGRESS] INFO: = Downloaded: 744.63 MiB, Written: 805.70 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.10 845397137/1534397908, Running for: 00:02:34, ETA: 00:02:06
+[PROGRESS] INFO: = Downloaded: 745.17 MiB, Written: 806.23 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.13 845972163/1534397908, Running for: 00:02:35, ETA: 00:02:06
+[PROGRESS] INFO: = Downloaded: 745.72 MiB, Written: 806.78 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.19 846899211/1534397908, Running for: 00:02:36, ETA: 00:02:07
+[PROGRESS] INFO: = Downloaded: 746.39 MiB, Written: 807.67 MiB
+[PROGRESS] INFO:  + Download	- 0.67 MiB/s (raw) / 0.67 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.24 847654437/1534397908, Running for: 00:02:37, ETA: 00:02:07
+[PROGRESS] INFO: = Downloaded: 747.10 MiB, Written: 808.39 MiB
+[PROGRESS] INFO:  + Download	- 0.70 MiB/s (raw) / 0.70 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.28 848221148/1534397908, Running for: 00:02:38, ETA: 00:02:08
+[PROGRESS] INFO: = Downloaded: 747.64 MiB, Written: 808.93 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.32 848847054/1534397908, Running for: 00:02:39, ETA: 00:02:09
+[PROGRESS] INFO: = Downloaded: 748.24 MiB, Written: 809.52 MiB
+[PROGRESS] INFO:  + Download	- 0.59 MiB/s (raw) / 0.59 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.86 MiB/s (write) / 0.03 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.36 849403928/1534397908, Running for: 00:02:40, ETA: 00:02:09
+[PROGRESS] INFO: = Downloaded: 748.77 MiB, Written: 810.05 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.91 MiB/s (write) / 0.17 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.39 849963086/1534397908, Running for: 00:02:41, ETA: 00:02:10
+[PROGRESS] INFO: = Downloaded: 749.30 MiB, Written: 810.59 MiB
+[PROGRESS] INFO:  + Download	- 0.53 MiB/s (raw) / 0.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.53 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.44 850594290/1534397908, Running for: 00:02:42, ETA: 00:02:10
+[PROGRESS] INFO: = Downloaded: 749.90 MiB, Written: 811.19 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.59 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.47 851161410/1534397908, Running for: 00:02:43, ETA: 00:02:11
+[PROGRESS] INFO: = Downloaded: 750.45 MiB, Written: 811.73 MiB
+[PROGRESS] INFO:  + Download	- 0.54 MiB/s (raw) / 0.54 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.51 851736621/1534397908, Running for: 00:02:44, ETA: 00:02:12
+[PROGRESS] INFO: = Downloaded: 750.99 MiB, Written: 812.28 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.55 852360250/1534397908, Running for: 00:02:45, ETA: 00:02:12
+[PROGRESS] INFO: = Downloaded: 751.59 MiB, Written: 812.87 MiB
+[PROGRESS] INFO:  + Download	- 0.60 MiB/s (raw) / 0.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.60 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.60 853125892/1534397908, Running for: 00:02:46, ETA: 00:02:13
+[PROGRESS] INFO: = Downloaded: 752.08 MiB, Written: 813.60 MiB
+[PROGRESS] INFO:  + Download	- 0.48 MiB/s (raw) / 0.48 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.53 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.67 854134980/1534397908, Running for: 00:02:47, ETA: 00:02:13
+[PROGRESS] INFO: = Downloaded: 752.81 MiB, Written: 814.57 MiB
+[PROGRESS] INFO:  + Download	- 0.72 MiB/s (raw) / 0.72 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.53 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.70 854716699/1534397908, Running for: 00:02:48, ETA: 00:02:14
+[PROGRESS] INFO: = Downloaded: 753.38 MiB, Written: 815.12 MiB
+[PROGRESS] INFO:  + Download	- 0.57 MiB/s (raw) / 0.57 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.54 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.75 855377800/1534397908, Running for: 00:02:49, ETA: 00:02:14
+[PROGRESS] INFO: = Downloaded: 753.99 MiB, Written: 815.75 MiB
+[PROGRESS] INFO:  + Download	- 0.62 MiB/s (raw) / 0.62 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.85 MiB/s (write) / 0.03 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.79 855992930/1534397908, Running for: 00:02:50, ETA: 00:02:15
+[PROGRESS] INFO: = Downloaded: 754.57 MiB, Written: 816.34 MiB
+[PROGRESS] INFO:  + Download	- 0.58 MiB/s (raw) / 0.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.63 MiB/s (write) / 0.17 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.83 856590168/1534397908, Running for: 00:02:51, ETA: 00:02:16
+[PROGRESS] INFO: = Downloaded: 755.16 MiB, Written: 816.91 MiB
+[PROGRESS] INFO:  + Download	- 0.58 MiB/s (raw) / 0.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.86 MiB/s (write) / 0.14 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.87 857263031/1534397908, Running for: 00:02:52, ETA: 00:02:16
+[PROGRESS] INFO: = Downloaded: 755.79 MiB, Written: 817.55 MiB
+[PROGRESS] INFO:  + Download	- 0.63 MiB/s (raw) / 0.63 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.62 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.91 857861704/1534397908, Running for: 00:02:53, ETA: 00:02:17
+[PROGRESS] INFO: = Downloaded: 756.36 MiB, Written: 818.12 MiB
+[PROGRESS] INFO:  + Download	- 0.57 MiB/s (raw) / 0.57 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.56 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.95 858464623/1534397908, Running for: 00:02:54, ETA: 00:02:17
+[PROGRESS] INFO: = Downloaded: 756.93 MiB, Written: 818.70 MiB
+[PROGRESS] INFO:  + Download	- 0.58 MiB/s (raw) / 0.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.57 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 55.99 859134226/1534397908, Running for: 00:02:55, ETA: 00:02:18
+[PROGRESS] INFO: = Downloaded: 757.57 MiB, Written: 819.33 MiB
+[PROGRESS] INFO:  + Download	- 0.64 MiB/s (raw) / 0.64 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.64 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.03 859751336/1534397908, Running for: 00:02:56, ETA: 00:02:18
+[PROGRESS] INFO: = Downloaded: 758.16 MiB, Written: 819.92 MiB
+[PROGRESS] INFO:  + Download	- 0.59 MiB/s (raw) / 0.59 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.59 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.10 860801535/1534397908, Running for: 00:02:57, ETA: 00:02:19
+[PROGRESS] INFO: = Downloaded: 758.94 MiB, Written: 820.92 MiB
+[PROGRESS] INFO:  + Download	- 0.78 MiB/s (raw) / 0.78 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.58 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.14 861391342/1534397908, Running for: 00:02:58, ETA: 00:02:19
+[PROGRESS] INFO: = Downloaded: 759.51 MiB, Written: 821.49 MiB
+[PROGRESS] INFO:  + Download	- 0.55 MiB/s (raw) / 0.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.56 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.18 862001261/1534397908, Running for: 00:02:59, ETA: 00:02:20
+[PROGRESS] INFO: = Downloaded: 760.09 MiB, Written: 822.07 MiB
+[PROGRESS] INFO:  + Download	- 0.59 MiB/s (raw) / 0.59 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.59 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.22 862691178/1534397908, Running for: 00:03:00, ETA: 00:02:20
+[PROGRESS] INFO: = Downloaded: 760.75 MiB, Written: 822.73 MiB
+[PROGRESS] INFO:  + Download	- 0.65 MiB/s (raw) / 0.65 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.64 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.26 863306726/1534397908, Running for: 00:03:01, ETA: 00:02:21
+[PROGRESS] INFO: = Downloaded: 761.33 MiB, Written: 823.31 MiB
+[PROGRESS] INFO:  + Download	- 0.58 MiB/s (raw) / 0.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 1.15 MiB/s (write) / 0.17 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.30 863913754/1534397908, Running for: 00:03:02, ETA: 00:02:21
+[PROGRESS] INFO: = Downloaded: 761.91 MiB, Written: 823.89 MiB
+[PROGRESS] INFO:  + Download	- 0.58 MiB/s (raw) / 0.58 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.57 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.34 864533800/1534397908, Running for: 00:03:03, ETA: 00:02:22
+[PROGRESS] INFO: = Downloaded: 762.50 MiB, Written: 824.48 MiB
+[PROGRESS] INFO:  + Download	- 0.59 MiB/s (raw) / 0.59 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.58 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.38 865153928/1534397908, Running for: 00:03:04, ETA: 00:02:23
+[PROGRESS] INFO: = Downloaded: 763.11 MiB, Written: 825.08 MiB
+[PROGRESS] INFO:  + Download	- 0.59 MiB/s (raw) / 0.59 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.59 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.43 865845424/1534397908, Running for: 00:03:05, ETA: 00:02:23
+[PROGRESS] INFO: = Downloaded: 763.76 MiB, Written: 825.73 MiB
+[PROGRESS] INFO:  + Download	- 0.67 MiB/s (raw) / 0.67 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.65 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.45 866172618/1534397908, Running for: 00:03:06, ETA: 00:02:24
+[PROGRESS] INFO: = Downloaded: 764.46 MiB, Written: 826.05 MiB
+[PROGRESS] INFO:  + Download	- 4.68 MiB/s (raw) / 4.68 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.11 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.45 866172618/1534397908, Running for: 00:03:08, ETA: 00:02:25
+[PROGRESS] INFO: = Downloaded: 765.03 MiB, Written: 826.05 MiB
+[PROGRESS] INFO:  + Download	- 8.31 MiB/s (raw) / 8.31 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 56.61 868563699/1534397908, Running for: 00:03:09, ETA: 00:02:24
+[PROGRESS] INFO: = Downloaded: 771.87 MiB, Written: 828.33 MiB
+[PROGRESS] INFO:  + Download	- 8.76 MiB/s (raw) / 8.76 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 58.10 891550174/1534397908, Running for: 00:03:10, ETA: 00:02:17
+[PROGRESS] INFO: = Downloaded: 787.93 MiB, Written: 850.25 MiB
+[PROGRESS] INFO:  + Download	- 8.51 MiB/s (raw) / 8.51 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 58.32 894921047/1534397908, Running for: 00:03:11, ETA: 00:02:16
+[PROGRESS] INFO: = Downloaded: 795.03 MiB, Written: 853.46 MiB
+[PROGRESS] INFO:  + Download	- 8.26 MiB/s (raw) / 8.26 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 59.02 905656122/1534397908, Running for: 00:03:12, ETA: 00:02:13
+[PROGRESS] INFO: = Downloaded: 803.51 MiB, Written: 863.70 MiB
+[PROGRESS] INFO:  + Download	- 8.40 MiB/s (raw) / 8.40 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 59.02 905656122/1534397908, Running for: 00:03:13, ETA: 00:02:14
+[PROGRESS] INFO: = Downloaded: 813.21 MiB, Written: 863.70 MiB
+[PROGRESS] INFO:  + Download	- 9.53 MiB/s (raw) / 9.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.08 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 59.67 915580170/1534397908, Running for: 00:03:14, ETA: 00:02:11
+[PROGRESS] INFO: = Downloaded: 818.32 MiB, Written: 873.17 MiB
+[PROGRESS] INFO:  + Download	- 7.45 MiB/s (raw) / 7.45 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 59.67 915580170/1534397908, Running for: 00:03:15, ETA: 00:02:12
+[PROGRESS] INFO: = Downloaded: 823.12 MiB, Written: 873.17 MiB
+[PROGRESS] INFO:  + Download	- 8.46 MiB/s (raw) / 8.46 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 60.33 925666554/1534397908, Running for: 00:03:16, ETA: 00:02:09
+[PROGRESS] INFO: = Downloaded: 834.39 MiB, Written: 882.78 MiB
+[PROGRESS] INFO:  + Download	- 8.47 MiB/s (raw) / 8.47 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 61.48 943297164/1534397908, Running for: 00:03:17, ETA: 00:02:03
+[PROGRESS] INFO: = Downloaded: 848.61 MiB, Written: 899.60 MiB
+[PROGRESS] INFO:  + Download	- 9.23 MiB/s (raw) / 9.23 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.07 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 61.48 943297164/1534397908, Running for: 00:03:18, ETA: 00:02:04
+[PROGRESS] INFO: = Downloaded: 852.65 MiB, Written: 899.60 MiB
+[PROGRESS] INFO:  + Download	- 7.52 MiB/s (raw) / 7.52 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 62.88 964819141/1534397908, Running for: 00:03:19, ETA: 00:01:57
+[PROGRESS] INFO: = Downloaded: 864.84 MiB, Written: 920.12 MiB
+[PROGRESS] INFO:  + Download	- 8.65 MiB/s (raw) / 8.65 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 63.26 970679361/1534397908, Running for: 00:03:20, ETA: 00:01:56
+[PROGRESS] INFO: = Downloaded: 866.42 MiB, Written: 925.71 MiB
+[PROGRESS] INFO:  + Download	- 8.46 MiB/s (raw) / 8.46 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 63.26 970679361/1534397908, Running for: 00:03:22, ETA: 00:01:57
+[PROGRESS] INFO: = Downloaded: 879.87 MiB, Written: 925.71 MiB
+[PROGRESS] INFO:  + Download	- 7.89 MiB/s (raw) / 7.89 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 63.26 970679361/1534397908, Running for: 00:03:23, ETA: 00:01:58
+[PROGRESS] INFO: = Downloaded: 883.05 MiB, Written: 925.71 MiB
+[PROGRESS] INFO:  + Download	- 9.30 MiB/s (raw) / 9.30 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 63.26 970679361/1534397908, Running for: 00:03:24, ETA: 00:01:58
+[PROGRESS] INFO: = Downloaded: 883.05 MiB, Written: 925.71 MiB
+[PROGRESS] INFO:  + Download	- 8.37 MiB/s (raw) / 8.37 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 64.32 986993419/1534397908, Running for: 00:03:25, ETA: 00:01:53
+[PROGRESS] INFO: = Downloaded: 905.02 MiB, Written: 941.27 MiB
+[PROGRESS] INFO:  + Download	- 7.85 MiB/s (raw) / 7.85 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 64.32 986993419/1534397908, Running for: 00:03:26, ETA: 00:01:54
+[PROGRESS] INFO: = Downloaded: 910.03 MiB, Written: 941.27 MiB
+[PROGRESS] INFO:  + Download	- 8.94 MiB/s (raw) / 8.94 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 64.32 986993419/1534397908, Running for: 00:03:27, ETA: 00:01:55
+[PROGRESS] INFO: = Downloaded: 914.28 MiB, Written: 941.27 MiB
+[PROGRESS] INFO:  + Download	- 8.88 MiB/s (raw) / 8.88 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 66.42 1019094260/1534397908, Running for: 00:03:28, ETA: 00:01:45
+[PROGRESS] INFO: = Downloaded: 941.00 MiB, Written: 971.88 MiB
+[PROGRESS] INFO:  + Download	- 7.92 MiB/s (raw) / 7.92 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.07 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 69.19 1061578380/1534397908, Running for: 00:03:29, ETA: 00:01:33
+[PROGRESS] INFO: = Downloaded: 951.83 MiB, Written: 1012.40 MiB
+[PROGRESS] INFO:  + Download	- 8.42 MiB/s (raw) / 8.42 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 69.19 1061578380/1534397908, Running for: 00:03:30, ETA: 00:01:33
+[PROGRESS] INFO: = Downloaded: 951.83 MiB, Written: 1012.40 MiB
+[PROGRESS] INFO:  + Download	- 8.62 MiB/s (raw) / 8.62 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 69.49 1066321833/1534397908, Running for: 00:03:31, ETA: 00:01:32
+[PROGRESS] INFO: = Downloaded: 959.15 MiB, Written: 1016.92 MiB
+[PROGRESS] INFO:  + Download	- 8.31 MiB/s (raw) / 8.31 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 69.95 1073341410/1534397908, Running for: 00:03:32, ETA: 00:01:31
+[PROGRESS] INFO: = Downloaded: 964.69 MiB, Written: 1023.62 MiB
+[PROGRESS] INFO:  + Download	- 8.25 MiB/s (raw) / 8.25 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 69.95 1073341410/1534397908, Running for: 00:03:33, ETA: 00:01:31
+[PROGRESS] INFO: = Downloaded: 983.42 MiB, Written: 1023.62 MiB
+[PROGRESS] INFO:  + Download	- 8.32 MiB/s (raw) / 8.32 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 71.78 1101450210/1534397908, Running for: 00:03:34, ETA: 00:01:24
+[PROGRESS] INFO: = Downloaded: 988.66 MiB, Written: 1050.42 MiB
+[PROGRESS] INFO:  + Download	- 8.28 MiB/s (raw) / 8.28 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 72.14 1106863969/1534397908, Running for: 00:03:35, ETA: 00:01:23
+[PROGRESS] INFO: = Downloaded: 1001.60 MiB, Written: 1055.59 MiB
+[PROGRESS] INFO:  + Download	- 9.37 MiB/s (raw) / 9.37 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.07 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 72.58 1113616700/1534397908, Running for: 00:03:36, ETA: 00:01:21
+[PROGRESS] INFO: = Downloaded: 1009.93 MiB, Written: 1062.03 MiB
+[PROGRESS] INFO:  + Download	- 7.43 MiB/s (raw) / 7.43 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 73.52 1128120822/1534397908, Running for: 00:03:37, ETA: 00:01:18
+[PROGRESS] INFO: = Downloaded: 1017.81 MiB, Written: 1075.86 MiB
+[PROGRESS] INFO:  + Download	- 8.57 MiB/s (raw) / 8.57 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 74.46 1142551231/1534397908, Running for: 00:03:38, ETA: 00:01:15
+[PROGRESS] INFO: = Downloaded: 1029.70 MiB, Written: 1089.62 MiB
+[PROGRESS] INFO:  + Download	- 8.73 MiB/s (raw) / 8.73 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 74.46 1142551231/1534397908, Running for: 00:03:39, ETA: 00:01:15
+[PROGRESS] INFO: = Downloaded: 1032.94 MiB, Written: 1089.62 MiB
+[PROGRESS] INFO:  + Download	- 8.78 MiB/s (raw) / 8.78 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 74.46 1142551231/1534397908, Running for: 00:03:41, ETA: 00:01:15
+[PROGRESS] INFO: = Downloaded: 1038.80 MiB, Written: 1089.62 MiB
+[PROGRESS] INFO:  + Download	- 8.23 MiB/s (raw) / 8.23 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.05 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 74.46 1142551231/1534397908, Running for: 00:03:42, ETA: 00:01:16
+[PROGRESS] INFO: = Downloaded: 1044.17 MiB, Written: 1089.62 MiB
+[PROGRESS] INFO:  + Download	- 8.35 MiB/s (raw) / 8.35 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 76.63 1175875321/1534397908, Running for: 00:03:43, ETA: 00:01:08
+[PROGRESS] INFO: = Downloaded: 1063.88 MiB, Written: 1121.40 MiB
+[PROGRESS] INFO:  + Download	- 8.62 MiB/s (raw) / 8.62 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.07 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 77.63 1191092847/1534397908, Running for: 00:03:44, ETA: 00:01:04
+[PROGRESS] INFO: = Downloaded: 1076.37 MiB, Written: 1135.91 MiB
+[PROGRESS] INFO:  + Download	- 8.05 MiB/s (raw) / 8.05 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 77.63 1191092847/1534397908, Running for: 00:03:45, ETA: 00:01:04
+[PROGRESS] INFO: = Downloaded: 1077.73 MiB, Written: 1135.91 MiB
+[PROGRESS] INFO:  + Download	- 8.96 MiB/s (raw) / 8.96 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.06 MiB/s (write) / 0.00 MiB/s (read)
+[PROGRESS] INFO: = Progress: 77.63 1191092847/1534397908, Running for: 00:03:46, ETA: 00:01:05
+[PROGRESS] INFO: = Downloaded: 1077.73 MiB, Written: 1135.91 MiB
+[PROGRESS] INFO:  + Download	- 8.40 MiB/s (raw) / 8.40 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 5.78 MiB/s (write) / 2.27 MiB/s (read)
+[PROGRESS] INFO: = Progress: 78.06 1197735666/1534397908, Running for: 00:03:47, ETA: 00:01:03
+[PROGRESS] INFO: = Downloaded: 1085.57 MiB, Written: 1142.25 MiB
+[PROGRESS] INFO:  + Download	- 7.48 MiB/s (raw) / 7.48 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 12.20 MiB/s (write) / 6.51 MiB/s (read)
+[PROGRESS] INFO: = Progress: 79.73 1223347640/1534397908, Running for: 00:03:48, ETA: 00:00:58
+[PROGRESS] INFO: = Downloaded: 1107.89 MiB, Written: 1166.68 MiB
+[PROGRESS] INFO:  + Download	- 9.73 MiB/s (raw) / 9.73 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 11.56 MiB/s (write) / 4.78 MiB/s (read)
+[PROGRESS] INFO: = Progress: 79.73 1223347640/1534397908, Running for: 00:03:49, ETA: 00:00:58
+[PROGRESS] INFO: = Downloaded: 1110.79 MiB, Written: 1166.68 MiB
+[PROGRESS] INFO:  + Download	- 8.31 MiB/s (raw) / 8.31 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 10.15 MiB/s (write) / 5.55 MiB/s (read)
+[PROGRESS] INFO: = Progress: 79.73 1223347640/1534397908, Running for: 00:03:50, ETA: 00:00:58
+[PROGRESS] INFO: = Downloaded: 1114.57 MiB, Written: 1166.68 MiB
+[PROGRESS] INFO:  + Download	- 8.18 MiB/s (raw) / 8.18 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 13.63 MiB/s (write) / 6.79 MiB/s (read)
+[PROGRESS] INFO: = Progress: 80.99 1242671191/1534397908, Running for: 00:03:51, ETA: 00:00:54
+[PROGRESS] INFO: = Downloaded: 1125.05 MiB, Written: 1185.10 MiB
+[PROGRESS] INFO:  + Download	- 8.73 MiB/s (raw) / 8.73 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 13.84 MiB/s (write) / 6.91 MiB/s (read)
+[PROGRESS] INFO: = Progress: 81.83 1255602873/1534397908, Running for: 00:03:52, ETA: 00:00:51
+[PROGRESS] INFO: = Downloaded: 1134.45 MiB, Written: 1197.44 MiB
+[PROGRESS] INFO:  + Download	- 8.16 MiB/s (raw) / 8.16 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.54 MiB/s (write) / 7.26 MiB/s (read)
+[PROGRESS] INFO: = Progress: 81.83 1255602873/1534397908, Running for: 00:03:53, ETA: 00:00:51
+[PROGRESS] INFO: = Downloaded: 1139.13 MiB, Written: 1197.44 MiB
+[PROGRESS] INFO:  + Download	- 8.03 MiB/s (raw) / 8.03 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 12.90 MiB/s (write) / 4.68 MiB/s (read)
+[PROGRESS] INFO: = Progress: 81.83 1255602873/1534397908, Running for: 00:03:54, ETA: 00:00:52
+[PROGRESS] INFO: = Downloaded: 1149.82 MiB, Written: 1197.44 MiB
+[PROGRESS] INFO:  + Download	- 9.15 MiB/s (raw) / 9.15 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.29 MiB/s (write) / 9.51 MiB/s (read)
+[PROGRESS] INFO: = Progress: 83.97 1288419452/1534397908, Running for: 00:03:55, ETA: 00:00:44
+[PROGRESS] INFO: = Downloaded: 1166.44 MiB, Written: 1228.73 MiB
+[PROGRESS] INFO:  + Download	- 8.51 MiB/s (raw) / 8.51 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.35 MiB/s (write) / 6.17 MiB/s (read)
+[PROGRESS] INFO: = Progress: 84.57 1297610199/1534397908, Running for: 00:03:56, ETA: 00:00:43
+[PROGRESS] INFO: = Downloaded: 1175.18 MiB, Written: 1237.50 MiB
+[PROGRESS] INFO:  + Download	- 7.44 MiB/s (raw) / 7.44 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 7.28 MiB/s (write) / 5.55 MiB/s (read)
+[PROGRESS] INFO: = Progress: 84.97 1303730625/1534397908, Running for: 00:03:57, ETA: 00:00:42
+[PROGRESS] INFO: = Downloaded: 1181.68 MiB, Written: 1243.33 MiB
+[PROGRESS] INFO:  + Download	- 9.16 MiB/s (raw) / 9.16 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.90 MiB/s (write) / 8.02 MiB/s (read)
+[PROGRESS] INFO: = Progress: 84.97 1303730625/1534397908, Running for: 00:03:58, ETA: 00:00:42
+[PROGRESS] INFO: = Downloaded: 1186.08 MiB, Written: 1243.33 MiB
+[PROGRESS] INFO:  + Download	- 7.31 MiB/s (raw) / 7.31 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 13.80 MiB/s (write) / 5.93 MiB/s (read)
+[PROGRESS] INFO: = Progress: 85.57 1312995627/1534397908, Running for: 00:03:59, ETA: 00:00:40
+[PROGRESS] INFO: = Downloaded: 1199.25 MiB, Written: 1252.17 MiB
+[PROGRESS] INFO:  + Download	- 10.03 MiB/s (raw) / 10.03 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.89 MiB/s (write) / 8.91 MiB/s (read)
+[PROGRESS] INFO: = Progress: 87.48 1342264312/1534397908, Running for: 00:04:00, ETA: 00:00:34
+[PROGRESS] INFO: = Downloaded: 1218.04 MiB, Written: 1280.08 MiB
+[PROGRESS] INFO:  + Download	- 8.14 MiB/s (raw) / 8.14 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 12.96 MiB/s (write) / 6.46 MiB/s (read)
+[PROGRESS] INFO: = Progress: 87.83 1347631478/1534397908, Running for: 00:04:01, ETA: 00:00:33
+[PROGRESS] INFO: = Downloaded: 1221.29 MiB, Written: 1285.20 MiB
+[PROGRESS] INFO:  + Download	- 7.71 MiB/s (raw) / 7.71 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.53 MiB/s (write) / 5.61 MiB/s (read)
+[PROGRESS] INFO: = Progress: 88.16 1352680541/1534397908, Running for: 00:04:02, ETA: 00:00:32
+[PROGRESS] INFO: = Downloaded: 1226.09 MiB, Written: 1290.02 MiB
+[PROGRESS] INFO:  + Download	- 8.57 MiB/s (raw) / 8.57 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.01 MiB/s (write) / 9.27 MiB/s (read)
+[PROGRESS] INFO: = Progress: 88.16 1352680541/1534397908, Running for: 00:04:04, ETA: 00:00:32
+[PROGRESS] INFO: = Downloaded: 1235.84 MiB, Written: 1290.02 MiB
+[PROGRESS] INFO:  + Download	- 8.72 MiB/s (raw) / 8.72 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 18.22 MiB/s (write) / 9.54 MiB/s (read)
+[PROGRESS] INFO: = Progress: 89.38 1371453503/1534397908, Running for: 00:04:05, ETA: 00:00:29
+[PROGRESS] INFO: = Downloaded: 1250.78 MiB, Written: 1307.92 MiB
+[PROGRESS] INFO:  + Download	- 8.27 MiB/s (raw) / 8.27 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.10 MiB/s (write) / 8.66 MiB/s (read)
+[PROGRESS] INFO: = Progress: 89.82 1378139726/1534397908, Running for: 00:04:06, ETA: 00:00:27
+[PROGRESS] INFO: = Downloaded: 1250.78 MiB, Written: 1314.30 MiB
+[PROGRESS] INFO:  + Download	- 8.37 MiB/s (raw) / 8.37 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.87 MiB/s (write) / 5.40 MiB/s (read)
+[PROGRESS] INFO: = Progress: 89.82 1378139726/1534397908, Running for: 00:04:07, ETA: 00:00:28
+[PROGRESS] INFO: = Downloaded: 1252.55 MiB, Written: 1314.30 MiB
+[PROGRESS] INFO:  + Download	- 9.00 MiB/s (raw) / 9.00 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 15.80 MiB/s (write) / 10.23 MiB/s (read)
+[PROGRESS] INFO: = Progress: 89.82 1378139726/1534397908, Running for: 00:04:08, ETA: 00:00:28
+[PROGRESS] INFO: = Downloaded: 1270.25 MiB, Written: 1314.30 MiB
+[PROGRESS] INFO:  + Download	- 8.95 MiB/s (raw) / 8.95 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 17.62 MiB/s (write) / 6.35 MiB/s (read)
+[PROGRESS] INFO: = Progress: 89.82 1378139726/1534397908, Running for: 00:04:09, ETA: 00:00:28
+[PROGRESS] INFO: = Downloaded: 1276.10 MiB, Written: 1314.30 MiB
+[PROGRESS] INFO:  + Download	- 7.20 MiB/s (raw) / 7.20 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 11.69 MiB/s (write) / 6.90 MiB/s (read)
+[PROGRESS] INFO: = Progress: 89.82 1378139726/1534397908, Running for: 00:04:10, ETA: 00:00:28
+[PROGRESS] INFO: = Downloaded: 1283.34 MiB, Written: 1314.30 MiB
+[PROGRESS] INFO:  + Download	- 9.50 MiB/s (raw) / 9.50 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.94 MiB/s (write) / 9.82 MiB/s (read)
+[PROGRESS] INFO: = Progress: 89.82 1378139726/1534397908, Running for: 00:04:11, ETA: 00:00:28
+[PROGRESS] INFO: = Downloaded: 1287.57 MiB, Written: 1314.30 MiB
+[PROGRESS] INFO:  + Download	- 7.53 MiB/s (raw) / 7.53 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 12.98 MiB/s (write) / 4.93 MiB/s (read)
+[PROGRESS] INFO: = Progress: 91.51 1404114260/1534397908, Running for: 00:04:12, ETA: 00:00:23
+[PROGRESS] INFO: = Downloaded: 1307.16 MiB, Written: 1339.07 MiB
+[PROGRESS] INFO:  + Download	- 9.00 MiB/s (raw) / 9.00 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 14.61 MiB/s (write) / 7.13 MiB/s (read)
+[PROGRESS] INFO: = Progress: 94.73 1453491653/1534397908, Running for: 00:04:13, ETA: 00:00:14
+[PROGRESS] INFO: = Downloaded: 1323.22 MiB, Written: 1386.16 MiB
+[PROGRESS] INFO:  + Download	- 8.45 MiB/s (raw) / 8.45 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 16.52 MiB/s (write) / 9.90 MiB/s (read)
+[PROGRESS] INFO: = Progress: 94.97 1457281145/1534397908, Running for: 00:04:14, ETA: 00:00:13
+[PROGRESS] INFO: = Downloaded: 1329.36 MiB, Written: 1389.77 MiB
+[PROGRESS] INFO:  + Download	- 8.11 MiB/s (raw) / 8.11 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 27.78 MiB/s (write) / 12.94 MiB/s (read)
+[PROGRESS] INFO: = Progress: 95.40 1463808063/1534397908, Running for: 00:04:15, ETA: 00:00:12
+[PROGRESS] INFO: = Downloaded: 1333.21 MiB, Written: 1396.00 MiB
+[PROGRESS] INFO:  + Download	- 8.27 MiB/s (raw) / 8.27 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 36.77 MiB/s (write) / 18.86 MiB/s (read)
+[PROGRESS] INFO: = Progress: 96.68 1483515432/1534397908, Running for: 00:04:16, ETA: 00:00:08
+[PROGRESS] INFO: = Downloaded: 1350.52 MiB, Written: 1414.79 MiB
+[PROGRESS] INFO:  + Download	- 5.30 MiB/s (raw) / 5.30 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 21.31 MiB/s (write) / 11.13 MiB/s (read)
+[PROGRESS] INFO: = Progress: 96.89 1486620072/1534397908, Running for: 00:04:17, ETA: 00:00:08
+[PROGRESS] INFO: = Downloaded: 1353.09 MiB, Written: 1417.75 MiB
+[PROGRESS] INFO:  + Download	- 2.55 MiB/s (raw) / 2.55 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 105.71 MiB/s (write) / 51.50 MiB/s (read)
+[PROGRESS] INFO: = Progress: 97.08 1489539388/1534397908, Running for: 00:04:18, ETA: 00:00:07
+[PROGRESS] INFO: = Downloaded: 1355.82 MiB, Written: 1420.54 MiB
+[PROGRESS] INFO:  + Download	- 2.74 MiB/s (raw) / 2.74 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 105.35 MiB/s (write) / 49.61 MiB/s (read)
+[PROGRESS] INFO: = Progress: 97.28 1492687543/1534397908, Running for: 00:04:19, ETA: 00:00:07
+[PROGRESS] INFO: = Downloaded: 1358.66 MiB, Written: 1423.54 MiB
+[PROGRESS] INFO:  + Download	- 2.75 MiB/s (raw) / 2.75 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 113.80 MiB/s (write) / 59.31 MiB/s (read)
+[PROGRESS] INFO: = Progress: 97.49 1495954458/1534397908, Running for: 00:04:20, ETA: 00:00:06
+[PROGRESS] INFO: = Downloaded: 1361.66 MiB, Written: 1426.65 MiB
+[PROGRESS] INFO:  + Download	- 2.78 MiB/s (raw) / 2.78 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 112.54 MiB/s (write) / 55.57 MiB/s (read)
+[PROGRESS] INFO: = Progress: 97.72 1499385821/1534397908, Running for: 00:04:21, ETA: 00:00:06
+[PROGRESS] INFO: = Downloaded: 1364.92 MiB, Written: 1429.99 MiB
+[PROGRESS] INFO:  + Download	- 3.24 MiB/s (raw) / 3.24 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 109.57 MiB/s (write) / 56.98 MiB/s (read)
+[PROGRESS] INFO: = Progress: 97.94 1502816176/1534397908, Running for: 00:04:22, ETA: 00:00:05
+[PROGRESS] INFO: = Downloaded: 1368.03 MiB, Written: 1433.20 MiB
+[PROGRESS] INFO:  + Download	- 3.07 MiB/s (raw) / 3.07 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 108.32 MiB/s (write) / 51.60 MiB/s (read)
+[PROGRESS] INFO: = Progress: 98.16 1506131235/1534397908, Running for: 00:04:23, ETA: 00:00:04
+[PROGRESS] INFO: = Downloaded: 1371.13 MiB, Written: 1436.36 MiB
+[PROGRESS] INFO:  + Download	- 3.04 MiB/s (raw) / 3.04 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 24.79 MiB/s (write) / 14.73 MiB/s (read)
+[PROGRESS] INFO: = Progress: 98.38 1509535876/1534397908, Running for: 00:04:24, ETA: 00:00:04
+[PROGRESS] INFO: = Downloaded: 1374.25 MiB, Written: 1439.61 MiB
+[PROGRESS] INFO:  + Download	- 3.13 MiB/s (raw) / 3.13 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 2.26 MiB/s (write) / 1.11 MiB/s (read)
+[PROGRESS] INFO: = Progress: 98.56 1512345622/1534397908, Running for: 00:04:25, ETA: 00:00:03
+[PROGRESS] INFO: = Downloaded: 1376.97 MiB, Written: 1442.29 MiB
+[PROGRESS] INFO:  + Download	- 2.61 MiB/s (raw) / 2.61 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 2.73 MiB/s (write) / 1.34 MiB/s (read)
+[PROGRESS] INFO: = Progress: 98.78 1515657605/1534397908, Running for: 00:04:26, ETA: 00:00:03
+[PROGRESS] INFO: = Downloaded: 1379.91 MiB, Written: 1445.44 MiB
+[PROGRESS] INFO:  + Download	- 3.05 MiB/s (raw) / 3.05 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 2.61 MiB/s (write) / 1.28 MiB/s (read)
+[PROGRESS] INFO: = Progress: 99.02 1519344431/1534397908, Running for: 00:04:27, ETA: 00:00:02
+[PROGRESS] INFO: = Downloaded: 1383.32 MiB, Written: 1448.96 MiB
+[PROGRESS] INFO:  + Download	- 3.41 MiB/s (raw) / 3.41 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 2.95 MiB/s (write) / 1.46 MiB/s (read)
+[PROGRESS] INFO: = Progress: 99.27 1523172904/1534397908, Running for: 00:04:28, ETA: 00:00:01
+[PROGRESS] INFO: = Downloaded: 1386.79 MiB, Written: 1452.61 MiB
+[PROGRESS] INFO:  + Download	- 3.44 MiB/s (raw) / 3.44 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 1.91 MiB/s (write) / 0.93 MiB/s (read)
+[PROGRESS] INFO: = Progress: 99.69 1529671750/1534397908, Running for: 00:04:29, ETA: 00:00:00
+[PROGRESS] INFO: = Downloaded: 1391.64 MiB, Written: 1458.81 MiB
+[PROGRESS] INFO:  + Download	- 4.60 MiB/s (raw) / 4.60 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 1.16 MiB/s (write) / 0.57 MiB/s (read)
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "threading.py", line 980, in _bootstrap_inner
+  File "threading.py", line 917, in run
+  File "gogdl/dl/progressbar.py", line 44, in loop
+  File "multiprocessing/queues.py", line 100, in get
+ValueError: Queue <multiprocessing.queues.Queue object at 0x711b6fad2760> is closed

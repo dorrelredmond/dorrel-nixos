@@ -1,0 +1,6 @@
+[PROGRESS] INFO: = Progress: 100.00 1253424/1253424, Running for: 00:00:01, ETA: 00:00:00
+[PROGRESS] INFO: = Downloaded: 1.11 MiB, Written: 1.20 MiB
+[PROGRESS] INFO:  + Download	- 0.92 MiB/s (raw) / 0.99 MiB/s (decompressed)
+[PROGRESS] INFO:  + Disk	- 0.99 MiB/s (write) / 0.00 MiB/s (read)
+[API] INFO: Getting Dependencies repository
+[REDIST] INFO: Nothing to do

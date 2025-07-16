@@ -1,0 +1,26 @@
+general.import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[window]
+
+opacity = 0.95
+
+padding.x = 10
+padding.y = 10
+
+decorations = "None"
+decorations_theme_variant = "Dark" # "Light"
+
+[font]
+
+normal.family = "FantasqueSansM Nerd Font Mono"
+bold.family = "FantasqueSansM Nerd Font Mono"
+italic.family = "FantasqueSansM Nerd Font Mono"
+bold_italic.family = "FantasqueSansM Nerd Font Mono"
+
+size = 18.0

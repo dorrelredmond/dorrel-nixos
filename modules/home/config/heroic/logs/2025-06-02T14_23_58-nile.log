@@ -1,0 +1,21 @@
+[6/2/2025, 9:23:59 AM] NILE_CONFIG_PATH=/home/dorrel/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile library sync
+INFO [AUTH_MANAGER]:	 Refreshing token
+[6/2/2025, 9:24:00 AM] NILE_CONFIG_PATH=/home/dorrel/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile --version
+INFO [LIBRARY]:	 Synchronizing library
+INFO [LIBRARY]:	 Successfully synced the library
+1.1.2 Will A. Zeppeli
+[6/2/2025, 9:24:00 AM] NILE_CONFIG_PATH=/home/dorrel/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile library sync
+INFO [LIBRARY]:	 Synchronizing library
+INFO [LIBRARY]:	 Successfully synced the library
+[6/2/2025, 9:24:13 AM] NILE_CONFIG_PATH=/home/dorrel/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile list-updates --json
+ERROR [CLI]:	 No games installed
+[]
+[6/2/2025, 9:24:14 AM] NILE_CONFIG_PATH=/home/dorrel/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile library sync
+INFO [LIBRARY]:	 Synchronizing library
+INFO [LIBRARY]:	 Successfully synced the library
+[6/2/2025, 9:44:26 AM] NILE_CONFIG_PATH=/home/dorrel/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile library sync
+INFO [LIBRARY]:	 Synchronizing library
+INFO [LIBRARY]:	 Successfully synced the library
+[6/2/2025, 9:44:28 AM] NILE_CONFIG_PATH=/home/dorrel/.config/heroic/nile_config /opt/Heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile list-updates --json
+ERROR [CLI]:	 No games installed
+[]

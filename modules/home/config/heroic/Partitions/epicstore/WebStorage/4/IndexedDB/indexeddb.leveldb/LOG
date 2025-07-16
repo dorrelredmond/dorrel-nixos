@@ -1,0 +1,7 @@
+2025/06/02-09:54:29.142 14d9 Reusing MANIFEST /home/dorrel/.config/heroic/Partitions/epicstore/WebStorage/4/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2025/06/02-09:54:29.142 14d9 Recovering log #3
+2025/06/02-09:54:29.142 14d9 Reusing old log /home/dorrel/.config/heroic/Partitions/epicstore/WebStorage/4/IndexedDB/indexeddb.leveldb/000003.log 
+2025/06/02-10:01:45.861 14da Level-0 table #5: started
+2025/06/02-10:01:45.865 14da Level-0 table #5: 23224 bytes OK
+2025/06/02-10:01:45.870 14da Delete type=0 #3
+2025/06/02-10:01:45.870 14da Manual compaction at level-0 from (begin) .. (end); will stop at (end)
