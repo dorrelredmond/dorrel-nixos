@@ -21,6 +21,7 @@
     ntfs3g
     gvfs
     pamixer
+    catppuccinifier-cli
 
     # GUI Applications & Tools
     solaar # logitech unified receiver settings
@@ -36,6 +37,7 @@
     kdePackages.kcharselect
     font-manager
     emote
+    catppuccinifier-gui
 
 
 
