@@ -34,7 +34,7 @@
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
     kdePackages.kcharselect
     font-manager
-    emote
+    emojipick
 
 
     # User Styles
