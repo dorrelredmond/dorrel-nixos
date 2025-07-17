@@ -15,9 +15,11 @@
 
     catppuccin.url = "github:catppuccin/nix";
 
+    dolphin-overlay.url = "github:rumboon/dolphin-overlay";
+
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -34,6 +36,7 @@
           ({ pkgs, ... }:{
               nixpkgs.overlays = [
                   (_: _: { waybar_git = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.waybar; })
+                  dolphin-overlay.overlays.default
               ];
           })
           home-manager.nixosModules.home-manager {
