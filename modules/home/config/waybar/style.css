@@ -68,20 +68,15 @@ window#waybar.empty #window {
  	border-radius: 0px;
 }
 
-/* This section can be use if you want to separate waybar modules */
 .modules-left, .modules-center, .modules-right {
 	background: @theme_base_color; 
- 	border: 0.5px solid @overlay0;
+ 	border: 1px solid @mauve;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-right: 4px;
 	padding-left: 4px;
 	border-radius: 10px;
-} 
-
-.modules-left, .modules-right {
-  	border: 1px solid @blue;
-} 
+}
 
 #backlight,
 #backlight-slider,
@@ -179,7 +174,7 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @yellow;
+  color: @rosewater;
 }
 
 #cpu {
