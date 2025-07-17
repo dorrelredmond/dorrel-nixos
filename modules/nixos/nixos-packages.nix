@@ -38,6 +38,7 @@
     font-manager
     emote
     catppuccinifier-gui
+    qpwgraph # pipewire patchbay
 
 
 
