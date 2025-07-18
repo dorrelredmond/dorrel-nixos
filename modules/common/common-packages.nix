@@ -5,14 +5,10 @@
     environment.systemPackages = with pkgs; [
 
         # Desktop Apps
-        obsidian # note taking
         vesktop #discord alternative client
         discord
         alacritty #terminal
-        chromium # browser
         firefox # browser
-        krita
-	    dropbox
 	    spotify
         vscodium # text editor
         mpv # video player
@@ -32,8 +28,6 @@
         eza
         fastfetch
         fish
-        gh
-        git
         starship
 	    imagemagick
 

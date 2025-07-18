@@ -24,11 +24,15 @@
     catppuccinifier-cli
 
     # GUI Applications & Tools
+    dropbox
+    chromium # browser
     solaar # logitech unified receiver settings
     bottles
+    krita
+    obsidian # note taking
     pavucontrol # audio controls
     hardinfo2 # System information and benchmarks for Linux systems
-    nomacs-qt6 # image viewer
+    kdePackages.gwenview # image viewer
     feh # minimal image viewer
     strawberry # audio player
     protonvpn-gui # VPN Service
@@ -36,10 +40,9 @@
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
     kdePackages.kcharselect
     font-manager
-    emote
     catppuccinifier-gui
     qpwgraph # pipewire patchbay
-
+    rofimoji # emote picker using rofi
 
 
     # User Styles
