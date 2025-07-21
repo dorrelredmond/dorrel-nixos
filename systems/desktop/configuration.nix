@@ -7,9 +7,9 @@
     ../../modules/nixos
   ];
 
-  # Add Media Drive `/dev/sdc1`
+  # Add Media Drive
   fileSystems."/mnt/media" = { 
-    device = "/dev/sdc1";
+    device = "/dev/disk/by-uuid/01DAFD6CEAD8E830";
     fsType = "ntfs-3g";
     options = [
       "nofail"
