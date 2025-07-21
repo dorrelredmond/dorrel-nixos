@@ -44,11 +44,11 @@
     qpwgraph # pipewire patchbay
     rofimoji # emote picker using rofi
 
-
     # User Styles
     kdePackages.qt6ct
     libsForQt5.qt5ct
-    kdePackages.qtstyleplugin-kvantum # kavantum manager for styling
+    kdePackages.qtstyleplugin-kvantum
+    catppuccin-kvantum
     nwg-look
 
     # System Packages
@@ -76,4 +76,5 @@
     kdePackages.kio-extras #extra protocols support (sftp, fish and more) in Dolphin
     
   ];
+
 }

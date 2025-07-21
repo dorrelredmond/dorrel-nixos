@@ -101,6 +101,9 @@
     catppuccin.flavor = "mocha";
     catppuccin.enable = true;
 
+    # Environment Variables
+    environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
+
     # Hyprland Window Manager Configuration
     programs.hyprland = {
         enable = true;
