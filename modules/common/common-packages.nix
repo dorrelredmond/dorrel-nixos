@@ -27,7 +27,7 @@ in
         # Desktop Apps
         vesktop #discord alternative client
         discord
-        alacritty #terminal
+        kitty #terminal
         firefox # browser
 	      spotify
         vscodium # text editor
