@@ -62,9 +62,10 @@
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
-    hyprshot # screenshot utility
     hyprsysteminfo
     hyprcursor
+    grim
+    slup
     wlogout
     playerctl
     waybar_git
