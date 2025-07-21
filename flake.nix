@@ -17,9 +17,11 @@
 
     dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, ... } @ inputs:
+  outputs = { self, nixpkgs, spicetify-nix, home-manager, hyprland, catppuccin, dolphin-overlay, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -32,6 +34,7 @@
         specialArgs = { inherit inputs user; };
         modules = [
           ./systems/desktop/configuration.nix
+          spicetify-nix.nixosModules.default
           catppuccin.nixosModules.catppuccin
           ({ pkgs, ... }:{
               nixpkgs.overlays = [
