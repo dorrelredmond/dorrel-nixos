@@ -29,11 +29,11 @@ in
         discord
         alacritty #terminal
         firefox # browser
-	    spotify
+	      spotify
         vscodium # text editor
         mpv # video player
         speedcrunch # Calculator
-	    qbittorrent
+	      qbittorrent
 
         # CLI Tools
         git
@@ -49,7 +49,7 @@ in
         fastfetch
         fish
         starship
-	    imagemagick
+	      imagemagick
 
         # TUI Tools
         btop
@@ -57,6 +57,7 @@ in
         neovim
         cava
         ranger # file manager
+        w3m # mostly for image previews in ranger
 
     ];
 }
