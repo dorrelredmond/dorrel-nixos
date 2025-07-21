@@ -1,5 +1,10 @@
-{ config, pkgs, lib, ...}:
+{ config, pkgs, lib, inputs, ...}:
 {
+
+  imports = [ 
+      inputs.spicetify-nix.nixosModules.spicetify # spicetify config in common folder
+  ];
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
