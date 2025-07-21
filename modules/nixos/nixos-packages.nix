@@ -68,7 +68,7 @@
     rofi-wayland
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
-    wype # fake keyboard/mouse input, window manager, etc for wayland
+    wtype # fake keyboard/mouse input, window manager, etc for wayland
     cliphist #clipboard manager
     networkmanagerapplet
     kdePackages.dolphin # GUI File Manager
