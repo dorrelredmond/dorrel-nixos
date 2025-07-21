@@ -65,7 +65,7 @@
     hyprsysteminfo
     hyprcursor
     grim
-    slup
+    slurp
     wlogout
     playerctl
     waybar_git
