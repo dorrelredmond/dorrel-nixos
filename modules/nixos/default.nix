@@ -1,6 +1,7 @@
 { pkgs, lib, inputs, user, home-manager, ... }: {
     imports = [
         ./nixos-packages.nix
+        ./catppuccin.nix
         ../common
     ];
 
@@ -97,10 +98,6 @@
 
     };
 
-    # Global Catppuccin Configuration
-    catppuccin.flavor = "mocha";
-    catppuccin.enable = true;
-
     # Environment Variables
     environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
 
@@ -127,9 +124,10 @@
         # Enable pulseaudio for Audio
         pulseaudio.enable = false;
 
-	displayManager.sddm.enable = true;
-	displayManager.sddm.wayland.enable = true;
-	displayManager.sddm.package = pkgs.kdePackages.sddm;
+        # Enable SDDM 
+	    displayManager.sddm.enable = true;
+	    displayManager.sddm.wayland.enable = true;
+	    displayManager.sddm.package = pkgs.kdePackages.sddm;
 
         # Enable Pipewire for Audio
         pipewire = {

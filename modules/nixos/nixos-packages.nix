@@ -50,11 +50,12 @@
     rofimoji # emote picker using rofi
 
     # User Styles
-    kdePackages.qt6ct
-    libsForQt5.qt5ct
-    kdePackages.qtstyleplugin-kvantum
-    catppuccin-kvantum
+    catppuccin
+    papirus-folders
     nwg-look
+    libsForQt5.qt5ct
+    kdePackages.qt6ct
+    kdePackages.qtstyleplugin-kvantum
 
     # System Packages
     hyprpolkitagent # PolicyKit
