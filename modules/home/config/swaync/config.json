@@ -1,6 +1,6 @@
 {
   "$schema": "./configSchema.json",
-  "positionX": "center",
+  "positionX": "right",
   "positionY": "top",
   "layer": "overlay",
   "control-center-layer": "top",
@@ -19,7 +19,7 @@
   "timeout": 6,
   "timeout-low": 3,
   "timeout-critical": 0,
-  "fit-to-screen": false,
+  "fit-to-screen": true,
   "control-center-width": 450,
   "control-center-height": 720,
   "keyboard-shortcuts": true,

@@ -18,18 +18,18 @@
     "modules-left": [
         "group/mobo_drawer",
         "hyprland/workspaces",
-        "tray",
-        "mpris"
+        "hyprland/window"
     ],
     
     "modules-center": [
-        "clock",
-        "group/notify"
+        "clock"
     ],
     
     "modules-right": [
-        "hyprland/window",
+        "mpris",
+        "tray",
         "pulseaudio",
+        "custom/swaync",
         "group/connections", 
         "custom/power"
     ],
