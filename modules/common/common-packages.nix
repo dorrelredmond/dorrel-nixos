@@ -34,6 +34,7 @@ in
         mpv # video player
         speedcrunch # Calculator
 	      qbittorrent
+        zathura # PDF viewer
 
         # CLI Tools
         git

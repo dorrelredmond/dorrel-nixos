@@ -22,9 +22,6 @@
 
   environment.systemPackages = with pkgs; [
     # CLI Tools
-    wireplumber
-    ntfs3g
-    gvfs
     pamixer
     catppuccinifier-cli
 
@@ -37,15 +34,12 @@
     obsidian # note taking
     pavucontrol # audio controls
     hardinfo2 # System information and benchmarks for Linux systems
-    kdePackages.gwenview # image viewer
     feh # minimal image viewer
     strawberry # audio player
     protonvpn-gui # VPN Service
     kdePackages.isoimagewriter # Write hybrid ISO files onto USB disks
     kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
-    kdePackages.kcharselect
     font-manager
-    catppuccinifier-gui
     qpwgraph # pipewire patchbay
     rofimoji # emote picker using rofi
 
@@ -58,11 +52,15 @@
     kdePackages.qtstyleplugin-kvantum
 
     # System Packages
+    wireplumber
+    ntfs3g
+    gvfs
     hyprpolkitagent # PolicyKit
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
     hyprsysteminfo
+    hyprsunset
     hyprcursor
     grim
     slurp
