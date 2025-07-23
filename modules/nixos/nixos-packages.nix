@@ -42,6 +42,7 @@
     font-manager
     qpwgraph # pipewire patchbay
     rofimoji # emote picker using rofi
+    swappy # snapshot and editor tool
 
     # User Styles
     catppuccin
@@ -67,8 +68,9 @@
     wlogout
     playerctl
     waybar_git
+    eww #widget system
     swaynotificationcenter # notification daemon
-    libnotify # required by mako
+    libnotify
     swww # wallpaper manager
     rofi-wayland
     wayland-utils # Wayland utilities
