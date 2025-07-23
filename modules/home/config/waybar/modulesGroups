@@ -10,14 +10,14 @@
 			"temperature",		
 			"cpu",
 			"memory",
-			"disk",
+			"disk"
 		]
 	},
 	"group/laptop": {
 		"orientation": "inherit",
 		"modules": [
 			"backlight",
-			"battery",
+			"battery"
 		]
 	},
 
@@ -30,7 +30,7 @@
 			},
 		"modules": [
 			"network",
-			"bluetooth",
+			"bluetooth"
 		]
 	},
 
@@ -43,7 +43,7 @@
 			},
 		"modules": [
 			"custom/power",
-			"custom/lock",
+			"custom/lock"
 		]
-	},
+	}
 }
