@@ -3,20 +3,15 @@
         "$HOME/.config/waybar/modules",
         "$HOME/.config/waybar/modulesCustom",
         "$HOME/.config/waybar/modulesGroups",
-        "$HOME/.config/waybar/modulesWorkspaces",
+        "$HOME/.config/waybar/modulesHyprland"
     ],
     
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "exclusive": true,
-    "passthrough": false,
-    "gtk-layer-shell": true,
-    "margin-left": 6,
-    "margin-right": 6,
-    "margin-top": 2,
+    "layer": "top",
+    "position": "top",
+    "height": 12,
     
     "modules-left": [
-        "group/mobo_drawer",
+        "group/status",
         "hyprland/workspaces",
         "hyprland/window"
     ],
@@ -31,7 +26,6 @@
         "pulseaudio",
         "custom/swaync",
         "group/connections", 
-        "custom/power"
-    ],
-
+        "group/power"
+    ]
 }
