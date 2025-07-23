@@ -75,7 +75,6 @@
     wl-clipboard # Command-line copy/paste utilities for Wayland
     wtype # fake keyboard/mouse input, window manager, etc for wayland
     cliphist #clipboard manager
-    networkmanagerapplet
     kdePackages.dolphin # GUI File Manager
     kdePackages.qtsvg # svg icon support in Dolphin
     kdePackages.kio-fuse #to mount remote filesystems via FUSE in Dolphin
