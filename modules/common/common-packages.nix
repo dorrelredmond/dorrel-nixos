@@ -35,6 +35,7 @@ in
         speedcrunch # Calculator
 	      qbittorrent
         zathura # PDF viewer
+        thunderbird # email client
 
         # CLI Tools
         git
