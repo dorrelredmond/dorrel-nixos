@@ -1,4 +1,4 @@
-{pkgs, inputs, ... }:
+{pkgs, inputs, firefox-addons, ... }:
 {
   let
     linuxAddons = inputs.firefox-addons.packages."x86_64-linux";
