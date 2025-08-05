@@ -98,29 +98,29 @@ in
       };
 
       extensions = {
-          linuxAddons.bitwarden
-          linuxAddons.enhancer-for-youtube
-          linuxAddons.firefox-color
-          linuxAddons.indie-wiki-buddy
-          linuxAddons.new-tab-override
-          linuxAddons.return-youtube-dislikes
-          linuxAddons.sponsorblock
-          linuxAddons.stylus
-          linuxAddons.tampermonkey
-          linuxAddons.to-google-translate
-          linuxAddons.ublock-origin
+          linuxAddons.bitwarden = true;
+          linuxAddons.enhancer-for-youtube = true;
+          linuxAddons.firefox-color = true;
+          linuxAddons.indie-wiki-buddy = true;
+          linuxAddons.new-tab-override = true;
+          linuxAddons.return-youtube-dislikes = true;
+          linuxAddons.sponsorblock = true;
+          linuxAddons.stylus = true;
+          linuxAddons.tampermonkey = true;
+          linuxAddons.to-google-translate = true;
+          linuxAddons.ublock-origin = true;
 
-          darwinAddons.bitwarden
-          darwinAddons.enhancer-for-youtube
-          darwinAddons.firefox-color
-          darwinAddons.indie-wiki-buddy
-          darwinAddons.new-tab-override
-          darwinAddons.return-youtube-dislikes
-          darwinAddons.sponsorblock
-          darwinAddons.stylus
-          darwinAddons.tampermonkey
-          darwinAddons.to-google-translate
-          darwinAddons.ublock-origin
+          darwinAddons.bitwarden = true;
+          darwinAddons.enhancer-for-youtube = true;
+          darwinAddons.firefox-color = true;
+          darwinAddons.indie-wiki-buddy = true;
+          darwinAddons.new-tab-override = true;
+          darwinAddons.return-youtube-dislikes = true;
+          darwinAddons.sponsorblock = true;
+          darwinAddons.stylus = true;
+          darwinAddons.tampermonkey = true;
+          darwinAddons.to-google-translate = true;
+          darwinAddons.ublock-origin = true;
       };
         
     };
