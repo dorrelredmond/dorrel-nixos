@@ -17,5 +17,6 @@
         ublock-origin
       ];
     };
+    extensions.force = true;
   };
 }
