@@ -1,9 +1,6 @@
 {pkgs, inputs, firefox-addons, ... }:
 {
-  programs.firefox = let
-    linuxAddons = inputs.firefox-addons.packages."x86_64-linux";
-    darwinAddons = inputs.firefox-addons.packages."x86_64-darwin";
-  in {
+  programs.firefox = {
     enable = true;
     profiles.default = {
 
@@ -93,32 +90,6 @@
           "identity.fxaccounts.enabled" = false;
           "privacy.trackingprotection.enabled" = true;
           "privacy.trackingprotection.socialtracking.enabled" = true;
-      };
-
-      extensions = {
-          linuxAddons.bitwarden = true;
-          linuxAddons.enhancer-for-youtube = true;
-          linuxAddons.firefox-color = true;
-          linuxAddons.indie-wiki-buddy = true;
-          linuxAddons.new-tab-override = true;
-          linuxAddons.return-youtube-dislikes = true;
-          linuxAddons.sponsorblock = true;
-          linuxAddons.stylus = true;
-          linuxAddons.tampermonkey = true;
-          linuxAddons.to-google-translate = true;
-          linuxAddons.ublock-origin = true;
-
-          darwinAddons.bitwarden = true;
-          darwinAddons.enhancer-for-youtube = true;
-          darwinAddons.firefox-color = true;
-          darwinAddons.indie-wiki-buddy = true;
-          darwinAddons.new-tab-override = true;
-          darwinAddons.return-youtube-dislikes = true;
-          darwinAddons.sponsorblock = true;
-          darwinAddons.stylus = true;
-          darwinAddons.tampermonkey = true;
-          darwinAddons.to-google-translate = true;
-          darwinAddons.ublock-origin = true;
       };
         
     };
