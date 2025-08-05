@@ -1,15 +1,15 @@
 #! /run/current-system/sw/bin/bash
 
-echo "Are you updating a nix or darwin install?"
+echo -e "\nAre you updating a nix or darwin install?"
 read installType
 
 
 if [ $installType == "nix" ]
 then
-echo "Enter NixOS Configuration to use"
+echo -e "\nEnter NixOS Configuration to use"
 read nixConfig
 
-echo "Enter Home Manager Configuration to use"
+echo -e "\nEnter Home Manager Configuration to use"
 read homeConfig
 
 echo -e "\nBeginning Flake Lock File Updates\n"
@@ -26,10 +26,10 @@ echo -e "\nSuccess\n"
 
 elif [ $installType == "darwin" ]
 then
-echo "Enter Darwin Configuration to use"
+echo -e "\nEnter Darwin Configuration to use"
 read darwinConfig
 
-echo "Enter Home Manager Configuration to use"
+echo -e "\nEnter Home Manager Configuration to use"
 read homeConfig
 
 echo -e "\nBeginning Flake Lock File Updates\n"
