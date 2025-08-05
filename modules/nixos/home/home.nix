@@ -1,8 +1,12 @@
 { config, nur, pkgs, inputs, user, ... }: 
+let
+  nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {};
+in
 {
   imports = [
     ./catppuccin.nix
     ../../common/home
+    (import "lib.attrValues nur-no-pkgs.repos.moredhel.hmModules.rawModules")
   ];
   
   nixpkgs.config.allowUnfree = true;
