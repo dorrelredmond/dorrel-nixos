@@ -17,8 +17,7 @@ else
     exit 1
 fi
 
-if [ $installType == "nix" ]
-then
+if [ $installType == "nix" ] then
     echo -e "\nNotice\nRequesting Updates: System Packages\n"
     
     if sudo nixos-rebuild switch --flake .#$systemConfig --upgrade; then
@@ -27,9 +26,7 @@ then
         echo -e "\nNotice\nAn Error Has Occurred"
         exit 1
     fi
-
-elif [ $installType == "darwin" ]
-then
+elif [ $installType == "darwin" ] then
     echo -e "\nNotice\nRequesting Updates: System Packages\n"
     
     if darwin-rebuild switch --flake .#$systemConfig --upgrade; then
