@@ -3,7 +3,7 @@
   programs.firefox = {
     enable = true;
     profiles.default = {
-      extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+      extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
         bitwarden
         enhancer-for-youtube
         firefox-color
@@ -16,7 +16,7 @@
         to-google-translate
         ublock-origin
       ];
+      extensions.force = true;
     };
-    extensions.force = true;
   };
 }
