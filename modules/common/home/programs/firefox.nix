@@ -33,14 +33,11 @@
       };
       search.force = true;
 
-      bookmarks = [
-        {
-          name = "NixOS Package Search";
-          tags = [ "nixos" ];
-          keyword = "nixos";
-          url = "https://search.nixos.org/packages";
-        }
-      ];
+      #bookmarks = {
+        #force = true;
+        #settings = [
+        #];
+      #};
 
       settings = {
           # Performance settings
