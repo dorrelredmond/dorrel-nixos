@@ -48,7 +48,7 @@
           ./systems/desktop/configuration.nix
           catppuccin.nixosModules.catppuccin
           nur.modules.nixos.default # NUR modules to import
-          nur.legacyPackages."${system}".repos.iopq.modules.xraya # This adds the NUR nixpkgs overlay.
+          nur.legacyPackages."x86_64-linux".repos.iopq.modules.xraya # This adds the NUR nixpkgs overlay.
           ({ pkgs, ... }:{
               nixpkgs.overlays = [
                   (_: _: { waybar_git = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.waybar; })
