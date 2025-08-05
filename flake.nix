@@ -53,13 +53,13 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "bak";
+            home-manager.extraSpecialArgs = { inherit inputs user; };
             home-manager.users.${user} = {
               imports = [
                 ./modules/nixos/home/home.nix 
                 catppuccin.homeModules.catppuccin
               ];
             };
-            extraSpecialArgs = { inherit inputs user; };
           }
         ];
       };
