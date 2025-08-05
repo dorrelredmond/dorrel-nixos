@@ -1,7 +1,4 @@
-{pkgs, inputs, lib, ... }:
-let
-  nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {};
-in
+{ config, pkgs, inputs, lib, ... }:
 {
   
   programs.firefox = {
@@ -95,7 +92,7 @@ in
 
       extensions = {
         force = true;
-        packages = with pkgs.nur.repos.rycee.firefox-addons; [
+        packages = with inputs.firefox-addons.packages."x86_64-linux"; [
           bitwarden
           enhancer-for-youtube
           firefox-color

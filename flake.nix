@@ -3,10 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -33,7 +29,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, nur, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -47,8 +43,6 @@
         modules = [
           ./systems/desktop/configuration.nix
           catppuccin.nixosModules.catppuccin
-          nur.modules.nixos.default # NUR modules to import
-          nur.legacyPackages."x86_64-linux".repos.iopq.modules.xraya # This adds the NUR nixpkgs overlay.
           ({ pkgs, ... }:{
               nixpkgs.overlays = [
                   (_: _: { waybar_git = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.waybar; })

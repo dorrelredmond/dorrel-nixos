@@ -1,4 +1,4 @@
-{ config, nur, pkgs, inputs, user, ... }: 
+{ config, pkgs, inputs, user, ... }: 
 {
   imports = [
     ./catppuccin.nix
