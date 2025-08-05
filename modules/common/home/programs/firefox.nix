@@ -105,15 +105,15 @@
           violentmonkey
           to-google-translate
           ublock-origin
+          { nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+             inputs.firefox-addons.packages."x86_64-linux"."enhancer-for-youtube"
+              inputs.firefox-addons.packages."x86_64-linux"."tampermonkey"
+            ];
+          }
         ];
       };
         
     };
   };
   
-  { nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    inputs.firefox-addons.packages."x86_64-linux"."enhancer-for-youtube"
-    inputs.firefox-addons.packages."x86_64-linux"."tampermonkey"
-    ];
-  }
 }
