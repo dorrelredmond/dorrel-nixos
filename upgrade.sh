@@ -29,5 +29,3 @@ fi
 echo -e "\nBeginning Home Manager Updates"
 home-manager switch --flake .#$homeConfig
 echo -e "\nSuccess"
-
-fi
