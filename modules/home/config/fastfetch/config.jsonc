@@ -45,6 +45,10 @@
             "key": "│  {icon}  \u001b[s{sysname}\u001b[u\u001b[10C│{$3}│{$2}"
         },
         {
+            "type": "kernel",
+            "key": "│  {icon}  Kernel    │{$3}│{$2}"
+        },
+        {
             "type": "datetime",
             "key": "│  {icon}  Fetched   │{$3}│{$2}",
             "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty}:{second-pretty} {timezone-name}"
