@@ -58,7 +58,7 @@
     # Home Manager Configurations for Unix Systems
     homeConfigurations = {
       desktop = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs user; };
         modules = [
           ./modules/nixos/home/home.nix
