@@ -1,4 +1,4 @@
-{ pkgs, inputs, user, ... }: {
+{ config, lib, pkgs, inputs, user, ... }: {
   imports = [
     ./catppuccin.nix
     ./firefox.nix
