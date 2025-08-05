@@ -1,7 +1,6 @@
 { config, pkgs, inputs, user, ... }: {
   imports = [
     ./catppuccin.nix
-    ./firefox.nix
     ../../common/home
   ];
   
