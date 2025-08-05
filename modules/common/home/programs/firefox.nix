@@ -1,4 +1,4 @@
-{pkgs, nur, inputs, firefox-addons, ... }:
+{pkgs, nur, inputs, ... }:
 {
   programs.firefox = {
     enable = true;
