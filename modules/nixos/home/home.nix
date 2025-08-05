@@ -10,13 +10,6 @@
     homeDirectory = "/home/${user}";
     stateVersion = "25.05";
   };
-    
-  home-manager = {
-    verbose = true;
-    useUserPackages = true;
-    useGlobalPkgs = true;
-    backupFileExtension = "bak";
-  };
 
   nixpgks.config.allowUnfree = true;
 
