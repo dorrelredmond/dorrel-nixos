@@ -11,8 +11,6 @@
     stateVersion = "25.05";
   };
 
-  nixpkgs.config.allowUnfree = true;
-
   # let Home Manager manage itself when in standalone mode
   programs.home-manager.enable = true;
 }

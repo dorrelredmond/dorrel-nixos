@@ -1,5 +1,6 @@
 {pkgs, inputs, ... }:
 {
+  nixpkgs.config.allowUnfree = true;
   programs.firefox = {
     enable = true;
     profiles.default = {
