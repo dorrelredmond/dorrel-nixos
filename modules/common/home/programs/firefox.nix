@@ -1,4 +1,4 @@
-{pkgs, nur, inputs, ... }:
+{pkgs, nur, inputs, lib, ... }:
 let
   nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {};
 in
