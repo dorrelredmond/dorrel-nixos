@@ -1,9 +1,11 @@
-{ pkgs, inputs, user, ... }: {
+{ config, pkgs, inputs, user, ... }: {
   imports = [
     ./catppuccin.nix
     ./firefox.nix
     ../../common/home
   ];
+  
+  nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
   home = {
     username = user;
@@ -11,7 +13,6 @@
     stateVersion = "25.05";
   };
 
-  nixpkgs.config.allowUnfreePredicate = (pkg: true);
 
   # let Home Manager manage itself when in standalone mode
   programs.home-manager.enable = true;
