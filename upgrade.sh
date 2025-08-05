@@ -4,7 +4,7 @@ echo "Are you updating a "nix" or "darwin" install?"
 read installType
 
 
-if [ installType == "nix" ]
+if [ $installType == "nix" ]
 then
 echo "Enter NixOS Configuration to use"
 read nixConfig
@@ -16,7 +16,7 @@ nix flake update
 sudo nixos-rebuild switch --flake .#$nixConfig --upgrade
 home-manager switch --flake .#$homeConfig
 
-elif [installType == "darwin" ]
+elif [ $installType == "darwin" ]
 then
 echo "Enter Darwin Configuration to use"
 read darwinConfig
