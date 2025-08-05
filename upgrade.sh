@@ -9,23 +9,25 @@ read systemConfig
 echo -e "\nEnter Home Manager Configuration to use"
 read homeConfig
 
-echo -e "\nBeginning Flake Lock File Updates"
+echo -e "\nNotice\nRequesting Updates: Flake Lock\n"
 nix flake update --commit-lock-file
-echo -e "\nSuccess"
+echo -e "\nUpdates: Flake Lock Acquisition Successful"
 
 if [ $installType == "nix" ]
 then
-echo -e "\nBeginning System Package Updates"
+echo -e "\nNotice\nRequesting Updates: System Packages\n"
 sudo nixos-rebuild switch --flake .#$systemConfig --upgrade
-echo -e "\nSuccess"
+echo -e "\nUpdates: System Packages Acquisition Successful"
 
 elif [ $installType == "darwin" ]
 then
-echo -e "\nBeginning System Package Updates"
+echo -e "\nNotice\nRequesting Updates: System Packages\n"
 darwin-rebuild switch --flake .#$systemConfig --upgrade
-echo -e "\nSuccess"
+echo -e "\nUpdates: System Packages Acquisition Successful"
 fi
 
-echo -e "\nBeginning Home Manager Updates"
+echo -e "\nNotice\nRequesting Updates: Home Manager\n"
 home-manager switch --flake .#$homeConfig
-echo -e "\nSuccess"
+echo -e "\nUpdates: Home Manager Acquisition Successful"
+
+echo -e "\nThe system has now been fully upgraded"
