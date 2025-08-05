@@ -6,7 +6,7 @@ in
   imports = [
     ./catppuccin.nix
     ../../common/home
-    lib.attrValues nur-no-pkgs.repos.moredhel.hmModules.rawModules;
+    lib.attrValues nur-no-pkgs.repos.moredhel.hmModules.rawModules
   ];
   
   nixpkgs.config.allowUnfree = true;
