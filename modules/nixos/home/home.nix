@@ -1,6 +1,9 @@
 { config, nur, pkgs, inputs, user, ... }: 
 let
-  nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {};
+  nur-no-pkgs = import (builtins.fetchTarball {
+      url = "https://github.com/nix-community/NUR/archive/main.tar.gz";
+      sha256 = "0ss4ildiliwm66323ssvpn66g662cj3360j6fs6c2jrrdql0pj3q";
+    }){};
 in
 {
   imports = [
