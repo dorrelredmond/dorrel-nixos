@@ -95,13 +95,13 @@
         packages = with inputs.firefox-addons.packages."x86_64-linux"; [
           bitwarden
           firefox-color
-          enhancer-for-youtube
+          
           indie-wiki-buddy
           new-tab-override
           return-youtube-dislikes
           sponsorblock
           stylus
-          tampermonkey
+          violentmonkey
           to-google-translate
           ublock-origin
         ];
