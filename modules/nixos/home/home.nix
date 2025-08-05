@@ -1,4 +1,4 @@
-{ nixpkgs, user, ... }: {
+{ pkgs, user, ... }: {
   imports = [
     ./catppuccin.nix
     ./firefox.nix
@@ -10,9 +10,16 @@
     homeDirectory = "/home/${user}";
     stateVersion = "25.05";
   };
+    
+  home-manager = {
+    verbose = true;
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    backupFileExtension = "bak";
+  };
 
   nixpgks.config.allowUnfree = true;
-  
+
   # let Home Manager manage itself when in standalone mode
   programs.home-manager.enable = true;
 }
