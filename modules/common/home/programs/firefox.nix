@@ -1,8 +1,8 @@
 {pkgs, inputs, firefox-addons, ... }:
 {
   programs.firefox = let
-  linuxAddons = inputs.firefox-addons.packages."x86_64-linux";
-  darwinAddons = inputs.firefox-addons.packages."x86_64-darwin";
+    linuxAddons = inputs.firefox-addons.packages."x86_64-linux";
+    darwinAddons = inputs.firefox-addons.packages."x86_64-darwin";
   in {
     enable = true;
     profiles.default = {
@@ -122,5 +122,5 @@
       };
         
     };
-  }
+  };
 }
