@@ -94,14 +94,15 @@
         force = true;
         packages = with inputs.firefox-addons.packages."x86_64-linux"; [
           bitwarden
-          enhancer-for-youtube
+          #enhancer-for-youtube
           firefox-color
           indie-wiki-buddy
           new-tab-override
           return-youtube-dislikes
           sponsorblock
           stylus
-          tampermonkey
+          #tampermonkey
+          violentmonkey
           to-google-translate
           ublock-origin
         ];
