@@ -1,6 +1,7 @@
 { user, ... }: {
   imports = [
     ./catppuccin.nix
+    ../../common/home
   ];
 
   home = {
