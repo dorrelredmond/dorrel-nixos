@@ -64,7 +64,7 @@
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs user; };
         modules = [
-          ./modules/home/home.nix
+          ./modules/nixos/home/home.nix
           catppuccin.homeModules.catppuccin
         ];
       };
