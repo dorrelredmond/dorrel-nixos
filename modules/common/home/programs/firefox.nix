@@ -3,7 +3,7 @@
   
   programs.firefox = {
     enable = true;
-    profiles.tqzkbjfz = {
+    profiles.tqzkbjfz.default = {
 
       search.engines = {
         "Nix Packages" = {
