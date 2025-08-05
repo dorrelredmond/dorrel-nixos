@@ -5,7 +5,7 @@
     ../../common/home
   ];
   
-  nixpkgs.config.allowUnfreePredicate = (pkg: true);
+  nixpkgs.config.allowUnfreePredicate = _: true;
 
   home = {
     username = user;
