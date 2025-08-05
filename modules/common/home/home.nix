@@ -1,6 +1,6 @@
 { user, ... }: {
   imports = [
-    
+    ./programs
   ];
 
   home = {
