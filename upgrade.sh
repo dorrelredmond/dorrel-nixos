@@ -11,7 +11,7 @@ read homeConfig
 
 echo -e "\nNotice\nRequesting Updates: Flake Lock\n"
 nix flake update --commit-lock-file
-echo -e "\nUpdates: Flake Lock Acquisition Successful"
+echo -e "\nRequest Confirmed\nUpdate: Flake Lock Acquisition Successful"
 
 if [ $installType == "nix" ]
 then
@@ -23,11 +23,11 @@ elif [ $installType == "darwin" ]
 then
 echo -e "\nNotice\nRequesting Updates: System Packages\n"
 darwin-rebuild switch --flake .#$systemConfig --upgrade
-echo -e "\nUpdates: System Packages Acquisition Successful"
+echo -e "\nRequest Confirmed\nUpdates: System Packages Acquisition Successful"
 fi
 
 echo -e "\nNotice\nRequesting Updates: Home Manager\n"
 home-manager switch --flake .#$homeConfig
-echo -e "\nUpdates: Home Manager Acquisition Successful"
+echo -e "\nRequest Confirmed\nUpdates: Home Manager Acquisition Successful"
 
-echo -e "\nThe system has now been fully upgraded"
+echo -e "\nNotice\nThe system has now been fully upgraded"
