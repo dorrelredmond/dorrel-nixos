@@ -38,6 +38,9 @@ then
         echo -e "\nNotice\nAn Error Has Occurred"
         exit 1
     fi
+else
+    echo -e "\nNotice\nAn Error Has Occurred"
+    exit 1
 fi
 
 echo -e "\nNotice\nRequesting Updates: Home Manager\n"
