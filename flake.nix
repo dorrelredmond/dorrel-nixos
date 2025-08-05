@@ -66,19 +66,6 @@
     };
 
     # TODO Darwin Configurations
-
-    # Home Manager Configurations for Unix Systems
-    #homeConfigurations = {
-    #  desktop = home-manager.lib.homeManagerConfiguration {
-    #    pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    #    extraSpecialArgs = { inherit inputs user; };
-    #    modules = [
-    #      ./modules/nixos/home/home.nix
-    #      catppuccin.homeModules.catppuccin
-    #    ];
-    #  };
-    #};
-
     # TODO Darwin Home Configs
     # TODO Add spicefity to Darwin Configs https://wiki.nixos.org/wiki/Spicetify-Nix
   };

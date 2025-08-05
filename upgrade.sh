@@ -6,9 +6,6 @@ read installType
 echo -e "\nEnter System Configuration to use (i.e., desktop or macbook)"
 read systemConfig
 
-#echo -e "\nEnter Home Manager Configuration to use"
-#read homeConfig
-
 echo -e "\nNotice\nRequesting Updates: Flake Lock\n"
 if nix flake update --commit-lock-file ; then
     echo -e "\nRequest Confirmed\nUpdate: Flake Lock Acquisition Successful"
@@ -39,13 +36,5 @@ else
     echo -e "\nNotice\nAn Error Has Occurred"
     exit 1
 fi
-
-#echo -e "\nNotice\nRequesting Updates: Home Manager\n"
-#if home-manager switch --flake .#$homeConfig; then
-#    echo -e "\nRequest Confirmed\nUpdates: Home Manager Acquisition Successful"
-#else
-#    echo -e "\nNotice\nAn Error Has Occurred"
-#    exit 1
-#fi
 
 echo -e "\nNotice\nThe system has now been fully upgraded"
