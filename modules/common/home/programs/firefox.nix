@@ -1,10 +1,8 @@
-{pkgs, nur, inputs, lib, ... }:
+{pkgs, inputs, lib, ... }:
 let
   nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {};
 in
 {
-
-  imports = lib.attrValues nur-no-pkgs.repos.moredhel.hmModules.rawModules;
   
   programs.firefox = {
     enable = true;
