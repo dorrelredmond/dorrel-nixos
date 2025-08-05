@@ -94,22 +94,15 @@
         force = true;
         packages = with inputs.firefox-addons.packages."x86_64-linux"; [
           bitwarden
-          #enhancer-for-youtube
           firefox-color
           indie-wiki-buddy
           new-tab-override
           return-youtube-dislikes
           sponsorblock
           stylus
-          #tampermonkey
           violentmonkey
           to-google-translate
           ublock-origin
-          { nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-             inputs.firefox-addons.packages."x86_64-linux"."enhancer-for-youtube"
-              inputs.firefox-addons.packages."x86_64-linux"."tampermonkey"
-            ];
-          }
         ];
       };
         
