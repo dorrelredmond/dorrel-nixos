@@ -1,8 +1,10 @@
 { config, nur, pkgs, inputs, user, ... }: 
 let
   nur-no-pkgs = import (builtins.fetchTarball {
-      url = "https://github.com/nix-community/NUR/archive/main.tar.gz";
-      sha256 = "0ss4ildiliwm66323ssvpn66g662cj3360j6fs6c2jrrdql0pj3q";
+      # Get the revision by choosing a version from https://github.com/nix-community/NUR/commits/main
+      url = "https://github.com/nix-community/NUR/archive/3a6a6f4da737da41e27922ce2cfacf68a109ebce.tar.gz";
+      # Get the hash by running `nix-prefetch-url --unpack <url>` on the above url
+      sha256 = "04387gzgl8y555b3lkz9aiw9xsldfg4zmzp930m62qw8zbrvrshd";
     }){};
 in
 {
