@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, user, ... }: {
+{ pkgs, inputs, user, ... }: {
   imports = [
     ./catppuccin.nix
     ./firefox.nix
@@ -11,7 +11,7 @@
     stateVersion = "25.05";
   };
 
-  nixpgks.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
   # let Home Manager manage itself when in standalone mode
   programs.home-manager.enable = true;
