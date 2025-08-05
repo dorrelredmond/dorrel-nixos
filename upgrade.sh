@@ -25,7 +25,7 @@ echo "Enter Home Manager Configuration to use"
 read homeConfig
 
 nix flake update
-sudo darwin-rebuild switch --flake .#$darwin --upgrade
+darwin-rebuild switch --flake .#$darwin --upgrade
 home-manager switch --flake .#$homeConfig
 
 fi
