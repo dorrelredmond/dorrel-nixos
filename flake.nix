@@ -33,7 +33,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, nur, ... } @ inputs:
 
   let
     user = "dorrel";
