@@ -33,11 +33,10 @@
 
   };
 
-  outputs = { lib, self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, nur, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, nur, ... } @ inputs:
 
   let
     user = "dorrel";
-    nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {};
   in {
 
     # NixOS Configurations
@@ -64,7 +63,6 @@
     homeConfigurations = {
       desktop = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        imports = lib.attrValues nur-no-pkgs.repos.moredhel.hmModules.rawModules;
         extraSpecialArgs = { inherit inputs user; };
         modules = [
           ./modules/nixos/home/home.nix
