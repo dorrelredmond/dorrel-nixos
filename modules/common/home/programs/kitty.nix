@@ -12,7 +12,7 @@
       enable_audio_bell = false;
       cursor_shape = "beam";
       cursor_trail = 200;
-      cursor_trail_decay = 0.1 0.4;
+      cursor_trail_decay = "0.1 0.4";
       cursor_trasil_start_threshold = 2;
       scrollback_lines = 5000;
       scrollback_pager_history_size = 10;
