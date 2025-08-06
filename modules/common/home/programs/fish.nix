@@ -247,7 +247,7 @@
         --geo-bypass \
         $argv
         end
-      ''
+      '';
     };
   };
 }
