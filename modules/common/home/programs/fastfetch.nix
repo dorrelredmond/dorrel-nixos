@@ -180,7 +180,7 @@
           {
               type = "command";
               condition = {
-                  system != "Windows"; # Posix version
+                  !system = "Windows"; # Posix version
               };
               keyIcon = "";
               key = "│{#red}│ {icon}  Clang     │{$4}│{#keys}│{$2}";
@@ -256,7 +256,7 @@
           }
           {
               condition = { # Conditional module: only show on non-macOS
-                  system != "macOS";
+                  !system = "macOS";
               };
               type = "disk";
               keyIcon = "";
