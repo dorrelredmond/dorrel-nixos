@@ -180,7 +180,7 @@
           {
               type = "command";
               condition = {
-                  system = !"Windows" # Posix version
+                  system = !"Windows"; # Posix version
               };
               keyIcon = "";
               key = "│{#red}│ {icon}  Clang     │{$4}│{#keys}│{$2}";
@@ -190,7 +190,7 @@
           {
               type = "command";
               condition = {
-                  system = "Windows" # Windows version
+                  system = "Windows"; # Windows version
               };
               keyIcon = "";
               key = "│{#red}│ {icon}  Clang     │{$4}│{#keys}│{$2}";
