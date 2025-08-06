@@ -27,8 +27,6 @@ in
         # Desktop Apps
         vesktop #discord alternative client
         discord
-        kitty #terminal
-        firefox # browser
 	      spotify
         vscodium # text editor
         mpv # video player
@@ -38,7 +36,6 @@ in
         thunderbird # email client
 
         # CLI Tools
-        git
         gh
         wget
         alejandra
@@ -47,7 +44,6 @@ in
         yt-dlp
         zip
         bat
-        eza
         fastfetch
         fish
         starship
