@@ -9,6 +9,17 @@
 
     enable = true;
 
+    loginShellInit = ''fish_add_path /home/dorrel/.spicetify'';
+
+    shellInit = ''
+      # themeing
+      set fish_greeting
+      export "MICRO_TRUECOLOR=1"
+      set -g theme_display_date no
+      set -g theme_nerd_fonts yes
+      set -g theme_newline_cursor yes
+    '';
+
     shellAliases = {
       ".." = "cd ..";
       "..." = "cd ../..";
@@ -119,7 +130,6 @@
         end
       end
       '';
-
 
       extracttodir = '' 
       function extracttodir
