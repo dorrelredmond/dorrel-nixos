@@ -36,6 +36,7 @@ in
         thunderbird # email client
 
         # CLI Tools
+        eza
         gh
         wget
         alejandra
@@ -45,8 +46,6 @@ in
         zip
         bat
         fastfetch
-        fish
-        starship
 	      imagemagick
 
         # TUI Tools
