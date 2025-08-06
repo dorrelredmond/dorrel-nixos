@@ -1,6 +1,5 @@
 { config, pkgs, lib, inputs, ...}:
 {
-
   imports = [ 
       inputs.spicetify-nix.nixosModules.spicetify # spicetify config in common folder
   ];
@@ -8,6 +7,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Enable Appimage Support
   programs = {
     appimage = {
       enable = true;
@@ -15,6 +15,17 @@
     };
   };
 
+  # Hyprland Window Manager Configuration
+  programs.hyprland = {
+      enable = true;
+      # set the flake package
+      package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      # make sure to also set the portal package, so that they are in sync
+      portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+      xwayland.enable = true;
+  };
+
+  # XDG Portal Settings
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
