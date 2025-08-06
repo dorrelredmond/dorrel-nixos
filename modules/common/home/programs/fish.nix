@@ -10,8 +10,7 @@
     enable = true;
 
     loginShellInit = ''
-      starship init fish | source
-      fish_add_path /home/dorrel/.spicetify
+      fish_add_path --move --prepend --path $HOME/.nix-profile/bin /run/wrappers/bin /etc/profiles/per-user/$USER/bin /run/current-system/sw/bin /nix/var/nix/profiles/default/bin $HOME/.spicetify
     '';
 
     shellInit = ''
