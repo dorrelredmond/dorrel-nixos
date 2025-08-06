@@ -3,6 +3,7 @@
     enable = true;
     shellIntegration.enableFishIntegration = true;
     enableGitIntegration = true;
+    themeFile = "Catppuccin-Mocha";
     settings = {
       font_family = "FantasqueSansM Nerd Font Mono";
       bold_font = "auto";
@@ -26,6 +27,5 @@
       macos_option_as_alt = "yes";
       shell = "fish";
     };
-    theme = "Catppuccin-Mocha";
   };
 }
