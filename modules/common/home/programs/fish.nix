@@ -9,7 +9,10 @@
 
     enable = true;
 
-    loginShellInit = ''fish_add_path /home/dorrel/.spicetify'';
+    loginShellInit = ''
+      starship init fish | source
+      fish_add_path /home/dorrel/.spicetify
+    '';
 
     shellInit = ''
       # themeing
