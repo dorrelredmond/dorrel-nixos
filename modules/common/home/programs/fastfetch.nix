@@ -175,7 +175,7 @@
               keyIcon = ""; # Custom icon override
               key = "│{#red}│ {icon}  Rust      │{$4}│{#keys}│{$2}";
               text = "rustc --version";
-              format = "rustc {~6,13}" # Print 6th to 13th characters (version number)
+              format = "rustc {~6,13}"; # Print 6th to 13th characters (version number)
           }
           {
               type = "command";
