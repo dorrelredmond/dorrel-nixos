@@ -272,7 +272,7 @@
               type = "disk";
               keyIcon = "";
               key = "│{#magenta}│ {icon}  OS Age    │{$4}│{#keys}│{$2}";
-              folder = "/"; # Check root filesystem
+              folders = "/"; # Check root filesystem
               format = "{create-time:10} [{days} days]"; # Show creation time and age in days
           }
           {
@@ -282,7 +282,7 @@
               type = "disk";
               keyIcon = "";
               key = "│{#magenta}│ {icon}  OS Age    │{$4}│{#keys}│{$2}";
-              folder = "/"; # Check root filesystem
+              folders = "/"; # Check root filesystem
               format = "{create-time:10} [{days} days]"; # Show creation time and age in days
           }
           {
