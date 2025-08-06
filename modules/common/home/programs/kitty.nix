@@ -26,6 +26,7 @@
       shell_integration = "enabled";
       macos_option_as_alt = "yes";
       shell = "fish";
+      window_padding_width = 1;
     };
   };
 }
