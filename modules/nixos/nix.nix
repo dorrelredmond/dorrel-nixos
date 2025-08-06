@@ -14,15 +14,16 @@
     
         # automatically optimise symlinks
         auto-optimise-store = true;
+  
+        experimental-features = [ 
+            # Enable flakes
+            "flakes"
+
+            # Enables the nix3 commands, a requirement for flakes
+            "nix-command"
+        ];
     };
 
-    experimental-features = [ 
-        # Enable flakes
-        "flakes"
-
-        # Enables the nix3 commands, a requirement for flakes
-        "nix-command"
-    ];
     
 
     # Don't warn if the current working tree is dirty
