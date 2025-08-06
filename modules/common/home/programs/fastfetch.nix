@@ -12,30 +12,30 @@
           # These contain ANSI escape codes for cursor positioning
           constants = [
               "──────────────────────────────────────────────" # {$1} - horizontal line for borders
-              "\u001b[47D" # {$2} - move cursor left 47 columns
-              "\u001b[47C" # {$3} - move cursor right 47 columns
-              "\u001b[46C" # {$4} - move cursor right 46 columns
+              "\\u001b[47D" # {$2} - move cursor left 47 columns
+              "\\u001b[47C" # {$3} - move cursor right 47 columns
+              "\\u001b[46C" # {$4} - move cursor right 46 columns
           ];
           brightColor = false;
       };
       modules = [
           {
               type = "version";
-              key = "┌───────────────┬─{$1}┐\u001b[41D";
-              format = "\u001b[1m{#keys} {1} - {2} ";
+              key = "┌───────────────┬─{$1}┐\\u001b[41D";
+              format = "\\u001b[1m{#keys} {1} - {2} ";
           }
           {
               type = "os";
               # Key format breakdown for OS module:
-              # "│  {icon}  \u001b[s{sysname}\u001b[u\u001b[10C│{$3}│{$2}"
+              # "│  {icon}  \\u001b[s{sysname}\\u001b[u\\u001b[10C│{$3}│{$2}"
               #
               # │                    - Left border of key block
               #   {icon}             - OS icon (defined internally by fastfetch)
-              #   \u001b[s           - ANSI escape: save cursor position (ESC[s)
+              #   \\u001b[s           - ANSI escape: save cursor position (ESC[s)
               # {sysname}            - Format variable: system name (e.g., "Linux", "Darwin")
-              # \u001b[u             - ANSI escape: restore cursor to saved position (ESC[u)
+              # \\u001b[u             - ANSI escape: restore cursor to saved position (ESC[u)
               #                        Necessary because the length of `{sysname}` differs between different platforms
-              # \u001b[10C           - ANSI escape: move cursor right 10 columns (ESC[10C)
+              # \\u001b[10C           - ANSI escape: move cursor right 10 columns (ESC[10C)
               # │                    - Right border of key block (always 10 columns from left border)
               # {$3}                 - Reference to constants[2]: move cursor right 47 columns
               # │                    - Right border of value block
@@ -44,7 +44,7 @@
               # This creates a fixed-width layout where the key block is exactly 10 columns wide,
               # regardless of the actual content length. The cursor manipulation ensures proper
               # alignment for the table-like structure.
-              key = "│  {icon}  \u001b[s{sysname}\u001b[u\u001b[10C│{$3}│{$2}";
+              key = "│  {icon}  \\u001b[s{sysname}\\u001b[u\\u001b[10C│{$3}│{$2}";
           }
           {
               type = "kernel";
@@ -62,7 +62,7 @@
           # Hardware section with cyan color theme
           {
               type = "custom";
-              key = "│{#cyan}┌──────────────┬{$1}┐{#keys}│\u001b[37D";
+              key = "│{#cyan}┌──────────────┬{$1}┐{#keys}│\\u001b[37D";
               format = "{#bright_cyan} Hardware ";
           }
           {
@@ -94,7 +94,7 @@
           #{
           #    "type": "disk",
           #    "key": "│{#cyan}│ {icon}  Disk      │{$4}│{#keys}│{$2}",
-          #    "format": "{size-used} \/ {size-total} ({size-percentage}) - {filesystem}",
+          #    "format": "{size-used} \\/ {size-total} ({size-percentage}) - {filesystem}",
           #}
           {
               type = "battery";
@@ -108,7 +108,7 @@
           # Desktop section with green color theme
           {
               type = "custom";
-              key = "│{#green}┌──────────────┬{$1}┐{#keys}│\u001b[37D";
+              key = "│{#green}┌──────────────┬{$1}┐{#keys}│\\u001b[37D";
               format = "{#bright_green} Desktop ";
           }
           {
@@ -137,7 +137,7 @@
           # Terminal section with yellow color theme
           {
               type = "custom";
-              key = "│{#yellow}┌──────────────┬{$1}┐{#keys}│\u001b[37D";
+              key = "│{#yellow}┌──────────────┬{$1}┐{#keys}│\\u001b[37D";
               format = "{#bright_yellow} Terminal ";
           }
           {
@@ -168,7 +168,7 @@
           # Development section with red color theme
           {
               type = "custom";
-              key = "│{#red}┌──────────────┬{$1}┐{#keys}│\u001b[39D";
+              key = "│{#red}┌──────────────┬{$1}┐{#keys}│\\u001b[39D";
               format = "{#bright_red} Development ";
           }
           {
@@ -252,7 +252,7 @@
           # Uptime section with magenta color theme
           {
               type = "custom";
-              key = "│{#magenta}┌──────────────┬{$1}┐{#keys}│\u001b[36D";
+              key = "│{#magenta}┌──────────────┬{$1}┐{#keys}│\\u001b[36D";
               format = "{#bright_magenta} Uptime ";
           }
           {
@@ -315,16 +315,16 @@
 
       The key format uses a combination of:
       1. Unicode box drawing characters (│ ┌ ┐ └ ┘ ┬ ┴) for borders
-      2. ANSI escape codes for cursor positioning (\u001b[...)
+      2. ANSI escape codes for cursor positioning (\\u001b[...)
       3. Format variables ({icon}, {sysname}, etc.)
       4. Constant references ({$1}, {$2}, etc.)
       5. Color formatting ({#color})
 
       ANSI Escape Codes Used:
-      - \u001b[s      - Save cursor position (ESC[s)
-      - \u001b[u      - Restore cursor position (ESC[u)
-      - \u001b[nC     - Move cursor right n columns (ESC[nC)
-      - \u001b[nD     - Move cursor left n columns (ESC[nD)
+      - \\u001b[s      - Save cursor position (ESC[s)
+      - \\u001b[u      - Restore cursor position (ESC[u)
+      - \\u001b[nC     - Move cursor right n columns (ESC[nC)
+      - \\u001b[nD     - Move cursor left n columns (ESC[nD)
 
       This creates a table-like layout with fixed column widths and proper alignment,
       regardless of the actual content length in each field.
