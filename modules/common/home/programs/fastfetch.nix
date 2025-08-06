@@ -180,7 +180,17 @@
           {
               type = "command";
               condition = {
-                  !system = "Windows"; # Posix version
+                  system = "Linux"; # Posix version
+              };
+              keyIcon = "";
+              key = "│{#red}│ {icon}  Clang     │{$4}│{#keys}│{$2}";
+              text = "clang --version | head -1 | awk '{print $NF}'";
+              format = "clang {}";
+          }
+          {
+              type = "command";
+              condition = {
+                  system = "macOS"; # Posix version
               };
               keyIcon = "";
               key = "│{#red}│ {icon}  Clang     │{$4}│{#keys}│{$2}";
@@ -256,7 +266,17 @@
           }
           {
               condition = { # Conditional module: only show on non-macOS
-                  !system = "macOS";
+                  system = "Windows";
+              };
+              type = "disk";
+              keyIcon = "";
+              key = "│{#magenta}│ {icon}  OS Age    │{$4}│{#keys}│{$2}";
+              folder = "/"; # Check root filesystem
+              format = "{create-time:10} [{days} days]"; # Show creation time and age in days
+          }
+          {
+              condition = { # Conditional module: only show on non-macOS
+                  system = "Linux";
               };
               type = "disk";
               keyIcon = "";
