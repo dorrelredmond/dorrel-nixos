@@ -184,7 +184,7 @@
       };
 
       git_commit = {
-        tag_symbol = '  ';
+        tag_symbol = "  ";
       };
 
       golang = {
