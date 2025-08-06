@@ -5,7 +5,7 @@
     profiles.tqzkbjfz = {
       extensions = {
         force = true;
-        packages = with inputs.firefox-addons.packages."x86_64-darwin"; [
+        packages = with inputs.firefox-addons.packages."x86_64-linux"; [
           bitwarden
           firefox-color
           indie-wiki-buddy

@@ -3,6 +3,7 @@
   imports = [
     ./catppuccin.nix
     ../../common/home
+    ../programs
   ];
 
   home = {
