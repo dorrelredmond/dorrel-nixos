@@ -1,9 +1,10 @@
+{ pkgs, ... }:
 {
   # User Configuration
   programs.fish.enable = true;
   users = {
       defaultUserShell = pkgs.fish;
-      users.${user} = {
+      users.dorrel = {
       isNormalUser = true;
       extraGroups = [ "wheel" "networkmanager" ];
       };
