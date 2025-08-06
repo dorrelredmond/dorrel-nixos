@@ -1,7 +1,6 @@
 {
   programs.starship = {
     enable = true;
-    enableFishIntegration = true;
     settings = {
       palette = "catppuccin_mocha";
 
