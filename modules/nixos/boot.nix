@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # Boot Configurations
   boot =
