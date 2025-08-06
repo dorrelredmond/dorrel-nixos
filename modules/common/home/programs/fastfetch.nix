@@ -287,7 +287,7 @@
           # End with color palette and line break
           "break" # Add a blank line
           "colors" # Display color palette
-      ]
+      ];
 
       /*
       Key Format Structure Explanation:
