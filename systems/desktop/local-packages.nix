@@ -27,6 +27,7 @@
     protonup-qt
     heroic
     r2modman
+    xivlauncher
 
     (prismlauncher.override {
      # Add binary required by some mod
