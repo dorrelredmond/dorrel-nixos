@@ -1,0 +1,23 @@
+{
+  "choose library location": "/home/dorrel/Calibre_Library",
+  "import-calibre-palette": "/home/dorrel/Dev/catppuccin/calibre/themes/frappe",
+  "sort_history": [
+    [
+      "series",
+      true
+    ],
+    [
+      "rating",
+      true
+    ],
+    [
+      "series",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_was_run": true
+}
