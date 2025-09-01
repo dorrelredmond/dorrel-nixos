@@ -1,1 +1,0 @@
-/nix/store/qbabva96ip3li6dp7p9srysl8xldmsgk-home-manager-files/.config/ranger/plugins/__init__.py

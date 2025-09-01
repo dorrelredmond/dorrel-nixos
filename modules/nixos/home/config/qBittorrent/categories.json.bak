@@ -1,1 +1,20 @@
-/nix/store/qbabva96ip3li6dp7p9srysl8xldmsgk-home-manager-files/.config/qBittorrent/categories.json.bak
+{
+    "Anime": {
+        "save_path": "/media/media/Torrents/Anime"
+    },
+    "Anime (Individual)": {
+        "save_path": "/media/media/Torrents/Anime (Individual)"
+    },
+    "Music": {
+        "save_path": "/media/media/Torrents/Music"
+    },
+    "Software": {
+        "save_path": "/media/media/Torrents/Software"
+    },
+    "TV Shows": {
+        "save_path": "/media/media/Torrents/TV Shows"
+    },
+    "tv-sonarr": {
+        "save_path": "/media/media/Torrents/tv-sonarr"
+    }
+}

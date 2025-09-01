@@ -1,1 +1,31 @@
-/nix/store/qbabva96ip3li6dp7p9srysl8xldmsgk-home-manager-files/.config/waybar/config.bak
+{
+    "include": [
+        "$HOME/.config/waybar/modules",
+        "$HOME/.config/waybar/modulesCustom",
+        "$HOME/.config/waybar/modulesGroups",
+        "$HOME/.config/waybar/modulesHyprland"
+    ],
+    
+    "layer": "top",
+    "position": "top",
+    "height": 12,
+    
+    "modules-left": [
+        "group/status",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    
+    "modules-center": [
+        "clock"
+    ],
+    
+    "modules-right": [
+        "mpris",
+        "tray",
+        "pulseaudio",
+        "custom/swaync",
+        "group/connections", 
+        "group/power"
+    ]
+}

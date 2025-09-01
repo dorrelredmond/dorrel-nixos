@@ -1,1 +1,2 @@
-/nix/store/qbabva96ip3li6dp7p9srysl8xldmsgk-home-manager-files/.config/Kvantum/kvantum.kvconfig.bak
+[General]
+theme=catppuccin-mocha-mauve

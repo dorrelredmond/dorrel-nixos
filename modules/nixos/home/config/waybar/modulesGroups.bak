@@ -1,1 +1,49 @@
-/nix/store/qbabva96ip3li6dp7p9srysl8xldmsgk-home-manager-files/.config/waybar/modulesGroups.bak
+{
+	"group/status": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "cpu",
+			"transition-left-to-right": true
+			},
+		"modules": [
+			"temperature",		
+			"cpu",
+			"memory",
+			"disk"
+		]
+	},
+	"group/laptop": {
+		"orientation": "inherit",
+		"modules": [
+			"backlight",
+			"battery"
+		]
+	},
+
+	"group/connections": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "bluetooth",
+			"transition-left-to-right": true
+			},
+		"modules": [
+			"network",
+			"bluetooth"
+		]
+	},
+
+	"group/power": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "custom/power",
+			"transition-left-to-right": false
+			},
+		"modules": [
+			"custom/power",
+			"custom/lock"
+		]
+	}
+}
