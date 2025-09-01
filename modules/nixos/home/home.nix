@@ -14,59 +14,59 @@
 
   # Set File Locations for configuration files that do not work or are more difficult to setup with Nix
   home.file = {
-    "calibre" = {
+    ".config/calibre" = {
       source = ./config/calibre;
       recursive = true;
     };
-    "hypr" = {
+    ".config/hypr" = {
       source = ./config/hypr;
       recursive = true;
     };
-    "Kvantum" = {
+    ".config/Kvantum" = {
       source = ./config/Kvantum;
       recursive = true;
     };
-    "pipewire" = {
+    ".config/pipewire" = {
       source = ./config/pipewire;
       recursive = true;
     };
-    "qBittorrent" = {
+    ".config/qBittorrent" = {
       source = ./config/qBittorrent;
       recursive = true;
     };
-    "qt5ct" = {
+    ".config/qt5ct" = {
       source = ./config/qt5ct;
       recursive = true;
     };
-    "qt6ct" = {
+    ".config/qt6ct" = {
       source = ./config/qt6ct;
       recursive = true;
     };
-    "solaar" = {
+    ".config/solaar" = {
       source = ./config/solaar;
       recursive = true;
     };
-    "strawberry" = {
+    ".config/strawberry" = {
       source = ./config/strawberry;
       recursive = true;
     };
-    "swappy" = {
+    ".config/swappy" = {
       source = ./config/swappy;
       recursive = true;
     };
-    "swaync" = {
+    ".config/swaync" = {
       source = ./config/swaync;
       recursive = true;
     };
-    "waybar" = {
+    ".config/waybar" = {
       source = ./config/waybar;
       recursive = true;
     };
-    "zathura" = {
+    ".config/zathura" = {
       source = ./config/zathura;
       recursive = true;
     };
-    "rofimoji.rc" = {
+    ".config/rofimoji.rc" = {
       source = ./config/rofimoji.rc;
     };
   };
