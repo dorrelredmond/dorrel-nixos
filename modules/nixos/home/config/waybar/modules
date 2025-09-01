@@ -1,1 +1,157 @@
-/nix/store/4yqn9ddwa3pd5l976m0ahblgl0gwnhb0-home-manager-files/.config/waybar/modules
+{
+    "network": {
+	    "format-wifi": "{icon}",
+	    "format-ethernet": "󰌘",
+	    "format-linked": "󰌘",
+		"tooltip-format": "{ipaddr}/{cidr}",
+	    "format-icons": [
+    		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
+    	],
+    	"on-click-right": "kitty --class=floating_waybar -e nmtui"
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+	"clock": {
+        "interval": 1,
+    	"format": " {:%H:%M:%S  %Y, %d %B, %A}",
+    	"format-alt": " {:%I:%M %p}",
+    	"tooltip-format": "<tt><small>{calendar}</small></tt>",
+    	"calendar": {
+      		"mode": "month",
+      		"mode-mon-col": 3,
+      		"weeks-pos": "left",
+      		"on-scroll": 1,
+      		"format": {
+	        	"months": "<span color='#d4be98'><b>{}</b></span>",
+    	    	"days": "<span color='#d4be98'><b>{}</b></span>",
+        		"weeks": "<span color='#a9b665'><b>W{}</b></span>",
+        		"weekdays": "<span color='#d8a657'><b>{}</b></span>",
+        		"today": "<span color='#e78a4e'><b><u>{}</u></b></span>"
+      		}
+    	},
+    	"actions": {
+      		"on-click-middle": "mode",
+      		"on-scroll-up": "shift_up",
+      		"on-scroll-down": "shift_down"
+    	},
+  	},
+
+	"battery": {
+    	"tooltip": true,
+    	"tooltip-format": "{time}",
+    	"states": {
+      		"warning": 35,
+      		"critical": 20
+    	},
+    	"format": "{capacity}% {icon}",
+    	"format-charging": "{capacity}% 󰂄",
+    	"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  	},
+
+    "bluetooth": {
+	    "format": " ",
+	    "format-disabled": "󰂳",
+	    "format-connected": "󰂱 {num_connections}",
+	    "tooltip-format": " {device_alias}",
+	    "tooltip-format-connected": "{device_enumerate}",
+	    "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
+	    "tooltip": true,
+	    "on-click-right": "blueman-manager"
+    },
+	
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+	    "format-bluetooth": "{icon} 󰂰 {volume}%",
+	    "format-muted": "󰖁",
+    	"format-icons": {
+      		"headphone": "",
+      		"headset": "",
+      		"default": ["", "", "󰕾",  ""]
+    	},
+    	"ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"],
+		"tooltip": true,
+		"tooltip-format": "{icon} {desc} | {volume}%",
+		"scroll-step": 5,
+		"smooth-scrolling-threshold": 1,
+    	"on-click": "pamixer -t",
+    	"on-click-right": "pavucontrol -t 3",
+		"on-scroll-up": "pamixer -i 5",
+		"on-scroll-down": "pamixer -d 5"
+  	},
+
+	"temperature": {
+		"interval": 10,
+    	"tooltip": false,
+    	"critical-threshold": 80,
+    	"format": "{temperatureC}°{icon}",
+    	"format-icons": ["", "", ""]
+  	},
+
+	"backlight": {
+    	"tooltip": false,
+    	"format": "{percent}% {icon}",
+    	"format-icons": ["󰃞", "󰃟", "󰃠"],
+		"on-scroll-up": "hyprctl hyprsunset gamma +5",
+	    "on-scroll-down": "hyprctl hyprsunset gamma -5",
+	    "smooth-scrolling-threshold": 1
+  	},
+
+    "cpu": {
+		"interval": 1,
+	    "format": "{usage}% 󰍛",
+		"states": {
+			"warning": 60,
+			"critical": 80
+		},
+	    "on-click-right": "kitty --class=floating_waybar -e btop"
+    },
+
+    "disk": {
+	    "interval": 30,
+	    "path": "/",
+	    "format": "{percentage_used}% 󰋊",
+	    "tooltip": true,
+	    "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)"
+    },
+
+    "memory": {
+	    "interval": 10,
+	    "format": "{percentage}% 󰾆",
+		"states": {
+			"warning": 60,
+			"critical": 80
+		},
+	    "tooltip": true,
+	    "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
+    },
+
+    "mpris": {
+    	"interval": 5,
+    	"format": "{player_icon} ",
+    	"format-paused": "{status_icon} <i>{dynamic}</i>",
+    	"on-click-middle": "playerctl play-pause",
+    	"on-click": "playerctl previous",
+    	"on-click-right": "playerctl next",
+    	"smooth-scrolling-threshold": 1,
+    	"tooltip": true,
+    	"tooltip-format": "{status_icon} {dynamic}\nLeft Click: previous\nMid Click: Pause\nRight Click: Next",
+    	"player-icons": {
+		    "chromium": "",
+		    "default": "",
+		    "firefox": "",
+		    "mpv": "󰐹",
+		    "spotify": "",
+		    "vlc": "󰕼"
+	    },
+	    "status-icons": {
+    		"paused": "󰐎",
+		    "playing": "",
+		    "stopped": ""
+	    },
+	    "max-length": 30
+    }
+}
