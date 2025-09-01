@@ -1,5 +1,1 @@
-require('options')
-require('keymaps')
-require('plugins')
-require('lsp')
-require('colorscheme')
+/nix/store/qbabva96ip3li6dp7p9srysl8xldmsgk-home-manager-files/.config/nvim/init.lua

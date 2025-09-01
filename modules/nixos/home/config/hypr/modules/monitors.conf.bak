@@ -1,7 +1,1 @@
-################
-### MONITORS ###
-################
-
-# See https://wiki.hypr.land/Configuring/Monitors/
-monitor = HDMI-A-1, preferred, auto-center-left, 1
-monitor = DP-1, preferred, auto-center-right, 1
+/nix/store/qbabva96ip3li6dp7p9srysl8xldmsgk-home-manager-files/.config/hypr/modules/monitors.conf.bak
