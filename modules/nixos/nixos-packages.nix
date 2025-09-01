@@ -31,6 +31,12 @@
     extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
   };
 
+  # Exclude Specific KDE Packages
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    elisa
+    kate
+  ];
+
   environment.systemPackages = with pkgs; [
     # CLI Tools
     pamixer
@@ -43,16 +49,12 @@
     bottles
     krita
     obsidian # note taking
-    pavucontrol # audio controls
     hardinfo2 # System information and benchmarks for Linux systems
     feh # minimal image viewer
     strawberry # audio player
     protonvpn-gui # VPN Service
-    kdePackages.isoimagewriter # Write hybrid ISO files onto USB disks
-    kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
     font-manager
     qpwgraph # pipewire patchbay
-    rofimoji # emote picker using rofi
     swappy # snapshot and editor tool
 
     # User Styles
@@ -67,6 +69,28 @@
     wireplumber
     ntfs3g
     gvfs
+    playerctl
+    wayland-utils # Wayland utilities
+    wl-clipboard # Command-line copy/paste utilities for Wayland
+
+    # KDE Packages
+    kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
+    kdePackages.kcalc # Calculator
+    kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
+    kdePackages.kclock # Clock app
+    kdePackages.kcolorchooser # A small utility to select a color
+    kdePackages.kolourpaint # Easy-to-use paint program
+    kdePackages.ksystemlog # KDE SystemLog Application
+    kdePackages.sddm-kcm # Configuration module for SDDM
+    kdiff3 # Compares and merges 2 or 3 files or directories
+    kdePackages.isoimagewriter # Program to write hybrid ISO files onto USB disks
+    kdePackages.partitionmanager # Manage the disk devices, partitions and file systems on your computer
+    kdePackages.dolphin # GUI File Manager
+    kdePackages.qtsvg # svg icon support in Dolphin
+    kdePackages.kio-fuse #to mount remote filesystems via FUSE in Dolphin
+    kdePackages.kio-extras #extra protocols support (sftp, fish and more) in Dolphin
+
+    # Hyprland Packges
     hyprpolkitagent # PolicyKit
     hyprlock # lock screen
     hypridle # idle daemon
@@ -77,22 +101,15 @@
     grim
     slurp
     wlogout
-    playerctl
     waybar_git
     eww #widget system
     swaynotificationcenter # notification daemon
     libnotify
     swww # wallpaper manager
+    pavucontrol # audio controls
     rofi-wayland
-    wayland-utils # Wayland utilities
-    wl-clipboard # Command-line copy/paste utilities for Wayland
+    rofimoji # emote picker using rofi
     wtype # fake keyboard/mouse input, window manager, etc for wayland
     cliphist #clipboard manager
-    kdePackages.dolphin # GUI File Manager
-    kdePackages.qtsvg # svg icon support in Dolphin
-    kdePackages.kio-fuse #to mount remote filesystems via FUSE in Dolphin
-    kdePackages.kio-extras #extra protocols support (sftp, fish and more) in Dolphin
-    
   ];
-
 }

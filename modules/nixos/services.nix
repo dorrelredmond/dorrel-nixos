@@ -19,10 +19,13 @@
     # Enable pulseaudio for Audio
     pulseaudio.enable = false;
 
-    # Enable SDDM 
+    # Enable SDDM
     displayManager.sddm.enable = true;
     displayManager.sddm.wayland.enable = true;
     displayManager.sddm.package = pkgs.kdePackages.sddm;
+    
+    # Enable KDE
+    desktopManager.plasma6.enable = true;
 
     # Enable Pipewire for Audio
     pipewire = {
@@ -32,5 +35,15 @@
         pulse.enable = true;
         jack.enable = true;
     };
+  };
+
+  # Configure Flatpak
+  services.flatpak.enable = true;
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
   };
 }
