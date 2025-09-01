@@ -19,12 +19,9 @@
     # Enable pulseaudio for Audio
     pulseaudio.enable = false;
 
-    # Enable SDDM
+    # Enable SDDM & KDE
     displayManager.sddm.enable = true;
     displayManager.sddm.wayland.enable = true;
-    displayManager.sddm.package = pkgs.kdePackages.sddm;
-    
-    # Enable KDE
     desktopManager.plasma6.enable = true;
 
     # Enable Pipewire for Audio
