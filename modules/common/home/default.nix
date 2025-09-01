@@ -5,27 +5,27 @@
 
   # Set File Locations for configuration files that do not work or are more difficult to setup with Nix
   home.file = {
-    "bat" = {
+    ".config/bat" = {
       source = ./config/bat;
       recursive = true;
     };
-    "btop" = {
+    ".config/btop" = {
       source = ./config/btop;
       recursive = true;
     };
-    "fastfetch" = {
+    ".config/fastfetch" = {
       source = ./config/fastfetch;
       recursive = true;
     };
-    "mpv" = {
+    ".config/mpv" = {
       source = ./config/mpv;
       recursive = true;
     };
-    "nvim" = {
+    ".config/nvim" = {
       source = ./config/nvim;
       recursive = true;
     };
-    "ranger" = {
+    ".config/ranger" = {
       source = ./config/ranger;
       recursive = true;
     };
