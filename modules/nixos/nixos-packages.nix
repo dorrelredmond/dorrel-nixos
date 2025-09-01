@@ -59,6 +59,7 @@
 
     # User Styles
     catppuccin
+    catppuccin-kde
     papirus-folders
     nwg-look
     libsForQt5.qt5ct
