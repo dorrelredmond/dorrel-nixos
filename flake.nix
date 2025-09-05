@@ -9,6 +9,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-darwin = {
+      url = "github:nix-darwin/nix-darwin/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     hyprland.url = "github:hyprwm/Hyprland";
 
     waybar.url = "github:Alexays/Waybar/master";
@@ -29,7 +34,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, hyprland, catppuccin, dolphin-overlay, nix-darwin, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -64,9 +69,30 @@
         ];
       };
     };
-
-    # TODO Darwin Configurations
-    # TODO Darwin Home Configs
-    # TODO Add spicefity to Darwin Configs https://wiki.nixos.org/wiki/Spicetify-Nix
+    
+    # Build darwin flake using:
+    # $ darwin-rebuild switch --flake .#macbook
+    darwinConfigurations = {
+      macbook = nix-darwin.lib.darwinSystem {
+        system = "x86_64-darwin";
+        specialArgs = { inherit inputs; };
+        modules = [ 
+          ./systems/Dorrels-Macbook-Pro/configuration.nix
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "bak";
+            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.users.dorrelredmond = {
+              imports = [
+                ./modules/darwin/home/home.nix
+                catppuccin.homeModules.catppuccin
+              ];
+            };
+          }
+	      ];
+      };
+    };
   };
 }
