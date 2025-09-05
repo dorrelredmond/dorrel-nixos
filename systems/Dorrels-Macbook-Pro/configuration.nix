@@ -1,8 +1,11 @@
-{ pkgs, config, ... }:
+{ pkgs, config, self, ... }:
 {
   imports = [
     ../../modules/darwin
   ];
+
+  # User Configuration
+  users.users.dorrelredmond.home = "/Users/dorrelredmond";
 
   # Set Git commit hash for darwin-version
   system.configurationRevision = self.rev or self.dirtyRev or null;

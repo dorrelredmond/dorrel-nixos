@@ -1,6 +1,8 @@
 {
   security.pam.services.sudo_local.touchIdAuth = true; # Unlock sudo commands via Touch ID
 
+  system.primaryUser = "dorrelredmond";
+  
   system.defaults = {
     dock.autohide = true;
     dock.mru-spaces = false; # don't rearrange spaces based on the most recent use
