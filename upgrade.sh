@@ -24,7 +24,7 @@ if [ $installType == "nix" ]; then
         exit 1
     fi
 elif [ $installType == "darwin" ]; then
-   if sudo darwin-rebuild switch --flake .#$systemConfig --upgrade; then
+   if sudo darwin-rebuild switch --flake .#$systemConfig; then
         echo -e "\nRequest Confirmed\nUpdates: System Packages Acquisition Successful"
     else
         echo -e "\nNotice\nAn Error Has Occurred"

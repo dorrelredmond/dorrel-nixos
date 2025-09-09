@@ -25,6 +25,7 @@ in
     environment.systemPackages = with pkgs; [
 
         # Desktop Apps
+        firefox # web browser
         vesktop #discord alternative client
         discord
 	      spotify
@@ -33,8 +34,10 @@ in
 	      qbittorrent
         zathura # PDF viewer
         thunderbird # email client
+        kitty # terminal emulator
 
         # CLI Tools
+        starship
         eza
         gh
         wget

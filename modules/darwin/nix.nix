@@ -3,7 +3,7 @@
     # Automatic Garbage Cleanup
     gc = {
         automatic = true;
-        options = "--delete-older-than 14d";
+        options = "--delete-older-than 3d";
     };
 
     # automatically optimise symlinks
