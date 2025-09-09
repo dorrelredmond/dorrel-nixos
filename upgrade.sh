@@ -6,6 +6,14 @@ read installType
 echo -e "\nEnter System Configuration to use (i.e., desktop or macbook)"
 read systemConfig
 
+echo -e "\nNotice\nRequesting Latest Build"
+if git pull ; then
+    echo -e "\nRequest Confirmed: Acquisition of the Latest System Successful"
+else
+    echo -e "\nNotice\nAn Error Has Occurred"
+    exit 1
+fi
+
 echo -e "\nNotice\nRequesting Updates: Flake Lock\n"
 if nix flake update --commit-lock-file ; then
     echo -e "\nRequest Confirmed\nUpdate: Flake Lock Acquisition Successful"
