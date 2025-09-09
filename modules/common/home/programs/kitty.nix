@@ -18,7 +18,7 @@
       scrollback_lines = 5000;
       scrollback_pager_history_size = 10;
       mouse_hide_wait = -3.0;
-      hide_window_decorations = "yes";
+      hide_window_decorations = "no";
       tab_bar_edge = "top";
       tab_bar_style = "powerline";
       background_opacity = 0.95;
