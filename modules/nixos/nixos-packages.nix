@@ -61,6 +61,7 @@
     catppuccin
     catppuccin-kde
     papirus-folders
+    papirus-icon-theme
     nwg-look
     libsForQt5.qt5ct
     kdePackages.qt6ct
