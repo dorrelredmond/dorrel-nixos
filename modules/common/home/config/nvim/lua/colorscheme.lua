@@ -1,2 +1,1 @@
--- define your colorscheme here
-vim.cmd.colorscheme "catppuccin-mocha"
+/nix/store/xch5hgm9vv7r3xb0pn6wp0mf83dz4ifr-home-manager-files/.config/nvim/lua/colorscheme.lua
