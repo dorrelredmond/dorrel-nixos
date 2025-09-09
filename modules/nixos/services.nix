@@ -10,9 +10,6 @@
     
   # System Services Configuration
   services = {
-    # Bluetooth Support
-    blueman.enable = true;
-
     # Enable Printing
     printing.enable = true;
 
