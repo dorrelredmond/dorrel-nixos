@@ -109,7 +109,7 @@
     libnotify
     swww # wallpaper manager
     pavucontrol # audio controls
-    rofi-wayland
+    rofi # powerful app launcher and menu
     rofimoji # emote picker using rofi
     wtype # fake keyboard/mouse input, window manager, etc for wayland
     cliphist #clipboard manager
