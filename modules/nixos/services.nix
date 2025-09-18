@@ -6,6 +6,12 @@
       variant = "";
   };
 
+  # ADB udev rules
+  services.udev.packages = [
+    pkgs.android-udev-rules
+  ];
+
+
   services.udisks2.enable = true;
     
   # System Services Configuration
