@@ -6,7 +6,7 @@
       defaultUserShell = pkgs.fish;
       users.dorrel = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "networkmanager" "gamemode" ];
+      extraGroups = [ "wheel" "networkmanager" "gamemode" "adbusers" ];
       };
   };
 }

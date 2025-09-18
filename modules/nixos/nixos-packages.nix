@@ -15,6 +15,9 @@
     };
   };
 
+  # Enable ADB support
+  programs.adb.enable = true;
+
   # Hyprland Window Manager Configuration
   programs.hyprland = {
       enable = true;
