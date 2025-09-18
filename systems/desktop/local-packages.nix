@@ -1,5 +1,30 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
+  # General Packages
+  environment.systemPackages = with pkgs; [    
+    # CLI
+    protonup
+    
+    # Gaming Applications & Tools
+    protonup-qt # GUI Proton Installer
+    heroic # 3rd-Party Games Launcher
+    r2modman # Thunderstore Mod Manager
+    xivlauncher # Final Fantasy XIV Launcher
+    wlx-overlay-s # VR Desktop Overlay
 
+    (prismlauncher.override {
+     # Add binary required by some mod
+     additionalPrograms = [ffmpeg];
+
+     # Change Java runtimes available to Prism Launcher
+     jdks = [
+       temurin-jre-bin-8 # Eclipse Teurmin openJDK version 8
+       temurin-jre-bin-17 # Eclipse Teurmin openJDK version 17
+       temurin-jre-bin # Eclipse Teurmin openJDK version 21
+     ];
+    })
+  ];
+
+  # Configure WiVRn for OpenXR streaming to standalone headsets (i.e., Quest 3)
   services.wivrn = {
     enable = true;
     openFirewall = true;
@@ -16,19 +41,31 @@
     config = {
       enable = true;
       json = {
-        # 1.0x foveation scaling
-        scale = 1.0;
-        # 100 Mb/s
-        bitrate = 100000000;
+        application = [ pkgs.wlx-overlay-s ];
+        # 20% foveation scaling
+        scale = 0.8;
+        # 120 Mbit/s
+        bitrate = 120000000;
         encoders = [
           {
-            encoder = "nvenc";
-            codec = "h265";
-            # 1.0 x 1.0 scaling
-            width = 1.0;
-            height = 1.0;
+            height = 0.25;
+            offset_x = 0.0;
+            offset_y = 0.75;
+            width = 0.5;
+          }
+          {
+            height = 0.75;
             offset_x = 0.0;
             offset_y = 0.0;
+            width = 0.5;
+          }
+          {
+            codec = "h264";
+            encoder = "x264";
+            height = 1.0;
+            offset_x = 0.5;
+            offset_y = 0.0;
+            width = 0.5;
           }
         ];
       };
@@ -52,29 +89,4 @@
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/dorrel/.steam/root/compatibilitytools.d";
   };
-
-  # General Packages
-  environment.systemPackages = with pkgs; [    
-    # CLI
-    protonup
-    
-    # Gaming Applications & Tools
-    protonup-qt # GUI Proton Installer
-    heroic # 3rd-Party Games Launcher
-    r2modman # Thunderstore Mod Manager
-    xivlauncher # Final Fantasy XIV Launcher
-
-    (prismlauncher.override {
-     # Add binary required by some mod
-     additionalPrograms = [ffmpeg];
-
-     # Change Java runtimes available to Prism Launcher
-     jdks = [
-       temurin-jre-bin-8 # Eclipse Teurmin openJDK version 8
-       temurin-jre-bin-17 # Eclipse Teurmin openJDK version 17
-       temurin-jre-bin # Eclipse Teurmin openJDK version 21
-     ];
-    })
-
-  ];
 }
