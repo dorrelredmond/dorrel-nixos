@@ -59,10 +59,11 @@
     protonup
     
     # Gaming Applications & Tools
-    protonup-qt
-    heroic
-    r2modman
-    xivlauncher
+    protonup-qt # GUI Proton Installer
+    heroic # 3rd-Party Games Launcher
+    r2modman # Thunderstore Mod Manager
+    xivlauncher # Final Fantasy XIV Launcher
+    wlx-overlay-s # VR Overlay Similar to XSOverlay 
 
     (prismlauncher.override {
      # Add binary required by some mod
