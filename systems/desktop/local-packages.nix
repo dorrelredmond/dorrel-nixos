@@ -22,7 +22,7 @@
         bitrate = 100000000;
         encoders = [
           {
-            encoder = "vaapi";
+            encoder = "nvenc";
             codec = "h265";
             # 1.0 x 1.0 scaling
             width = 1.0;
@@ -63,7 +63,6 @@
     heroic # 3rd-Party Games Launcher
     r2modman # Thunderstore Mod Manager
     xivlauncher # Final Fantasy XIV Launcher
-    wlx-overlay-s # VR Overlay Similar to XSOverlay 
 
     (prismlauncher.override {
      # Add binary required by some mod
