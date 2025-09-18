@@ -10,6 +10,7 @@
     r2modman # Thunderstore Mod Manager
     xivlauncher # Final Fantasy XIV Launcher
     wlx-overlay-s # VR Desktop Overlay
+    sidequest # App Store for Android-based VR Devices
 
     (prismlauncher.override {
      # Add binary required by some mod
