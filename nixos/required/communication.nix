@@ -7,7 +7,7 @@
     chromium
 
     #Email
-    thunerbird
+    thunderbird
 
     #Chat and Messaging
     (discord.override { withVencord = true; })

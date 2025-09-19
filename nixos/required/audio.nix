@@ -1,8 +1,9 @@
 { pkgs, config, ... }:
 {
+  security.rtkit.enable = true;
+  
   services = {
     # Enable Pipewire for Audio
-    security.rtkit.enable = true;
     pulseaudio.enable = false;
     pipewire = {
         enable = true;
