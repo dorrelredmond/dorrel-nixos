@@ -6,7 +6,7 @@
         ./catppuccin.nix
         ./communication.nix
         ./desktop.nix
-        ./developement.nix
+        ./development.nix
         ./locale.nix
         ./media.nix
         ./networking.nix
