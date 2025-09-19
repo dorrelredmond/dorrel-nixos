@@ -1,5 +1,5 @@
 {
-  description = "Dorrel's Nix Configurations";
+  description = "Dorrels Nix Configurations";
 
   inputs = 
   {
@@ -75,7 +75,7 @@
             {
               imports = 
               [
-                ./modules/nixos/home/home.nix 
+                ./systems/desktop/home.nix 
                 catppuccin.homeModules.catppuccin
               ];
             };
@@ -107,7 +107,7 @@
             {
               imports = 
               [
-                ./modules/darwin/home/home.nix
+                ./systems/Dorrels-Macbook-Pro/home.nix
                 catppuccin.homeModules.catppuccin
               ];
             };

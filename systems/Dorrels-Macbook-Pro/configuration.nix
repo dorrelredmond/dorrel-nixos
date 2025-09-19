@@ -1,7 +1,8 @@
 { pkgs, config, ... }:
 {
   imports = [
-    ../../modules/darwin
+    ../../common
+    ../../darwin
   ];
 
   # User Configuration

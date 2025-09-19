@@ -6,9 +6,9 @@ read installType
 echo -e "\nEnter System Configuration to use (i.e., desktop or macbook)"
 read systemConfig
 
-echo -e "\nNotice\nRequesting Latest Build"
+echo -e "\nNotice\nRequesting Latest Build Configuration"
 if git pull ; then
-    echo -e "\nRequest Confirmed: Acquisition of the Latest System Successful"
+    echo -e "\nRequest Confirmed: Acquisition of the Latest System Configuration Successful"
 else
     echo -e "\nNotice\nAn Error Has Occurred"
     exit 1
