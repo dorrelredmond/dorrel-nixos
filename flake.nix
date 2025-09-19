@@ -18,6 +18,8 @@
     nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     catppuccin.url = "github:catppuccin/nix";
+    
+    dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
@@ -31,7 +33,7 @@
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-xr, home-manager, catppuccin, nix-darwin, ... } @ inputs:
+  outputs = { self, nixpkgs, nixpkgs-xr, home-manager, catppuccin, dolphin-overlay, nix-darwin, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -49,6 +51,13 @@
         [
           ./systems/desktop/configuration.nix
           catppuccin.nixosModules.catppuccin
+
+          # Overlay Settings
+          ({ pkgs, ... }:{
+              nixpkgs.overlays = [
+                  dolphin-overlay.overlays.default
+              ];
+          })
 
           # Home Manager Settings
           home-manager.nixosModules.home-manager 
