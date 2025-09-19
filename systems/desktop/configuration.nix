@@ -3,8 +3,10 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./gaming.nix
     ./local-packages.nix
     ../../modules/nixos
+    ./vr
   ];
 
   # Add Media Drive
