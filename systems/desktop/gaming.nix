@@ -43,7 +43,7 @@
     openarena
     xonotic
     gzdoom
-    engima
+    enigma
 
     # Emulators
     retroarch-full

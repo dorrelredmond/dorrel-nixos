@@ -18,12 +18,6 @@
         restartTriggers = [ pkgs.wlx-overlay-s ];
       };
 
-  xdg.configFile."wlxoverlay/wayvr.yaml".source = ./config/wlxoverlay/wayvr.yaml;
-  
-  xdg.configFile."wlxoverlay/watch.yaml".source = ./config/wlxoverlay/watch.yaml;
-
-  xdg.configFile."wlxoverlay/conf.d/passthrough.yaml".source = ./config/wlxoverlay/conf.d/passthrough.yaml;
-
   environment.systemPackages = with pkgs; [
     wlx-overlay-s
     wayvr-dashboard

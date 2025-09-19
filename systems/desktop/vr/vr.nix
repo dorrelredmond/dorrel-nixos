@@ -14,7 +14,11 @@
   ];
 
   # VR Specific Packages
-  environment.systemPackages = with pkgs; [    
+  environment.systemPackages = with pkgs; [  
+    # Launcher and Desktop Overlay
+    wlx-overlay-s
+    wayvr-dashboard
+
     sidequest # App Store for Android-based VR Devices
     bs-manager # Beat Saber Mod Manager
     
@@ -23,25 +27,4 @@
     vrc-get # CLI Client of VRC Package Manager
     alcom # Manage VRChat Unity Projects
   ];
-
-  # OpenVR Configs
-  xdg.configFile."openvr/openvrpaths.vrpath".text = ''
-    {
-      "config" :
-      [
-        "~/.local/share/Steam/config"
-      ],
-      "external_drivers" : null,
-      "jsonid" : "vrpathreg",
-      "log" :
-      [
-        "~/.local/share/Steam/logs"
-      ],
-      "runtime" :
-      [
-        "${pkgs.opencomposite}/lib/opencomposite"
-      ],
-      "version" : 1
-    }
-  '';
 }
