@@ -6,9 +6,6 @@
       variant = "";
   };
 
-  # Configure console keymap
-  console.keymap  = "us";
-
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
