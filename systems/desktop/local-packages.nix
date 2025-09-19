@@ -9,7 +9,7 @@
     heroic # 3rd-Party Games Launcher
     r2modman # Thunderstore Mod Manager
     xivlauncher # Final Fantasy XIV Launcher
-    wlx-overlay-s # VR Desktop Overlay
+    #wlx-overlay-s # VR Desktop Overlay
     sidequest # App Store for Android-based VR Devices
 
     (prismlauncher.override {
@@ -42,7 +42,7 @@
     config = {
       enable = true;
       json = {
-        application = [ pkgs.wlx-overlay-s ];
+        #application = [ pkgs.wlx-overlay-s ];
         # 20% foveation scaling
         scale = 0.8;
         # 120 Mbit/s
