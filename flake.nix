@@ -52,18 +52,16 @@
           catppuccin.nixosModules.catppuccin
           nixpkgs-xr.nixosModules.nixpkgs-xr
 
+          # Overlay Settings
           ({ pkgs, ... }:{
               nixpkgs.overlays = [
                   (_: _: { waybar_git = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.waybar; })
                   dolphin-overlay.overlays.default
               ];
           })
-          
+
+          # Home Manager Settings
           home-manager.nixosModules.home-manager {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "bak";
-            home-manager.extraSpecialArgs = { inherit inputs user; };
             home-manager.users.${user} = {
               imports = [
                 ./modules/nixos/home/home.nix 
@@ -76,19 +74,16 @@
     };
     
     # Build darwin flake using:
-    # $ darwin-rebuild switch --flake .#macbook
+    # $ sudo darwin-rebuild switch --flake .#macbook
     darwinConfigurations = {
       macbook = nix-darwin.lib.darwinSystem {
         system = "x86_64-darwin";
         specialArgs = { inherit inputs; };
         modules = [ 
           ./systems/Dorrels-Macbook-Pro/configuration.nix
-          home-manager.darwinModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "bak";
-            home-manager.extraSpecialArgs = { inherit inputs; };
+
+          # Home Manager Settings
+          home-manager.darwinModules.home-manager {
             home-manager.users.dorrelredmond = {
               imports = [
                 ./modules/darwin/home/home.nix
