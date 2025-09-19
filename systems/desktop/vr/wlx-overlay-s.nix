@@ -1,9 +1,4 @@
 { lib, pkgs, config, ... }:
-
-let
-  yaml = pkgs.formats.yaml { };
-in
-
 {
   systemd.user.services.wlx-overlay-s =
     lib.recursiveUpdate
@@ -27,11 +22,7 @@ in
   
   xdg.configFile."wlxoverlay/watch.yaml".source = ./config/wlxoverlay/watch.yaml;
 
-  xdg.configFile."wlxoverlay/conf.d/passthrough.yaml".source = ./config/wlxoverlay/conf.d/passthrough.yaml
-
-  xdg.configFile."wlxoverlay/conf.d/font.yaml".source = yaml.generate "font.yaml" {
-    primary_font = "Cascadia Cove:weight=150";
-  };
+  xdg.configFile."wlxoverlay/conf.d/passthrough.yaml".source = ./config/wlxoverlay/conf.d/passthrough.yaml;
 
   environment.systemPackages = with pkgs; [
     wlx-overlay-s
