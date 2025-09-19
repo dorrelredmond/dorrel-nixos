@@ -1,19 +1,10 @@
-{ config, pkgs, inputs, user, ... }: 
+{ config, pkgs, user, ... }: 
 {
   imports = [
-    inputs.home-manager.darwinModules.home-manager
-
     ./catppuccin.nix
     ../../common/home
     ./programs
   ];
-
-  home-manager = {
-    backupFileExtension = "bak";
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    extraSpecialArgs = { inherit inputs user; };
-  };
 
   home = {
     username = user;

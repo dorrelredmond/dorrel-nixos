@@ -1,7 +1,8 @@
 {
-  description = "NixOS Configuration";
+  description = "Dorrel's Nix Configurations";
 
-  inputs = {
+  inputs = 
+  {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
     home-manager = {
@@ -40,17 +41,20 @@
 
   let
     user = "dorrel";
-  in {
+  in 
+  {
 
     # NixOS Configurations
-    nixosConfigurations = {
-      desktop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations = 
+    {
+      desktop = nixpkgs.lib.nixosSystem 
+      {
         system = "x86_64-linux";
         specialArgs = { inherit inputs user; };
-        modules = [
+        modules = 
+        [
           ./systems/desktop/configuration.nix
           catppuccin.nixosModules.catppuccin
-          nixpkgs-xr.nixosModules.nixpkgs-xr
 
           # Overlay Settings
           ({ pkgs, ... }:{
@@ -61,9 +65,16 @@
           })
 
           # Home Manager Settings
-          home-manager.nixosModules.home-manager {
-            home-manager.users.${user} = {
-              imports = [
+          home-manager.nixosModules.home-manager 
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "bak";
+            home-manager.extraSpecialArgs = { inherit inputs user; };
+            home-manager.users.${user} = 
+            {
+              imports = 
+              [
                 ./modules/nixos/home/home.nix 
                 catppuccin.homeModules.catppuccin
               ];
@@ -75,17 +86,27 @@
     
     # Build darwin flake using:
     # $ sudo darwin-rebuild switch --flake .#macbook
-    darwinConfigurations = {
-      macbook = nix-darwin.lib.darwinSystem {
+    darwinConfigurations = 
+    {
+      macbook = nix-darwin.lib.darwinSystem 
+      {
         system = "x86_64-darwin";
         specialArgs = { inherit inputs; };
-        modules = [ 
+        modules = 
+        [ 
           ./systems/Dorrels-Macbook-Pro/configuration.nix
 
           # Home Manager Settings
-          home-manager.darwinModules.home-manager {
-            home-manager.users.dorrelredmond = {
-              imports = [
+          home-manager.darwinModules.home-manager 
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "bak";
+            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.users.dorrelredmond = 
+            {
+              imports = 
+              [
                 ./modules/darwin/home/home.nix
                 catppuccin.homeModules.catppuccin
               ];
