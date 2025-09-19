@@ -15,15 +15,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland.url = "github:hyprwm/Hyprland";
-
-    waybar.url = "github:Alexays/Waybar/master";
-
     nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     catppuccin.url = "github:catppuccin/nix";
-
-    dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
@@ -37,7 +31,7 @@
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-xr, home-manager, hyprland, catppuccin, dolphin-overlay, nix-darwin, ... } @ inputs:
+  outputs = { self, nixpkgs, nixpkgs-xr, home-manager, catppuccin, nix-darwin, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -55,14 +49,6 @@
         [
           ./systems/desktop/configuration.nix
           catppuccin.nixosModules.catppuccin
-
-          # Overlay Settings
-          ({ pkgs, ... }:{
-              nixpkgs.overlays = [
-                  (_: _: { waybar_git = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.waybar; })
-                  dolphin-overlay.overlays.default
-              ];
-          })
 
           # Home Manager Settings
           home-manager.nixosModules.home-manager 
