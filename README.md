@@ -1,6 +1,38 @@
 # Dorrel's Custom Nix Configurations
 
-This is very much still a work-in-progress. However, I am attempting to make things as modular as possible to allow me to implement Nix on each of my systems that I use on a regular basis. There will likely be many restructures during this process and I'll readily admit that my commits may get a bit... messy, but I will do my best to follow good practices as I am using this entire project as a learning experience for using GitHub in a more proper manner.
+I am still very new to Nix as a whole, and as such, many things likely will not be done in the most optimal way. Despite this, I am using this repo as a way to learn not only Nix, but I am also attempting to learn better git practices. 
+
+This repo may go through many restructures as I attempt to modularize and configure as many aspects as possible of my various machines.
+
+## Basic Folder Structure
+- **common:** Common configurations shared across all machines, regardless of build type
+    - **home:** Common Home Manager Configurations
+        - **config:** Non-Nix config files. Symlinked to the .config folder
+- **darwin:** Configurations for macOS systems
+    - **home:** Home Manager Configurations for Darwin based systems
+        - **config:** Non-Nix config files. Symlinked to the .config folder
+- **nixos:** Configurations for NixOS systems
+    - **home:** Home Manager Configurations for NixOS based systems
+        - **config:** Non-Nix config files. Symlinked to the .config folder
+    - **optional:** Optional modules that are enabled per system
+        - **graphics:** Graphics Drivers
+        - **vr:** Virtual Reality COnfiguration
+    - **required:** Core Modules that are requires for all NixOS systems
+- **systems:** Machine Specific Configurations
+    - **desktop:** Configuration for my desktop
+    - **Dorrels-Macbook-Pro:** Configuration for my Macbook Pro
+
+## Scripts
+
+```bash
+./config-link.sh
+``` 
+ This script will take the various home/config files and quickly create symlinks to the user's home directory
+
+```bash
+./upgrade.sh
+```
+This script will prompt the user for the type of system and the exact system name to update. The script will then run a `git pull` to ensure the local repo is up-to-date, then update the `flake.nix` file and begin rebuilding the desired system with the `--upgrade` flag applied
 
 ## Credits
 While I am attempting to primarily only take inspiration from other people's dotfiles, some code snippets are taken verbatim as I slowly work everything up. Thank you to the following people for all of your amazing work and sharing your own configurations! You have truly made things so much easier for me through this process ^-^
