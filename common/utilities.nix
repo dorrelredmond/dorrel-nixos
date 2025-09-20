@@ -32,6 +32,12 @@
     fastfetch
     btop
 
+    # Graphics
+    blender
+    scribus
+    darktable
+    inkscape
+
     # Fun Utilities
     sl
     lolcat
@@ -46,6 +52,8 @@
     imagemagick
     yt-dlp
     cava
+    handbrake
+    tenacity
     
     # Misc CLI Tools
     starship

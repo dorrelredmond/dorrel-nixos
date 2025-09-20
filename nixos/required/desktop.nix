@@ -61,9 +61,8 @@
     obsidian
 
     # Graphics
+    davinci-resolve
     krita
-    inkscape
-    darktable
     gimp3
 
     # KDE Packages
