@@ -7,7 +7,6 @@
   # Media Packages
   environment.systemPackages = with pkgs; [
     strawberry
-    mpv
     feh
     catppuccinifier-cli
   ];
