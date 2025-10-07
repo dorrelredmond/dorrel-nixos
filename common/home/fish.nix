@@ -55,7 +55,14 @@
       "mp4" = "mpv *.mp4";
       "vmpv" = "mpv *";
       "webm" = "mpv *.webm";
-      
+
+      "avilist" = "ls *.avi | sort -V > playlist.m3u";
+      "mkvlist" = "ls *.mkv | sort -V > playlist.m3u";
+      "movlist" = "ls *.mov | sort -V > playlist.m3u";
+      "mp3list" = "ls *.mp3 | sort -V > playlist.m3u";
+      "mp4list" = "ls *.mp4 | sort -V > playlist.m3u";
+      "webmlist" = "ls *.webm | sort -V > playlist.m3u";
+
     };
     
     shellAbbrs = {
