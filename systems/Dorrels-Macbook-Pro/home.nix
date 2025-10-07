@@ -1,4 +1,4 @@
-{ config, pkgs, user, ... }: 
+{ config, pkgs, ... }: 
 {
   imports = [
     ../../common/home
@@ -6,8 +6,8 @@
   ];
 
   home = {
-    username = user;
-    homeDirectory = "/home/${user}";
+    username = "dorrelredmond";
+    homeDirectory = "/Users/dorrelredmond";
     stateVersion = "25.05";
   };
 }
