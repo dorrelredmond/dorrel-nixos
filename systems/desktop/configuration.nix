@@ -9,6 +9,7 @@
     ../../nixos/optional/vr
     ../../nixos/optional/graphics/nvidia.nix
     ../../nixos/optional/gaming.nix
+    ../../nixos/optional/services.nix
   ];
 
   networking.hostName = "desktop";
