@@ -91,9 +91,10 @@
 
       # nix abbreviations
       ncg = "nix-collect-garbage";
-
       nrd = "sudo nixos-rebuild switch --flake .#desktop";
-      nrm = "sudo nixos-rebuild switch --flake .#macbook";
+      
+      # misc abbreviations
+      chwall = "swww img --transition-type any --transition-pos top-right"
     };
 
     functions = {
