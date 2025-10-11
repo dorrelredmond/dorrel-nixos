@@ -31,6 +31,8 @@
   };
 
   environment.systemPackages = with pkgs; [
+    cmake
+    
     # System Management
     home-manager
     font-manager

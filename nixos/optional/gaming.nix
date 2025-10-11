@@ -36,23 +36,23 @@
 
     # Games
     osu-lazer
-    superTux
-    superTuxKart
-    extremetuxracer
-    chromium-bsu
-    openarena
-    xonotic
-    gzdoom
-    enigma
+    #superTux
+    #superTuxKart
+    #extremetuxracer
+    #chromium-bsu
+    #openarena
+    #xonotic
+    #gzdoom
+    #enigma
 
     # Emulators
-    retroarch-full
-    ryubing
-    dolphin-emu
-    cemu
-    ppsspp
-    pcsx2
-    desmume
+    #retroarch-full
+    #ryubing
+    #dolphin-emu
+    #cemu
+    #ppsspp
+    #pcsx2
+    #desmume
     
   ];
 
