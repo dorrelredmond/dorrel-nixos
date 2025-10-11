@@ -94,7 +94,7 @@
       nrd = "sudo nixos-rebuild switch --flake .#desktop";
       
       # misc abbreviations
-      chwall = "swww img --transition-type any --transition-pos top-right"
+      chwall = "swww img --transition-type any --transition-pos top-right";
     };
 
     functions = {
