@@ -8,7 +8,6 @@
 
     #Email
     thunderbird
-    mailspring
 
     #Chat and Messaging
     (discord.override { withVencord = true; })
