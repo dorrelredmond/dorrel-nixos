@@ -93,8 +93,10 @@
       ncg = "nix-collect-garbage";
       nrd = "sudo nixos-rebuild switch --flake .#desktop";
       
-      # misc abbreviations
+      # wallpaper abbreviations
       chwall = "swww img --transition-type any --transition-pos top-right";
+      chwall1 = "swww img --transition-type any --transition-pos top-right -o HDMI-A-1";
+      chwall2 = "swww img --transition-type any --transition-pos top-right -o DP-1";
     };
 
     functions = {
