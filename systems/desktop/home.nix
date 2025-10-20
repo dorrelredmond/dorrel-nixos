@@ -2,7 +2,6 @@
 {
   imports = [
     ../../nixos/home/required
-    ../../nixos/home/optional/catppuccin.nix
   ];
 
   home = {

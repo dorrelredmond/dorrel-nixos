@@ -17,9 +17,6 @@
     ../../nixos/optional/vr
     ../../nixos/optional/gaming.nix
     ../../nixos/optional/services.nix
-    
-    # User Styles
-    ../../nixos/optional/catppuccin.nix
   ];
 
   networking.hostName = "desktop";
