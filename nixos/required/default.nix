@@ -3,7 +3,6 @@
         ./audio.nix
         ./bluetooth.nix
         ./boot.nix
-        ./catppuccin.nix
         ./communication.nix
         ./desktop.nix
         ./development.nix
