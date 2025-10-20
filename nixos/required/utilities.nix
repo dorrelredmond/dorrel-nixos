@@ -31,26 +31,39 @@
   };
 
   # Custom Fonts
-  fonts.packages = with pkgs; [
-    # Noto Fonts
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-cjk-serif
-    noto-fonts-color-emoji
-    noto-fonts-monochrome-emoji
+  fonts = {
+    packages = with pkgs; [
+      # Noto Fonts
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-emoji
+      noto-fonts-color-emoji
+      noto-fonts-monochrome-emoji
 
-    # Nerd Fonts
-    nerd-fonts.iosevka
-    nerd-fonts.fira-code
-    nerd-fonts.liberation
-    nerd-fonts.sauce-code-pro
-    nerd-fonts.mononoki
-    nerd-fonts.fantasque-sans-mono
-    nerd-fonts.hack
+      # Hans Sans Fonts
+      source-han-sans
+      source-han-sans-japanese
+      source-han-serif-japanese
 
-    # Misc Fonts
-    font-awesome
-  ];
+      # Nerd Fonts
+      nerd-fonts.iosevka
+      nerd-fonts.fira-code
+      nerd-fonts.liberation
+      nerd-fonts.sauce-code-pro
+      nerd-fonts.mononoki
+      nerd-fonts.fantasque-sans-mono
+      nerd-fonts.hack
+
+      # Misc Fonts
+      font-awesome
+    ];
+    
+    fontconfig.defaultFonts = {
+      serif = [ "Noto Serif" "Source Han Serif" ];
+      sansSerif = [ "Noto Sans" "Source Han Sans" ];
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     kitty # terminal emulatoror

@@ -44,6 +44,8 @@
       "llt" = "eza -lh -s time --no-quotes --time-style long-iso --group-directories-first --header --color --git --icons";
       "lltr" = "eza -lhr -s time --no-quotes --time-style long-iso --group-directories-first --header --color --git --icons";
 
+      "icat"="kitten icat";
+
       "png" = "feh -Z *.png";
       "jpg" = "feh -Z *.jpg";
       "jpeg" = "feh -Z *.jpeg";
