@@ -15,8 +15,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
-
     catppuccin.url = "github:catppuccin/nix";
     
     dolphin-overlay.url = "github:rumboon/dolphin-overlay";
