@@ -55,7 +55,6 @@
   environment.systemPackages = with pkgs; [
     kitty # terminal emulatoror
     qbittorrent
-    zathura # PDF viewer
 
     # System Information and Monitoring
     fastfetch

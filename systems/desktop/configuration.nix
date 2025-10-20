@@ -5,8 +5,9 @@
     ./hardware-configuration.nix
     ./mounts.nix
     ../../nixos/required
-    ../../nixos/optional/vr
     ../../nixos/optional/graphics/nvidia.nix
+    ../../nixos/optional/hyprland_kde
+    ../../nixos/optional/vr
     ../../nixos/optional/gaming.nix
     ../../nixos/optional/services.nix
   ];

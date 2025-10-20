@@ -11,14 +11,9 @@ in
   environment.systemPackages = with pkgs; [
     # Music
     spotify
-    strawberry
     
     # Video
     mpv
-    
-    # Images
-    feh
-    catppuccinifier-cli
   ];
 
   # Spicetify Configuration

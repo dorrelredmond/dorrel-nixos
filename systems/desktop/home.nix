@@ -2,6 +2,7 @@
 {
   imports = [
     ../../nixos/home/required
+    ../../nixos/home/option/hyprland_kde
   ];
 
   home = {
