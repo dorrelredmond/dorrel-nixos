@@ -1,7 +1,7 @@
 { config, pkgs, user, ... }: 
 {
   imports = [
-    ../../nixos/home
+    ../../nixos/home/required
   ];
 
   home = {
