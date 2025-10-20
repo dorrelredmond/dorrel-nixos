@@ -4,7 +4,6 @@
   imports = [
     ./hardware-configuration.nix
     ./mounts.nix
-    ../../common
     ../../nixos/required
     ../../nixos/optional/vr
     ../../nixos/optional/graphics/nvidia.nix

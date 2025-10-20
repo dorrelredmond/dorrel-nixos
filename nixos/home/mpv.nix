@@ -37,11 +37,12 @@
 
       ## Screenshots
       screenshot-format="png";
-      screenshot-dir="~Pictures/mpv";
+      screenshot-dir="~/Pictures/mpv";
       screenshot-template="%F-%p-%n";
       screenshot-high-bit-depth="no";
 
       ## Language Priority
+      
       ## Sub
       ## Add enm before eng for honorifics
       #slang=eng,en

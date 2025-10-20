@@ -13,8 +13,10 @@
     (discord.override { withVencord = true; })
     vesktop
     fluffychat
+    element-desktop
 
     # File Sharing
     dropbox
+    localsend
   ];
 }
