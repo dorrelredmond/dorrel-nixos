@@ -5,6 +5,6 @@
     settings = {
       userName = "dorrelredmond";
       userEmail = "dorrelredmond@gmail.com";
-    }
+    };
   };
 }
