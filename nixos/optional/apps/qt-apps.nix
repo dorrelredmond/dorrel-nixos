@@ -1,11 +1,8 @@
 { pkgs, ... }:
 {
-  # System Packages
+  # Qt-Based Packages
   environment.systemPackages = with pkgs; [
     # Music
     strawberry
-    
-    # Images
-    feh
   ];
 }
