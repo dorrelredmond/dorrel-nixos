@@ -31,7 +31,7 @@
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-xr, home-manager, catppuccin, dolphin-overlay, nix-darwin, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, catppuccin, dolphin-overlay, nix-darwin, ... } @ inputs:
 
   let
     user = "dorrel";
