@@ -10,11 +10,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-darwin = {
-      url = "github:nix-darwin/nix-darwin/master";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     catppuccin.url = "github:catppuccin/nix";
     
     dolphin-overlay.url = "github:rumboon/dolphin-overlay";
@@ -31,7 +26,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, dolphin-overlay, nix-darwin, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, catppuccin, dolphin-overlay, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -75,38 +70,8 @@
           }
         ];
       };
-    };
-    
-    # Build darwin flake using:
-    # $ sudo darwin-rebuild switch --flake .#macbook
-    darwinConfigurations = 
-    {
-      macbook = nix-darwin.lib.darwinSystem 
-      {
-        system = "x86_64-darwin";
-        specialArgs = { inherit inputs; };
-        modules = 
-        [ 
-          ./systems/Dorrels-Macbook-Pro/configuration.nix
 
-          # Home Manager Settings
-          home-manager.darwinModules.home-manager 
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "bak";
-            home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.users.dorrelredmond = 
-            {
-              imports = 
-              [
-                ./systems/Dorrels-Macbook-Pro/home.nix
-                catppuccin.homeModules.catppuccin
-              ];
-            };
-          }
-	      ];
-      };
+      ## Insert Additional Systems Here
     };
   };
 }
