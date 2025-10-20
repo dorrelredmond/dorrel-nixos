@@ -39,6 +39,8 @@
     kdePackages.qt6ct
     kdePackages.qtstyleplugin-kvantum
 
+    # Misc Packages
+    feh # minimal image viewer
     wayland-utils # Wayland utilities
     
     # Clipboard Utils

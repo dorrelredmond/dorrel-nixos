@@ -6,10 +6,20 @@
     ./mounts.nix
     ../../nixos/required
     ../../nixos/optional/graphics/nvidia.nix
-    ../../nixos/optional/hyprland_kde
+    
+    # Display Manager & Desktop Environment
+    ../../nixos/optional/displayManager/sddm.nix
+    ../../nixos/optional/environments/hyprland.nix
+    ../../nixos/optional/environments/kde.nix
+    ../../nixos/optional/apps/qt-apps.nix
+    
+    # Misc Packages
     ../../nixos/optional/vr
     ../../nixos/optional/gaming.nix
     ../../nixos/optional/services.nix
+    
+    # User Styles
+    ../../nixos/optional/catppuccin.nix
   ];
 
   networking.hostName = "desktop";

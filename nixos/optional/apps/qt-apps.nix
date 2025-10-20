@@ -7,6 +7,5 @@
     
     # Images
     feh
-    catppuccinifier-cli
   ];
 }

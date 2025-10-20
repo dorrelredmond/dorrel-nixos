@@ -2,7 +2,7 @@
 {
   imports = [
     ../../nixos/home/required
-    ../../nixos/home/optional/hyprland_kde
+    ../../nixos/home/optional/catppuccin.nix
   ];
 
   home = {

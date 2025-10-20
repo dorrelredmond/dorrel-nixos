@@ -1,11 +1,7 @@
 { pkgs, config, lib, inputs, ... }:
 {
   # Enable the KDE Plasma Desktop Environment
-  services = {
-    displayManager.sddm.enable = true;
-    displayManager.sddm.wayland.enable = true;
-    desktopManager.plasma6.enable = true;
-  };
+  services.desktopManager.plasma6.enable = true;
 
   # Exclude Specific KDE Packages
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
@@ -13,7 +9,7 @@
     kate
   ];
 
-    environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     # KDE Packages
     kdePackages.kcalc # Calculator
     kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
