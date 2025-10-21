@@ -6,6 +6,9 @@
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
 
+  # Kernel Parameters
+  boot.kernelParams = [ "nvidia-drm.fbdev=1" ];
+
   # nvidia hardware settings
   hardware.nvidia = {
     # Use the NVidia open source kernel module (not to be confused with the
