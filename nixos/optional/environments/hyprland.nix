@@ -64,7 +64,6 @@
 
     # Panels
     waybar
-    eww #widget system
     
     # Hyprland Packges
     hyprpolkitagent # PolicyKit
