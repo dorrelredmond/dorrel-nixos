@@ -2,10 +2,6 @@
 {
   programs.yazi = {
     enable = true;
-    flavors = {
-      dark = "catppuccin-mocha";
-      light = "catppucin-latte";
-    };
     settings = {
       manager = {
         ratio = [
