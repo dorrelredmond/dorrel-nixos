@@ -18,5 +18,8 @@
     gnomeExtensions.just-perfection
     gnomeExtensions.arc-menu
     gnomeExtensions.pop-shell
+
+    gnome-tweaks
+    gnome-extension-manager
   ];
 }
