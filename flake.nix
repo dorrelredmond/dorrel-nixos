@@ -24,9 +24,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, dolphin-overlay, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, catppuccin, dolphin-overlay, stylix, ... } @ inputs:
 
   let
     user = "dorrel";
@@ -44,7 +50,8 @@
         [
           ./systems/desktop/configuration.nix
           catppuccin.nixosModules.catppuccin
-
+          stylix.nixosModules.stylix
+          
           # Overlay Settings
           ({ pkgs, ... }:{
               nixpkgs.overlays = [
