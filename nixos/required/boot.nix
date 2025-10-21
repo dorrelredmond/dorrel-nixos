@@ -16,6 +16,6 @@
   console = {
     earlySetup = true;
     packages = with pkgs; [ terminus_font ];
-    font = "${pkgs.terminus_fonts}/share/consolefonts/ter-u28n.psf.gz";
+    font = "${pkgs.terminus_font}/share/consolefonts/ter-u28n.psf.gz";
   };
 }
