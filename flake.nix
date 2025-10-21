@@ -52,7 +52,7 @@
           ./systems/desktop/configuration.nix
           catppuccin.nixosModules.catppuccin
           stylix.nixosModules.stylix
-          nixos-hardware.nixosModules.common-gpu-nividia-nonprime
+          nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
           
           # Overlay Settings
           ({ pkgs, ... }:{
