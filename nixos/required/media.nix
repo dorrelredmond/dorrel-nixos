@@ -11,9 +11,11 @@ in
   environment.systemPackages = with pkgs; [
     # Music
     spotify
+    rmpc # Terminal Based Music Player
     
     # Video
     mpv
+    inputs.yt-x.packages."${system}".default # YouTube in the Terminal
   ];
 
   # Spicetify Configuration

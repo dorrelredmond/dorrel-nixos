@@ -31,6 +31,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    yt-x = {
+      url = "github:Benexl/yt-x";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs = { self, nixpkgs, nixos-hardware, home-manager, catppuccin, dolphin-overlay, stylix, ... } @ inputs:
