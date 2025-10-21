@@ -1,9 +1,5 @@
 #! /run/current-system/sw/bin/bash
-
-echo -e "\nAre you updating a nix or darwin install?"
-read installType
-
-echo -e "\nEnter System Configuration to use (i.e., desktop or macbook)"
+echo -e "\nEnter System Configuration to use (i.e., desktop or laptop)"
 read systemConfig
 
 echo -e "\nNotice\nRequesting Latest Build Configuration"
@@ -24,20 +20,8 @@ fi
 
 echo -e "\nNotice\nRequesting Updates: System Packages\n"
 
-if [ $installType == "nix" ]; then
-    if sudo nixos-rebuild switch --flake .#$systemConfig --upgrade; then
-        echo -e "\nRequest Confirmed\nUpdates: System Packages Acquisition Successful"
-    else
-        echo -e "\nNotice\nAn Error Has Occurred"
-        exit 1
-    fi
-elif [ $installType == "darwin" ]; then
-   if sudo darwin-rebuild switch --flake .#$systemConfig; then
-        echo -e "\nRequest Confirmed\nUpdates: System Packages Acquisition Successful"
-    else
-        echo -e "\nNotice\nAn Error Has Occurred"
-        exit 1
-    fi
+if sudo nixos-rebuild switch --flake .#$systemConfig --upgrade; then
+    echo -e "\nRequest Confirmed\nUpdates: System Packages Acquisition Successful"
 else
     echo -e "\nNotice\nAn Error Has Occurred"
     exit 1
