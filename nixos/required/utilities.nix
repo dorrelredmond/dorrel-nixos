@@ -84,7 +84,7 @@
     lolcat
         
     # File Management
-    yazi.override {_7zz = pkgs._7zz-rar; }
+    yazi
     unzip
     zip
 
