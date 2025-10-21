@@ -8,7 +8,7 @@
     ../../nixos/optional/graphics/nvidia.nix
     
     # Display Manager & Desktop Environment
-    ../../nixos/optional/loginManager/sddm.nix
+    ../../nixos/optional/loginManager/regreet.nix
     ../../nixos/optional/environments/hyprland.nix
     ../../nixos/optional/environments/gnome.nix
     ../../nixos/optional/environments/sway.nix
