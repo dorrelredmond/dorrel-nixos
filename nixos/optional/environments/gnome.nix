@@ -14,11 +14,12 @@
 
   # Gnome Specific Packages
   environment.systemPackages = with pkgs; [
+    # Extensions
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
     gnomeExtensions.arc-menu
-    gnomeExtensions.pop-shell
 
+    # Tools
     gnome-tweaks
     gnome-extension-manager
   ];
