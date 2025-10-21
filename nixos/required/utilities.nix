@@ -101,6 +101,7 @@
     eza
     bat
     wget
+    fzf
 
     # Android Debugging
     android-tools
