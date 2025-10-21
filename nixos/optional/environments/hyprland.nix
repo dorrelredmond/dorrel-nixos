@@ -32,8 +32,14 @@
   security.pam.services.hyprlock = {};
 
   environment.systemPackages = with pkgs; [
+    # Images & Documents
+    kdePackages.okular
+    kdePackages.gwenview
+    kdePackages.ffmpegthumbs
+    feh # minimal image viewer
 
     # File Management
+    kdePackages.ark
     kdePackages.filelight
     kdePackages.partitionmanager
     kdePackages.dolphin
@@ -51,9 +57,6 @@
     libsForQt5.qt5ct
     kdePackages.qt6ct
     kdePackages.qtstyleplugin-kvantum
-
-    # Misc Packages
-    feh # minimal image viewer
     
     # Notifications
     libnotify # notification daemon
