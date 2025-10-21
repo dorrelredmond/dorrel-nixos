@@ -84,7 +84,7 @@
     lolcat
         
     # File Management
-    ranger
+    yazi.override {_7zz = pkgs._7zz-rar; }
     unzip
     zip
 

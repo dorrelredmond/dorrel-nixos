@@ -103,6 +103,19 @@
 
     functions = {
 
+      # Press q to quit Yazi && CWD
+      # Press Q to quit Yazi w/o CWD
+      y = ''
+      function y
+        set tmp (mktemp -t "yazi-cwd.XXXXXX")
+        yazi $argv --cwd-file="$tmp"
+        if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+          builtin cd -- "$cwd"
+        end
+        rm -f -- "$tmp"
+      end
+      '';
+
       extract = '' 
       function extract
         switch $argv[1]
