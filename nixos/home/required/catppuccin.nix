@@ -27,7 +27,7 @@
     swaync.enable = true;
     thunderbird.enable = true;
     vesktop.enable = true;
-    vscode.enable = true;
+    vscode.profiles.default.enable = true;
     waybar.enable = true;
     wlogout.enable = true;
     yazi.enable = true;
