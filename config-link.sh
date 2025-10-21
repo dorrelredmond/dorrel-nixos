@@ -4,7 +4,7 @@ cd ~/.config
 
 echo -e "\nNotice\nRequesting Update: Required Links"
 
-if ln -sf ~/dorrel-nixos/common/home//required/config/* ./ ; then
+if ln -sf ~/dorrel-nixos/nixos/home/required/config/* ./ ; then
     echo -e "Request Confirmed\nUpdate: Required Links Acquisition Successful"
 else
     echo -e "\nNotice\nAn Error Has Occurred"
