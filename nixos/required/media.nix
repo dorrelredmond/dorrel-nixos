@@ -11,6 +11,7 @@ in
   environment.systemPackages = with pkgs; [
     # Music
     spotify
+    mpd # music player daemon (required backend for rmpc)
     rmpc # Terminal Based Music Player
     
     # Video
