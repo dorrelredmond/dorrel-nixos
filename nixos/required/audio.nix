@@ -56,6 +56,5 @@
     wireplumber
     playerctl
     pamixer
-    mpd
   ];
 }
