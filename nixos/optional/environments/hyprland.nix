@@ -41,32 +41,23 @@
 
     # Misc Packages
     feh # minimal image viewer
-    wayland-utils # Wayland utilities
     
-    # Clipboard Utils
-    wl-clipboard # Command-line copy/paste utilities for Wayland
-    wtype # fake keyboard/mouse input, window manager, etc for wayland
-    cliphist #clipboard manager
+    # Notifications
+    libnotify # notification daemon
+    swaynotificationcenter # notification daemon
 
-
+    # Panels
+    waybar
+    eww #widget system
+    
     # Hyprland Packges
     hyprpolkitagent # PolicyKit
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
     hyprsysteminfo
+    wlogout
     hyprsunset
     hyprcursor
-    grim
-    slurp
-    wlogout
-    waybar
-    eww #widget system
-    swaynotificationcenter # notification daemon
-    libnotify
-    swww # wallpaper manager
-    swappy # snapshot and editor tool
-    rofi # powerful app launcher and menu
-    rofimoji # emote picker using rofi
   ];
 }

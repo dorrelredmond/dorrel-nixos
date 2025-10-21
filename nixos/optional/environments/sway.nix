@@ -19,19 +19,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # Image Tools
-    grim # screenshot functionality
-    slurp # screenshot functionality
-    swappy # snapshot and editor tool
-    swww # wallpaper manager
     swayimg # image viewer
-    
-    # Text Tools
-    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
     
     # Utilities
     mako # notification system developed by swaywm maintainer
-    
 
   ];
 }

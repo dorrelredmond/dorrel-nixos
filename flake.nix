@@ -29,7 +29,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
   };
 
   outputs = { self, nixpkgs, home-manager, catppuccin, dolphin-overlay, stylix, ... } @ inputs:
