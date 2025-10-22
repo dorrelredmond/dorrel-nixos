@@ -1,7 +1,7 @@
 {
   services.mpd = {
     enable = true;
-    musicDirectory = "~/Music";
+    musicDirectory = "/mnt/media/Music";
 
     # Optional:
     network.listenAddress = "any"; # if you want to allow non-localhost connections
