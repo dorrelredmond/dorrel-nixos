@@ -2,36 +2,75 @@
   description = "Dorrels Nix Configurations";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    # Primary Package Suppliter
+    #
+    # you may also notice that I don't use a `github:` url for nixpkgs this is
+    # beacuse we can save 15mb of data by using the channel tarball this is not
+    # a major saving but it is nice to have
+    # https://deer.social/profile/did:plc:mojgntlezho4qt7uvcfkdndg/post/3loogwsoqok2w
+    nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
 
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    # Improved Hardware Support
+    nixos-hardware = {
+      type = "github";
+      owner = "NixOS";
+      repo = "nixos-hardware";
+    };
 
+    # Manager Userspace With Nix
     home-manager = {
-      url = "github:nix-community/home-manager";
+      type = "github";
+      owner = "nix-community";
+      repo = "home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    catppuccin.url = "github:catppuccin/nix";
+    ### System Tools
 
-    dolphin-overlay.url = "github:rumboon/dolphin-overlay";
-
-    spicetify-nix = {
-      url = "github:Gerg-L/spicetify-nix";
+    # Fix Dolphin on Hyprland
+    dolphin-overlay = {
+      type = "github";
+      owner = "rumboon";
+      repo = "dolphin-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Declarative Firefox Extensions
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      url = "github:nix-community/stylix";
+    ### Media Tools
+
+    # customize spotify
+    spicetify-nix = {
+      type = "github";
+      owner = "Gerg-L";
+      repo = "spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # YouTube in the terminal
     yt-x = {
-      url = "github:Benexl/yt-x";
+      type = "github";
+      owner = "Benexl";
+      repo = "yt-x";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    ### Theme Management
+    catppuccin = {
+      type = "github";
+      owner = "catppuccin";
+      repo = "nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    stylix = {
+      type = "github";
+      owner = "nix-community";
+      repo = "stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -56,17 +95,15 @@
           system = "x86_64-linux";
           specialArgs = {inherit inputs user;};
           modules = [
-            ./systems/desktop/configuration.nix
             catppuccin.nixosModules.catppuccin
             stylix.nixosModules.stylix
             nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
+            ./systems/desktop/configuration.nix
 
             # Overlay Settings
-            ({pkgs, ...}: {
-              nixpkgs.overlays = [
-                dolphin-overlay.overlays.default
-              ];
-            })
+            {
+              nixpkgs.overlays = [dolphin-overlay.overlays.default];
+            }
 
             # Home Manager Settings
             home-manager.nixosModules.home-manager
