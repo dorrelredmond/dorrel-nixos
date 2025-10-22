@@ -16,7 +16,7 @@
     r2modman # Thunderstore Mod Manager
     xivlauncher # Final Fantasy XIV Launcher
     modrinth-app
-    lutris
+    #lutris
 
     # Prism Launcher Settings for Minecraft
     (prismlauncher.override {
