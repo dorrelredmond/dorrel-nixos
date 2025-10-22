@@ -1,6 +1,6 @@
 {
   # Mount Media Drive
-  fileSystems."/mnt/media" = { 
+  fileSystems."/mnt/media" = {
     device = "/dev/disk/by-uuid/01DAFD6CEAD8E830";
     fsType = "ntfs-3g";
   };

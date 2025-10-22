@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-{
-
+{pkgs, ...}: {
   # Enable Appimage Support
   programs = {
     appimage = {
@@ -11,7 +9,7 @@
 
   # Enable ADB support
   programs.adb.enable = true;
-    
+
   # ADB udev rules
   services.udev.packages = [
     pkgs.android-udev-rules
@@ -23,8 +21,8 @@
   # Configure Flatpak
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
-    wantedBy = [ "multi-user.target" ];
-    path = [ pkgs.flatpak ];
+    wantedBy = ["multi-user.target"];
+    path = [pkgs.flatpak];
     script = ''
       flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     '';
@@ -58,10 +56,10 @@
       # Misc Fonts
       font-awesome
     ];
-    
+
     fontconfig.defaultFonts = {
-      serif = [ "Noto Serif" "Source Han Serif" ];
-      sansSerif = [ "Noto Sans" "Source Han Sans" ];
+      serif = ["Noto Serif" "Source Han Serif"];
+      sansSerif = ["Noto Sans" "Source Han Sans"];
     };
   };
 
@@ -82,7 +80,7 @@
     # Fun Utilities
     sl
     lolcat
-        
+
     # File Management
     yazi
     unzip
@@ -95,7 +93,7 @@
     cava
     handbrake
     tenacity
-    
+
     # Misc CLI Tools
     starship
     eza
@@ -105,15 +103,15 @@
 
     # Android Debugging
     android-tools
-    
+
     # System Management
     home-manager
     font-manager
     protonvpn-gui
-    
+
     # System Information and Monitoring
     hardinfo2
-    
+
     # File Management
     ntfs3g
     gvfs

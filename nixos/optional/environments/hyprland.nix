@@ -1,18 +1,23 @@
-{ pkgs, config, lib, inputs, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  inputs,
+  ...
+}: {
   # Environment Variables
   environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
 
   # Hyprland Window Manager Configuration
   programs.hyprland = {
-      enable = true;
-      xwayland.enable = true;
+    enable = true;
+    xwayland.enable = true;
   };
 
   # XDG Portal Settings
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
+    extraPortals = [pkgs.kdePackages.xdg-desktop-portal-kde];
   };
 
   nix.settings = {
@@ -20,7 +25,7 @@
     substituters = [
       "https://hyprland.cachix.org"
     ];
-    trusted-substituters = [  
+    trusted-substituters = [
       "https://hyprland.cachix.org"
     ];
     trusted-public-keys = [
@@ -57,14 +62,14 @@
     libsForQt5.qt5ct
     kdePackages.qt6ct
     kdePackages.qtstyleplugin-kvantum
-    
+
     # Notifications
     libnotify # notification daemon
     swaynotificationcenter # notification daemon
 
     # Panels
     waybar
-    
+
     # Hyprland Packges
     hyprpolkitagent # PolicyKit
     hyprlock # lock screen

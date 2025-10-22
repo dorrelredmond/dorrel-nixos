@@ -1,5 +1,9 @@
-{ config, pkgs, user, ... }: 
 {
+  config,
+  pkgs,
+  user,
+  ...
+}: {
   imports = [
     ../../nixos/home/required
   ];

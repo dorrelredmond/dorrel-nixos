@@ -1,5 +1,10 @@
-{ pkgs, config, lib, inputs, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  inputs,
+  ...
+}: {
   # Enable the KDE Plasma Desktop Environment
   services.desktopManager.plasma6.enable = true;
 
@@ -29,5 +34,5 @@
     kdePackages.qtsvg # svg icon support in Dolphin
     kdePackages.kio-fuse # mount remote filesystems via FUSE in Dolphin
     kdePackages.kio-extras # extra protocols support (sftp, fish and more) in Dolphin
- ];
+  ];
 }

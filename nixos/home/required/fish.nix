@@ -1,12 +1,13 @@
-{ config, pkgs, ... }:
-
 {
-	home.packages = with pkgs; [
-		fish
-	];
+  config,
+  pkgs,
+  ...
+}: {
+  home.packages = with pkgs; [
+    fish
+  ];
 
   programs.fish = {
-
     enable = true;
 
     loginShellInit = ''
@@ -44,7 +45,7 @@
       "llt" = "eza -lh -s time --no-quotes --time-style long-iso --group-directories-first --header --color --git --icons";
       "lltr" = "eza -lhr -s time --no-quotes --time-style long-iso --group-directories-first --header --color --git --icons";
 
-      "icat"="kitten icat";
+      "icat" = "kitten icat";
 
       "png" = "feh -Z *.png";
       "jpg" = "feh -Z *.jpg";
@@ -64,9 +65,8 @@
       "mp3list" = "ls *.mp3 | sort -V > playlist.m3u";
       "mp4list" = "ls *.mp4 | sort -V > playlist.m3u";
       "webmlist" = "ls *.webm | sort -V > playlist.m3u";
-
     };
-    
+
     shellAbbrs = {
       # cargo abbreviations
       cb = "cargo build";
@@ -75,26 +75,26 @@
       cr = "cargo run";
 
       # git abbreviations
-      gaa  = "git add -A";
-      ga   = "git add";
-      gbd  = "git branch --delete";
-      gb   = "git branch";
-      gc   = "git commit";
-      gcm  = "git commit -m";
+      gaa = "git add -A";
+      ga = "git add";
+      gbd = "git branch --delete";
+      gb = "git branch";
+      gc = "git commit";
+      gcm = "git commit -m";
       gcob = "git checkout -b";
-      gco  = "git checkout";
-      gd   = "git diff";
-      gl   = "git log";
-      gp   = "git push";
+      gco = "git checkout";
+      gd = "git diff";
+      gl = "git log";
+      gp = "git push";
       gpom = "git push origin main";
-      gs   = "git status";
-      gst  = "git stash";
-      gstp =  "git stash pop";
+      gs = "git status";
+      gst = "git stash";
+      gstp = "git stash pop";
 
       # nix abbreviations
       ncg = "nix-collect-garbage";
       nrd = "sudo nixos-rebuild switch --flake .#desktop";
-      
+
       # wallpaper abbreviations
       chwall = "swww img --transition-type any --transition-pos top-right";
       chwall1 = "swww img --transition-type any --transition-pos top-right -o HDMI-A-1";
@@ -102,167 +102,166 @@
     };
 
     functions = {
-
       # Press q to quit Yazi && CWD
       # Press Q to quit Yazi w/o CWD
       y = ''
-      function y
-        set tmp (mktemp -t "yazi-cwd.XXXXXX")
-        yazi $argv --cwd-file="$tmp"
-        if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-          builtin cd -- "$cwd"
+        function y
+          set tmp (mktemp -t "yazi-cwd.XXXXXX")
+          yazi $argv --cwd-file="$tmp"
+          if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+            builtin cd -- "$cwd"
+          end
+          rm -f -- "$tmp"
         end
-        rm -f -- "$tmp"
-      end
       '';
 
-      extract = '' 
-      function extract
-        switch $argv[1]
-            case "*.tar.bz2"
-                tar xjf $argv[1]
-
-            case "*.tar.gz"
-                tar xzf $argv[1]
-
-            case "*.bz2"
-                bunzip2 $argv[1]
-
-            case "*.rar"
-                unrar e $argv[1]
-
-            case "*.gz"
-                gunzip $argv[1]
-
-            case "*.tar"
-                tar xf $argv[1]
-
-            case "*.tbz2"
-                tar xjf $argv[1]
-
-            case "*.tgz"
-                tar xzf $argv[1]
-
-            case "*.zip"
-                unzip $argv[1]
-
-            case "*.Z"
-                uncompress $argv[1]
-
-            case "*.7z"
-                7z x $argv[1]
-
-            case "*"
-                echo "unknown extension: $argv[1]"
-        end
-      end
-      '';
-
-      extracttodir = '' 
-      function extracttodir
+      extract = ''
+        function extract
           switch $argv[1]
               case "*.tar.bz2"
-                  tar -xjf $argv[1] -C "$argv[2]"
+                  tar xjf $argv[1]
 
               case "*.tar.gz"
-                  tar -xzf $argv[1] -C "$argv[2]"
+                  tar xzf $argv[1]
+
+              case "*.bz2"
+                  bunzip2 $argv[1]
 
               case "*.rar"
-                  unrar x $argv[1] "$argv[2]/"
+                  unrar e $argv[1]
+
+              case "*.gz"
+                  gunzip $argv[1]
 
               case "*.tar"
-                  tar -xf $argv[1] -C "$argv[2]"
+                  tar xf $argv[1]
 
               case "*.tbz2"
-                  tar -xjf $argv[1] -C "$argv[2]"
+                  tar xjf $argv[1]
 
               case "*.tgz"
-                  tar -xzf $argv[1] -C "$argv[2]"
+                  tar xzf $argv[1]
 
               case "*.zip"
-                  unzip $argv[1] -d $argv[2]
+                  unzip $argv[1]
+
+              case "*.Z"
+                  uncompress $argv[1]
 
               case "*.7z"
-                  7za e -y $argv[1] -o"$argv[2]"
+                  7z x $argv[1]
 
               case "*"
                   echo "unknown extension: $argv[1]"
           end
-      end
-      '';
-      
-      lsr = ''
-      function lsr
-        ls | rg -i $argv[1]
-      end
-      '';
-
-      mkcd = '' 
-      function mkcd --argument name
-        mkdir -p $name
-        cd $name
-      end
-      '';
-
-      num = '' 
-      function num 
-        ls -1 $argv | wc -l;
-      end
-      '';
-
-      wg = '' 
-      function wg
-        set -l num_args (count $argv)
-
-        if test $num_args -eq 1
-            wget -c $argv[1]
-
-        else if test $num_args -eq 2
-            # arg1 = name, arg2 = url
-            wget -c -O $argv[1] $argv[2]
-
-        else
-            echo "Incorrect number of arguments"
         end
-      end
       '';
 
-      ytarchive = '' 
-      function ytarchive
-      yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
-      --sponsorblock-mark "all" \
-      --geo-bypass \
-      --sub-langs 'all' \
-      --embed-subs \
-      --embed-metadata \
-      --convert-subs 'srt' \
-      --download-archive $argv[1].txt https://www.youtube.com/$argv[1]/videos; 
-      end
+      extracttodir = ''
+        function extracttodir
+            switch $argv[1]
+                case "*.tar.bz2"
+                    tar -xjf $argv[1] -C "$argv[2]"
+
+                case "*.tar.gz"
+                    tar -xzf $argv[1] -C "$argv[2]"
+
+                case "*.rar"
+                    unrar x $argv[1] "$argv[2]/"
+
+                case "*.tar"
+                    tar -xf $argv[1] -C "$argv[2]"
+
+                case "*.tbz2"
+                    tar -xjf $argv[1] -C "$argv[2]"
+
+                case "*.tgz"
+                    tar -xzf $argv[1] -C "$argv[2]"
+
+                case "*.zip"
+                    unzip $argv[1] -d $argv[2]
+
+                case "*.7z"
+                    7za e -y $argv[1] -o"$argv[2]"
+
+                case "*"
+                    echo "unknown extension: $argv[1]"
+            end
+        end
       '';
 
-      ytarchivevideo = '' 
-      function ytarchivevideo
+      lsr = ''
+        function lsr
+          ls | rg -i $argv[1]
+        end
+      '';
+
+      mkcd = ''
+        function mkcd --argument name
+          mkdir -p $name
+          cd $name
+        end
+      '';
+
+      num = ''
+        function num
+          ls -1 $argv | wc -l;
+        end
+      '';
+
+      wg = ''
+        function wg
+          set -l num_args (count $argv)
+
+          if test $num_args -eq 1
+              wget -c $argv[1]
+
+          else if test $num_args -eq 2
+              # arg1 = name, arg2 = url
+              wget -c -O $argv[1] $argv[2]
+
+          else
+              echo "Incorrect number of arguments"
+          end
+        end
+      '';
+
+      ytarchive = ''
+        function ytarchive
         yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
-      --sponsorblock-mark "all" \
-      --geo-bypass \
-      --sub-langs 'all' \
-      --embed-metadata \
-      --convert-subs 'srt' \
-      --download-archive $argv[1] $argv[2]; 
-      end
+        --sponsorblock-mark "all" \
+        --geo-bypass \
+        --sub-langs 'all' \
+        --embed-subs \
+        --embed-metadata \
+        --convert-subs 'srt' \
+        --download-archive $argv[1].txt https://www.youtube.com/$argv[1]/videos;
+        end
       '';
 
-      ytd = '' 
-      function ytd
-      yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
-      --sponsorblock-mark "all" \
-      --geo-bypass \
-      --sub-langs 'all' \
-      --embed-subs \
-      --embed-metadata \
-      --convert-subs 'srt' \
-      $argv
-      end
+      ytarchivevideo = ''
+        function ytarchivevideo
+          yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
+        --sponsorblock-mark "all" \
+        --geo-bypass \
+        --sub-langs 'all' \
+        --embed-metadata \
+        --convert-subs 'srt' \
+        --download-archive $argv[1] $argv[2];
+        end
+      '';
+
+      ytd = ''
+        function ytd
+        yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
+        --sponsorblock-mark "all" \
+        --geo-bypass \
+        --sub-langs 'all' \
+        --embed-subs \
+        --embed-metadata \
+        --convert-subs 'srt' \
+        $argv
+        end
       '';
 
       ytaudio = ''

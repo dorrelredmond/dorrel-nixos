@@ -1,15 +1,17 @@
-{ pkgs, config, ... }:
 {
-  services.greetd = {                                                      
-    enable = true;                                                         
-    settings = {                                                           
-      default_session = {                                                  
+  pkgs,
+  config,
+  ...
+}: {
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
         command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd hyprland";
-        user = "greeter";                                                  
-      };                                                                   
-    };                                                                     
+        user = "greeter";
+      };
+    };
   };
-
 
   # this is a life saver.
   # literally no documentation about this anywhere.

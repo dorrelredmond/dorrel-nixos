@@ -1,7 +1,10 @@
-{ pkgs, config, ... }:
 {
+  pkgs,
+  config,
+  ...
+}: {
   security.rtkit.enable = true;
-  
+
   # Configure Pipewire for Audio
   services = {
     pulseaudio.enable = false;
@@ -49,11 +52,11 @@
       }
     ];
   };
-  
+
   # Audio Related Packages
   environment.systemPackages = with pkgs; [
     pavucontrol # audio controls
-    qpwgraph  # PipeWire graph manager
+    qpwgraph # PipeWire graph manager
     wireplumber
     playerctl
     pamixer

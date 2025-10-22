@@ -1,5 +1,8 @@
-{ pkgs, config, ... }:
 {
+  pkgs,
+  config,
+  ...
+}: {
   # Configure WiVRn for OpenXR streaming to standalone headsets (i.e., Quest 3)
   services.wivrn = {
     enable = true;
@@ -17,7 +20,7 @@
     config = {
       enable = true;
       json = {
-        application = [ pkgs.wlx-overlay-s ];
+        application = [pkgs.wlx-overlay-s];
         scale = 0.8; # 20% foveation scaling
         bitrate = 120000000; # 120 Mbit/s
         encoders = [

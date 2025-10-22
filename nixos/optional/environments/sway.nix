@@ -1,5 +1,9 @@
-{ config, pkgs, lib, ... }:
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   # enable Sway window manager
   programs.sway = {
     enable = true;
@@ -9,7 +13,7 @@
   security.pam.services.swaylock = {};
   security.polkit.enable = true;
 
-  # Enable the gnome-keyring secrets vault. 
+  # Enable the gnome-keyring secrets vault.
   # Will be exposed through DBus to programs willing to store secrets.
   services.gnome.gnome-keyring.enable = true;
 
@@ -20,9 +24,8 @@
 
   environment.systemPackages = with pkgs; [
     swayimg # image viewer
-    
+
     # Utilities
     mako # notification system developed by swaywm maintainer
-
   ];
 }

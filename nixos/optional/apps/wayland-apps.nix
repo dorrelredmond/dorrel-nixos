@@ -1,10 +1,9 @@
-{pkgs, ... }:
-{
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # Menus
     rofi # powerful app launcher and menu
     rofimoji # emote picker using rofi
-    
+
     # Image Tools
     grim # screenshot functionality
     slurp # screenshot functionality

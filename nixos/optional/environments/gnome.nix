@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   services.desktopManager.gnome.enable = true;
 
   # To disable installing GNOME's suite of applications
@@ -8,7 +11,7 @@
   #services.gnome.core-developer-tools.enable = false;
   #services.gnome.games.enable = false;
   environment.gnome.excludePackages = with pkgs; [
-    gnome-tour 
+    gnome-tour
     gnome-user-docs
   ];
 

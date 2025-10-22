@@ -1,8 +1,7 @@
 {
   description = "Dorrels Nix Configurations";
 
-  inputs = 
-  {
+  inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -13,7 +12,7 @@
     };
 
     catppuccin.url = "github:catppuccin/nix";
-    
+
     dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
     spicetify-nix = {
@@ -35,55 +34,56 @@
       url = "github:Benexl/yt-x";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, home-manager, catppuccin, dolphin-overlay, stylix, ... } @ inputs:
-
-  let
+  outputs = {
+    self,
+    nixpkgs,
+    nixos-hardware,
+    home-manager,
+    catppuccin,
+    dolphin-overlay,
+    stylix,
+    ...
+  } @ inputs: let
     user = "dorrel";
-  in 
-  {
-
+  in {
     # NixOS Configurations
-    nixosConfigurations = 
-    {
-      desktop = nixpkgs.lib.nixosSystem 
-      {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs user; };
-        modules = 
-        [
-          ./systems/desktop/configuration.nix
-          catppuccin.nixosModules.catppuccin
-          stylix.nixosModules.stylix
-          nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
-          
-          # Overlay Settings
-          ({ pkgs, ... }:{
-              nixpkgs.overlays = [
-                  dolphin-overlay.overlays.default
-              ];
-          })
+    nixosConfigurations = {
+      desktop =
+        nixpkgs.lib.nixosSystem
+        {
+          system = "x86_64-linux";
+          specialArgs = {inherit inputs user;};
+          modules = [
+            ./systems/desktop/configuration.nix
+            catppuccin.nixosModules.catppuccin
+            stylix.nixosModules.stylix
+            nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
 
-          # Home Manager Settings
-          home-manager.nixosModules.home-manager 
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "bak";
-            home-manager.extraSpecialArgs = { inherit inputs user; };
-            home-manager.users.${user} = 
-            {
-              imports = 
-              [
-                ./systems/desktop/home.nix 
-                catppuccin.homeModules.catppuccin
+            # Overlay Settings
+            ({pkgs, ...}: {
+              nixpkgs.overlays = [
+                dolphin-overlay.overlays.default
               ];
-            };
-          }
-        ];
-      };
+            })
+
+            # Home Manager Settings
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "bak";
+              home-manager.extraSpecialArgs = {inherit inputs user;};
+              home-manager.users.${user} = {
+                imports = [
+                  ./systems/desktop/home.nix
+                  catppuccin.homeModules.catppuccin
+                ];
+              };
+            }
+          ];
+        };
 
       ## Insert Additional Systems Here
     };

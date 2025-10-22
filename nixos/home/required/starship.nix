@@ -1,8 +1,11 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
-		starship
-	];
+    starship
+  ];
 
   programs.starship = {
     enable = true;
@@ -96,7 +99,6 @@
         mantle = "#1e2030";
         crust = "#181926";
       };
-
 
       palettes.catppuccin_mocha = {
         rosewater = "#f5e0dc";

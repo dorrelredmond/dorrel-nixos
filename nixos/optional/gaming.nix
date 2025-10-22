@@ -1,5 +1,8 @@
-{ pkgs, config, ... }: 
 {
+  pkgs,
+  config,
+  ...
+}: {
   # Enable Gamemode
   programs.gamemode.enable = true;
 
@@ -7,7 +10,7 @@
   virtualisation.waydroid.enable = true;
 
   # Gaming Related Packages
-  environment.systemPackages = with pkgs; [    
+  environment.systemPackages = with pkgs; [
     # Game Launchers
     heroic # 3rd-Party Games Launcher
     r2modman # Thunderstore Mod Manager
@@ -17,15 +20,15 @@
 
     # Prism Launcher Settings for Minecraft
     (prismlauncher.override {
-     # Add binary required by some mod
-     additionalPrograms = [ffmpeg];
+      # Add binary required by some mod
+      additionalPrograms = [ffmpeg];
 
-     # Change Java runtimes available to Prism Launcher
-     jdks = [
-       temurin-jre-bin-8 # Eclipse Teurmin openJDK version 8
-       temurin-jre-bin-17 # Eclipse Teurmin openJDK version 17
-       temurin-jre-bin # Eclipse Teurmin openJDK version 21
-     ];
+      # Change Java runtimes available to Prism Launcher
+      jdks = [
+        temurin-jre-bin-8 # Eclipse Teurmin openJDK version 8
+        temurin-jre-bin-17 # Eclipse Teurmin openJDK version 17
+        temurin-jre-bin # Eclipse Teurmin openJDK version 21
+      ];
     })
 
     # Gaming Utilities
@@ -53,7 +56,6 @@
     #ppsspp
     #pcsx2
     #desmume
-    
   ];
 
   # Steam Settings
