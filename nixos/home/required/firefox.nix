@@ -128,7 +128,7 @@
         "datareporting.policy.dataSubmissionPolicyAcceptedVersion" = 2;
         "dom.security.https_only_mode" = true;
         "dom.security.https_only_mode_ever_enabled" = true;
-        "browser.contentblocking.category" = "strict";
+        "browser.contentblocking.category" = "standard";
 
         # Telemetry Settings
         "browser.newtabpage.activity-stream.feeds.telemetry" = false;
