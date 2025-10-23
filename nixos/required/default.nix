@@ -14,6 +14,7 @@
     ./communication.nix
     ./desktop.nix
     ./development.nix
+    ./lix.nix
     ./locale.nix
     ./media.nix
     ./networking.nix
