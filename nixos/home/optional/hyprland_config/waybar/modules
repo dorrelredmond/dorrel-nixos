@@ -7,7 +7,8 @@
 	    "format-icons": [
     		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
     	],
-    	"on-click-right": "kitty --class=floating_waybar -e nmtui"
+    	//"on-click-right": "kitty --class=floating_waybar -e nmtui"
+		"on-click-right": "~/.config/rofi/scripts/rofi-wifi-menu.sh"
     },
 
     "tray": {

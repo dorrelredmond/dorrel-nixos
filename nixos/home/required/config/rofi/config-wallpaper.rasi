@@ -1,0 +1,54 @@
+/* Rofi Config for Wallpaper Selection */
+
+@import "~/.config/rofi/config.rasi"  
+
+window {
+  fullscreen:         true;
+  children:           [ wrap, listview-split];
+}
+
+wrap {
+  expand:       false;
+  orientation:  vertical;
+  children:     [ inputbar, message ];
+}
+
+entry {
+  placeholder: "  Search Wallpapers";
+}
+
+element {
+  orientation:    vertical;
+  children:       [element-icon, element-text ];
+}
+
+element-icon {
+  size:             calc(((100% - 8em) / 7 ));
+  horizontal-align: 0.5;
+  vertical-align:   0.5;
+}
+
+element-text {
+  horizontal-align: 0.5;
+  vertical-align:   0.5;
+  padding:          0.2em;
+}
+
+/* ----- Media Split ----- */
+
+listview-split {
+  orientation:  horizontal;
+  children:     [listview, icon-current-entry];
+}
+
+listview {
+  flow:     horizontal;
+  columns:  4;
+}
+
+// preview widget
+icon-current-entry {
+  expand:  true;
+  size:    80%;
+}
+

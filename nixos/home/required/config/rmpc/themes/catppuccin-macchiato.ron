@@ -62,13 +62,13 @@
             prop: (kind: Property(Artist), style: (fg: "#b7bdf8"), 
                 default: (kind: Text("Unknown"))
             ),
-            width: "70%",
+            width: "30%",
         ),
         (
             prop: (kind: Property(Title), style: (fg: "#7dc4e4"), 
                 default: (kind: Text("Unknown"))
             ),
-            width: "30%",
+            width: "70%",
         ),
     ],
     browser_song_format: [
