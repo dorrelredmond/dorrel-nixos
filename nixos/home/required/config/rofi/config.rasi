@@ -15,6 +15,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 
+/* Color Scheme Selection */
 // @import "themes/catppuccin-latte"
 // @import "themes/catppuccin-frappe"
 // @import "themes/catppuccin-macchiato"
