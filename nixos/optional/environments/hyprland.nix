@@ -75,7 +75,7 @@
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
-    hyprsysteminfo
+    #hyprsysteminfo
     wlogout
     hyprsunset
     hyprcursor

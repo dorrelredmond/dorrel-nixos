@@ -1,6 +1,6 @@
 {
   imports = [
     ./vr.nix
-    ./wivrn.nix
+    #./wivrn.nix # temp remove wivrn
   ];
 }
