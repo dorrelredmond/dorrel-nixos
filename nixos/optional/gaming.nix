@@ -36,6 +36,7 @@
     protonup-qt # GUI Proton Installer
     mangohud
     waydroid-helper
+    sgdboop
 
     # Games
     osu-lazer
