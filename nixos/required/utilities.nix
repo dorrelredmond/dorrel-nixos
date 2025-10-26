@@ -10,11 +10,6 @@
   # Enable ADB support
   programs.adb.enable = true;
 
-  # ADB udev rules
-  services.udev.packages = [
-    pkgs.android-udev-rules
-  ];
-
   services.udisks2.enable = true;
   services.printing.enable = true;
 
