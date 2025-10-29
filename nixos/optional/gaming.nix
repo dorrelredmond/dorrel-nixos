@@ -32,7 +32,7 @@
     })
 
     # Gaming Utilities
-    protonup # CLI Proton Installer
+    protonup-ng # CLI Proton Installer
     protonup-qt # GUI Proton Installer
     mangohud
     waydroid-helper
