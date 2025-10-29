@@ -39,7 +39,7 @@
   environment.systemPackages = with pkgs; [
     # Images & Documents
     kdePackages.okular # document viewer
-    #kdePackages.gwenview # image viewer
+    kdePackages.gwenview # image viewer
     feh # minimal image viewer
     grim # screenshot functionality
     slurp # screenshot functionality
