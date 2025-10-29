@@ -11,12 +11,17 @@
 
   # Gaming Related Packages
   environment.systemPackages = with pkgs; [
-    # Game Launchers
+    # Generic Game Launchers
     heroic # 3rd-Party Games Launcher
     r2modman # Thunderstore Mod Manager
+    
+    # Individual Games/Launchers
+    osu-lazer
+    vintagestory # voxel sandbox adventure
     xivlauncher # Final Fantasy XIV Launcher
-    modrinth-app
-    #lutris
+    airshipper # Veloren Launcher
+    luanti # formerly Minetest
+    modrinth-app # Minecraft Launcher
 
     # Prism Launcher Settings for Minecraft
     (prismlauncher.override {
@@ -37,17 +42,6 @@
     mangohud
     waydroid-helper
     sgdboop
-
-    # Games
-    osu-lazer
-    #superTux
-    #superTuxKart
-    #extremetuxracer
-    #chromium-bsu
-    #openarena
-    #xonotic
-    #gzdoom
-    #enigma
 
     # Emulators
     #retroarch-full
