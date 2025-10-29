@@ -8,7 +8,6 @@
     # Communication
     kdePackages.konversation # IRC client
     kdePackages.tokodon # Mastodon client
-    kdePackages.neochat # matrix client
     
     # Misc
     tellico # collection management
