@@ -38,7 +38,7 @@
     # Office and Productivity
     libreoffice
     obsidian
-    (calibre.override { unrarSupport = true; })
+    calibre
 
     # Graphics
     davinci-resolve
