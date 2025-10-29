@@ -38,10 +38,13 @@
 
   environment.systemPackages = with pkgs; [
     # Images & Documents
-    kdePackages.okular
-    kdePackages.gwenview
-    kdePackages.ffmpegthumbs
+    kdePackages.okular # document viewer
+    kdePackages.gwenview # image viewer
     feh # minimal image viewer
+    grim # screenshot functionality
+    slurp # screenshot functionality
+    swappy # snapshot and editor tool
+    swww # wallpaper manager
 
     # File Management
     kdePackages.ark
@@ -52,6 +55,7 @@
     kdePackages.qtsvg # svg icon support in Dolphin
     kdePackages.kio-fuse # mount remote filesystems via FUSE in Dolphin
     kdePackages.kio-extras # extra protocols support (sftp, fish and more) in Dolphin
+    kdePackages.ffmpegthumbs
 
     # User Styles
     catppuccin
@@ -63,21 +67,34 @@
     kdePackages.qt6ct
     kdePackages.qtstyleplugin-kvantum
 
+    # Menus
+    rofi # powerful app launcher and menu
+    rofimoji # emote picker using rofi
+
+    # Clipboard Utils
+    wl-clipboard # Command-line copy/paste utilities for Wayland
+    wtype # fake keyboard/mouse input, window manager, etc for wayland
+    cliphist #clipboard manager
+    
     # Notifications
     libnotify # notification daemon
     swaynotificationcenter # notification daemon
 
-    # Panels
+    # Panels & Widgets
     waybar
+    quickshell
 
     # Hyprland Packges
     hyprpolkitagent # PolicyKit
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
-    #hyprsysteminfo
     wlogout
     hyprsunset
     hyprcursor
+
+    # Misc Packages
+    wayland-utils # Wayland utilities
+    kdePackages.kcalc # Calculator
   ];
 }

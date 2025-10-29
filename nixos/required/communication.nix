@@ -8,11 +8,12 @@
     # Web Browsers
     firefox
     chromium
+    qutebrowser
 
-    #Email
+    # Email
     thunderbird
 
-    #Chat and Messaging
+    # Chat and Messaging
     (discord.override {withVencord = true;})
     vesktop
     fluffychat
