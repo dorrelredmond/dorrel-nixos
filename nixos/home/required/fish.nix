@@ -47,9 +47,10 @@
 
       "icat" = "kitten icat";
 
-      "png" = "feh -Z *.png";
-      "jpg" = "feh -Z *.jpg";
-      "jpeg" = "feh -Z *.jpeg";
+      "feh" = "feh -Z -d --scale-down";
+      "png" = "feh -Z -d --scale-down *.png";
+      "jpg" = "feh -Z -d --scale-down *.jpg";
+      "jpeg" = "feh -Z -d --scale-down *.jpeg";
 
       "avi" = "mpv *.avi";
       "mkv" = "mpv *.mkv";
