@@ -2,7 +2,7 @@
   description = "Dorrels Nix Configurations";
 
   inputs = {
-    # Primary Package Suppliter
+    # Primary Package Supplier
     #
     # you may also notice that I don't use a `github:` url for nixpkgs this is
     # beacuse we can save 15mb of data by using the channel tarball this is not
@@ -108,15 +108,17 @@
             # Home Manager Settings
             home-manager.nixosModules.home-manager
             {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.backupFileExtension = "bak";
-              home-manager.extraSpecialArgs = {inherit inputs user;};
-              home-manager.users.${user} = {
-                imports = [
-                  ./systems/desktop/home.nix
-                  catppuccin.homeModules.catppuccin
-                ];
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                backupFileExtension = "bak";
+                extraSpecialArgs = {inherit inputs user;};
+                users.${user} = {
+                  imports = [
+                    ./systems/desktop/home.nix
+                    catppuccin.homeModules.catppuccin
+                  ];
+                };
               };
             }
           ];
