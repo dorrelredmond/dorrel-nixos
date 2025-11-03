@@ -17,28 +17,11 @@
 
 #waybar {
   color: @text; /* Primary text color */
-  /*background: transparent;*/ /* Semi-transparent background */
-  background: @base; /* Semi-transparent background */
-  padding: 0px;
+  background: @base;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border: 2px solid @mauve;
+  border: 1px solid @mauve;
 }
-
-.modules-left, .modules-center, .modules-right {
-  background: transparent;
-
-}
-
-/*.modules-left, .modules-center, .modules-right {
-  background: @base;
- 	border: 2px solid @mauve;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 4px;
-	padding-left: 4px;
-	border-radius: 0px;
-}*/
 
 /* -------------------------
    Workspaces Module Styles
