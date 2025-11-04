@@ -1,0 +1,35 @@
+[mgr]
+linemode = "size"
+ratio = [1, 4, 3]
+show_hidden = true
+show_symlink = true
+sort_by = "natural"
+sort_dir_first = true
+sort_reverse = false
+sort_sensitive = false
+
+[preview]
+cache_dir = ""
+image_filter = "lanczos3"
+image_quality = 90
+max_height = 1440
+max_width = 2560
+tab_size = 1
+ueberzug_offset = [0, 0, 0, 0]
+ueberzug_scale = 1
+wrap = "yes"
+
+[tasks]
+bizarre_retry = 5
+macro_workers = 10
+micro_workers = 5
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
