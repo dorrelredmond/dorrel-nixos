@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   # GTK Based Packages
-  environment.systemPackages = with Pkgs; [
+  environment.systemPackages = with pkgs; [
+    pavucontrol # audio mixer
   ];
 }

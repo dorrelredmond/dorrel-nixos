@@ -5,6 +5,10 @@
   inputs,
   ...
 }: {
+  imports = [
+    ../apps/qt-apps.nix
+  ];
+  
   # Environment Variables
   environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
 
@@ -38,28 +42,25 @@
 
   environment.systemPackages = with pkgs; [
     # Images & Documents
-    kdePackages.okular # document viewer
-    kdePackages.gwenview # image viewer
-    feh # minimal image viewer
+    zathura # minimal pdf viewer
+    imv # miniminal image viewer
     grim # screenshot functionality
     slurp # screenshot functionality
     swappy # snapshot and editor tool
     swww # wallpaper manager
 
     # File Management
-    kdePackages.ark
-    kdePackages.filelight
     kdePackages.partitionmanager
-    kdePackages.dolphin
-    kdePackages.dolphin-plugins
-    kdePackages.qtsvg # svg icon support in Dolphin
-    kdePackages.kio-fuse # mount remote filesystems via FUSE in Dolphin
-    kdePackages.kio-extras # extra protocols support (sftp, fish and more) in Dolphin
-    kdePackages.ffmpegthumbs
+    lxqt.pcmanfm-qt
+    lxqt.lxqt-archiver
+    lxqt.qtxdg-tools
+    lxqt.lxqt-menu-data
+    shared-mime-info
+    kdePackages.qtimageformats
 
     # User Styles
     catppuccin
-    catppuccin-kde
+    catppuccin-qt5ct
     papirus-folders
     papirus-icon-theme
     nwg-look
@@ -95,6 +96,7 @@
 
     # Misc Packages
     wayland-utils # Wayland utilities
-    kdePackages.kcalc # Calculator
+    speedcrunch # Calculator
+    lxqt.pavucontrol-qt # Pulseaudio Mixer
   ];
 }

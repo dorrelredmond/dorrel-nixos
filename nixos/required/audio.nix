@@ -55,7 +55,6 @@
 
   # Audio Related Packages
   environment.systemPackages = with pkgs; [
-    pavucontrol # audio controls
     qpwgraph # PipeWire graph manager
     wireplumber
     playerctl

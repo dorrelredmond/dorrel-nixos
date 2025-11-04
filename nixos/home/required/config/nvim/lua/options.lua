@@ -6,6 +6,11 @@ vim.opt.scrolloff = 10              -- no less than 10 lines even if you keep sc
 vim.opt.swapfile = false            -- no .swp file
 
 -- Indentation
+vim.opt.tabstop = 4 -- the number of visual spaces per TAB
+vim.opt.softtabstop = 4 -- number of spaces in tab when editing
+vim.opt.shiftwidth = 4 -- insert 4 spaces on a tab
+vim.opt.expandtab = true -- tabs are spaces, mainly because of Python
+
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "py", "lua" },
 	callback = function()

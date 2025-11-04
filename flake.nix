@@ -28,12 +28,12 @@
     ### System Tools
 
     # Fix Dolphin on Hyprland
-    dolphin-overlay = {
-      type = "github";
-      owner = "rumboon";
-      repo = "dolphin-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #dolphin-overlay = {
+    #  type = "github";
+    #  owner = "rumboon";
+    #  repo = "dolphin-overlay";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
 
     # Declarative Firefox Extensions
     firefox-addons = {
@@ -81,7 +81,6 @@
     nixos-hardware,
     home-manager,
     catppuccin,
-    dolphin-overlay,
     stylix,
     ...
   } @ inputs: let
@@ -101,9 +100,9 @@
             ./systems/desktop/configuration.nix
 
             # Overlay Settings
-            {
-              nixpkgs.overlays = [dolphin-overlay.overlays.default];
-            }
+            #{
+            #  nixpkgs.overlays = [dolphin-overlay.overlays.default];
+            #}
 
             # Home Manager Settings
             home-manager.nixosModules.home-manager

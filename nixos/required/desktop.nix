@@ -41,6 +41,10 @@
     calibre
 
     # Graphics
+    blender
+    scribus
+    darktable
+    inkscape
     davinci-resolve
     krita
     gimp3

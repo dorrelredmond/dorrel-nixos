@@ -10,8 +10,12 @@
   # Enable ADB support
   programs.adb.enable = true;
 
-  services.udisks2.enable = true;
-  services.printing.enable = true;
+  services = {
+    udisks2.enable = true;
+    devmon.enable = true;
+    gvfs.enable = true;
+    printing.enable = true;
+  };
 
   # Configure Flatpak
   services.flatpak.enable = true;
@@ -57,18 +61,12 @@
   };
 
   environment.systemPackages = with pkgs; [
-    kitty # terminal emulatoror
+    kitty # terminal emulator
     qbittorrent
 
     # System Information and Monitoring
     fastfetch
     btop
-
-    # Graphics
-    blender
-    scribus
-    darktable
-    inkscape
 
     # Fun Utilities
     sl
@@ -76,23 +74,33 @@
 
     # File Management
     yazi
+    yaziPlugins.git
+    yaziPlugins.mount
+    yaziPlugins.recycle-bin
+    yaziPlugins.lazygit
+    yaziPlugins.mediainfo
+    yaziPlugins.full-border
+    yaziPlugins.wl-clipboard
     unzip
     zip
+    ntfs3g
+    gvfs
+    trash-cli
+    vimv-rs # batch rename files
 
     # Media Tools
     ffmpeg
     imagemagick
     yt-dlp
-    cava
-    handbrake
     tenacity
 
     # Misc CLI Tools
     starship
-    eza
-    bat
-    wget
-    fzf
+    wget # web downloads
+    eza # ls alternative
+    bat # cat alternative
+    fzf # fuzzyfinder
+    zoxide # smarter cd command (inspired by z and autojump)
 
     # Android Debugging
     android-tools
@@ -104,9 +112,5 @@
 
     # System Information and Monitoring
     hardinfo2
-
-    # File Management
-    ntfs3g
-    gvfs
   ];
 }

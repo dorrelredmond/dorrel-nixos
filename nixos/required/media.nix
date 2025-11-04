@@ -17,6 +17,7 @@ in {
     spotify
     mpd # music player daemon (required backend for rmpc)
     rmpc # Terminal Based Music Player
+    cava # audio visualizer
 
     # Video
     mpv
