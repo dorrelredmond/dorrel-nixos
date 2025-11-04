@@ -14,7 +14,7 @@
     # Generic Game Launchers
     heroic # 3rd-Party Games Launcher
     r2modman # Thunderstore Mod Manager
-    
+
     # Individual Games/Launchers
     osu-lazer
     vintagestory # voxel sandbox adventure

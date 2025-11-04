@@ -5,11 +5,11 @@
     kdePackages.k3b # CD/DVD burning & ripping
     kid3-qt # audio tag editor
     strawberry # music player
-    
+
     # Communication
     kdePackages.konversation # IRC client
     kdePackages.tokodon # Mastodon client
-    
+
     # Misc
     tellico # collection management
     kdePackages.arianna # epub reader

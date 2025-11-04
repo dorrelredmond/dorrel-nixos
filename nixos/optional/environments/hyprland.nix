@@ -75,7 +75,7 @@
     wl-clipboard # Command-line copy/paste utilities for Wayland
     wtype # fake keyboard/mouse input, window manager, etc for wayland
     cliphist #clipboard manager
-    
+
     # Notifications
     libnotify # notification daemon
     swaynotificationcenter # notification daemon
