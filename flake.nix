@@ -27,14 +27,6 @@
 
     ### System Tools
 
-    # Fix Dolphin on Hyprland
-    #dolphin-overlay = {
-    #  type = "github";
-    #  owner = "rumboon";
-    #  repo = "dolphin-overlay";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #};
-
     # Declarative Firefox Extensions
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -98,11 +90,6 @@
             stylix.nixosModules.stylix
             nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
             ./systems/desktop/configuration.nix
-
-            # Overlay Settings
-            #{
-            #  nixpkgs.overlays = [dolphin-overlay.overlays.default];
-            #}
 
             # Home Manager Settings
             home-manager.nixosModules.home-manager

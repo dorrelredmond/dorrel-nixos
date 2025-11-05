@@ -1,12 +1,14 @@
 [mgr]
 linemode = "size"
 ratio = [1, 4, 3]
-show_hidden = true
+show_hidden = false
 show_symlink = true
 sort_by = "natural"
 sort_dir_first = true
 sort_reverse = false
 sort_sensitive = false
+scrolloff = 5
+mouse_events =["click", "scroll"]
 
 [preview]
 cache_dir = ""
@@ -14,15 +16,74 @@ image_filter = "lanczos3"
 image_quality = 90
 max_height = 1440
 max_width = 2560
-tab_size = 1
+tab_size = 2
 ueberzug_offset = [0, 0, 0, 0]
 ueberzug_scale = 1
 wrap = "yes"
+
+[opener]
+edit = [
+    { run = 'nvim "$@"', desc = "nvim", block = true },
+]
+open = [
+    { run = 'xdg-open "$1"', desc = "Open" },
+]
+reveal = [
+    { run = 'xdg-open "$(dirname "$1")"', desc = "Reveal" },
+    { run = '''exiftool "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF" },
+]
+extract = [
+    { run = 'ya pub extract --list "$@"', desc = "Extract here" },
+]
+play = [
+    { run = 'mpv --force-window "$@"', orphan = true },
+    { run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info" },
+]
+
+[open]
+rules = [
+    # Folder
+    { name = "*/", use = ["edit", "open", "reveal"] },
+    # Text
+    { mime = "text/*", use = ["edit", "reveal"] },
+    # Image
+    { mime = "image/*", use = ["open", "reveal"] },
+    # Media
+    { mime = "{audio,video}/*", use = ["play", "reveal"] },
+    { mime = "*.m3u", use = ["play", "edit", "reveal"] },
+    # Archive
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = ["extract", "reveal"] },
+    # JSON
+    { mime = "application/{json,ndjson}", use = ["edit", "reveal"] },
+    { mime = "*/javascript", use = ["edit", "reveal"] },
+    # Empty file
+    { mime = "inode/empty", use = ["edit", "reveal"] },
+    # Fallback
+    { name = "*", use = ["open", "reveal"] },
+]
+
 
 [tasks]
 bizarre_retry = 5
 macro_workers = 10
 micro_workers = 5
+image_alloc = 1073741824        # = 1024*1024*1024 = 1024MB
+
+[plugin]
+  prepend_preloaders = [
+    # Replace magick, image, video with mediainfo
+    { mime = "{audio,video,image}/*", run = "mediainfo" },
+    { mime = "application/subrip", run = "mediainfo" },
+    # Adobe Illustrator, Adobe Photoshop is image/adobe.photoshop, already handled above
+    { mime = "application/postscript", run = "mediainfo" },
+  ]
+  prepend_previewers = [
+    # Replace magick, image, video with mediainfo
+    { mime = "{audio,video,image}/*", run = "mediainfo"},
+    { mime = "application/subrip", run = "mediainfo" },
+    # Adobe Illustrator, Adobe Photoshop is image/adobe.photoshop, already handled above
+    { mime = "application/postscript", run = "mediainfo" },
+  ]
 
 [[plugin.prepend_fetchers]]
 id   = "git"
@@ -33,3 +94,66 @@ run  = "git"
 id   = "git"
 name = "*/"
 run  = "git"
+
+
+[input]
+cursor_blink = false
+
+# cd
+cd_title = "Change directory:"
+cd_origin = "top-center"
+cd_offset = [0, 2, 50, 3]
+
+# create
+create_title = ["Create:", "Create (dir):"]
+create_origin = "top-center"
+create_offset = [0, 2, 50, 3]
+
+# rename
+rename_title = "Rename:"
+rename_origin = "hovered"
+rename_offset = [0, 1, 50, 3]
+
+# filter
+filter_title = "Filter:"
+filter_origin = "top-center"
+filter_offset = [0, 2, 50, 3]
+
+# find
+find_title = ["Find next:", "Find previous:"]
+find_origin = "top-center"
+find_offset = [0, 2, 50, 3]
+
+# search
+search_title = "Search via {n}:"
+search_origin = "top-center"
+search_offset = [0, 2, 50, 3]
+
+# shell
+shell_title = ["Shell:", "Shell (block):"]
+shell_origin = "top-center"
+shell_offset = [0, 2, 50, 3]
+
+[confirm]
+# trash
+trash_title = "Trash {n} selected file{s}?"
+trash_origin = "center"
+trash_offset = [0, 0, 70, 20]
+
+# delete
+delete_title = "Permanently delete {n} selected file{s}?"
+delete_origin = "center"
+delete_offset = [0, 0, 70, 20]
+
+# overwrite
+overwrite_title = "Overwrite file?"
+overwrite_content = "Will overwrite the following file:"
+overwrite_origin = "center"
+overwrite_offset = [0, 0, 50, 15]
+
+# quit
+quit_title = "Quit?"
+quit_content = "The following tasks are still running, are you sure you want to quit?"
+quit_origin = "center"
+quit_offset = [0, 0, 50, 15]
+

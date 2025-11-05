@@ -8,6 +8,5 @@
     ./mpd.nix
     ./mpv.nix
     ./starship.nix
-    ./yazi.nix
   ];
 }

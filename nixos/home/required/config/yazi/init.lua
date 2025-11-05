@@ -7,4 +7,5 @@ require("recycle-bin"):setup()
 
 require("git"):setup()
 
+require("starship"):setup()
 

@@ -1,0 +1,80 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1394,
+      "width": 1268,
+      "x": -2560,
+      "y": -720
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1394,
+      "width": 1268,
+      "x": -2560,
+      "y": -720
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1394,
+      "width": 1268,
+      "x": -2560,
+      "y": -720
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///YA///9MP//+vMAAAKh///2AP///TD///rzAAACoQAAAAACAAAACgD///YA///9MP//+vMAAAKh"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": -2560,
+        "y": -720
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "ASUSTek COMPUTER INC",
+      "model": "PA278QV",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4000,
+        "x": -2560,
+        "y": -720
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIgA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAlwD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACcAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAOwA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAANMA////AAAE9AAABXIAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "columns_per_screen": {
+      "landscape": 2,
+      "portrait": 1
+    },
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "key": "/home/dorrel/Dropbox/Streaming/Images - Press Kits/VRising/4_Logos_Brand/2_Stunlock_Studios_Logo/Stunlock Studios_ Brand Guidelines.pdf",
+        "pathtoebook": "/home/dorrel/Dropbox/Streaming/Images - Press Kits/VRising/4_Logos_Brand/2_Stunlock_Studios_Logo/Stunlock Studios_ Brand Guidelines.pdf",
+        "timestamp": "2025-11-05T02:23:48.957Z",
+        "title": "Stunlock Studios: Brand Guidelines"
+      }
+    ]
+  }
+}

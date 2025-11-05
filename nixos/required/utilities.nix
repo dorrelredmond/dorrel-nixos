@@ -73,19 +73,13 @@
     lolcat
 
     # File Management
-    yazi
-    yaziPlugins.git
-    yaziPlugins.mount
-    yaziPlugins.recycle-bin
-    yaziPlugins.lazygit
-    yaziPlugins.mediainfo
-    yaziPlugins.full-border
-    yaziPlugins.wl-clipboard
+    yazi # terminal file manager
     unzip
     zip
-    ntfs3g
-    gvfs
-    trash-cli
+    ntfs3g # ntfs drive support
+    gvfs # various drive support
+    trash-cli # recycle bin, but terminal
+    dust # terminal disk usage calculator
     vimv-rs # batch rename files
 
     # Media Tools
@@ -93,6 +87,7 @@
     imagemagick
     yt-dlp
     tenacity
+    mediainfo
 
     # Misc CLI Tools
     starship
