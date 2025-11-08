@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     fish
   ];
+  
 
   programs.fish = {
     enable = true;
@@ -46,6 +47,8 @@
       "lltr" = "eza -lhr -s time --no-quotes --time-style long-iso --group-directories-first --header --color --git --icons";
 
       "icat" = "kitten icat";
+      "diff" = "kitten diff";
+      "ssh" = "kitten ssh";
 
       "png" = "imv *.png";
       "jpg" = "imv *.jpg";
@@ -54,17 +57,24 @@
       "avi" = "mpv *.avi";
       "mkv" = "mpv *.mkv";
       "mov" = "mpv *.mov";
-      "mp3" = "mpv *.mp3";
       "mp4" = "mpv *.mp4";
       "vmpv" = "mpv *";
       "webm" = "mpv *.webm";
 
+      "mp3" = "mpv *.mp3";
+      "opus" = "mpv *.opus";
+      "wav" = "mpv *.wav";
+
       "avilist" = "ls *.avi | sort -V > playlist.m3u";
       "mkvlist" = "ls *.mkv | sort -V > playlist.m3u";
       "movlist" = "ls *.mov | sort -V > playlist.m3u";
-      "mp3list" = "ls *.mp3 | sort -V > playlist.m3u";
       "mp4list" = "ls *.mp4 | sort -V > playlist.m3u";
       "webmlist" = "ls *.webm | sort -V > playlist.m3u";
+
+      "mp3list" = "ls *.mp3 | sort -V > playlist.m3u";
+      "opuslist" = "ls *.opus | sort -V > playlist.m3u";
+      "wavlist" = "ls *.wav | sort -V > playlist.m3u";
+      
     };
 
     shellAbbrs = {
@@ -85,6 +95,7 @@
       gco = "git checkout";
       gd = "git diff";
       gl = "git log";
+      gpl = "git pull";
       gp = "git push";
       gpom = "git push origin main";
       gs = "git status";
