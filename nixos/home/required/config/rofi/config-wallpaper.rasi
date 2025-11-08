@@ -5,6 +5,7 @@
 window {
   fullscreen:         true;
   children:           [ wrap, listview-split];
+  border-radius:      0px;
 }
 
 wrap {
