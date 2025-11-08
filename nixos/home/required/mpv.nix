@@ -32,6 +32,7 @@
       ## Behavior (personal preference)
       keep-open = "no";
       save-position-on-quit = "no";
+      autocreate-playlist = "same";
 
       ## Screenshots
       screenshot-format = "png";

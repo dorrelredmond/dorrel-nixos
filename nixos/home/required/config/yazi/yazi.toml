@@ -23,7 +23,7 @@ wrap = "yes"
 
 [opener]
 edit = [
-    { run = 'nvim "$@"', desc = "nvim", block = true },
+    { run = 'nvim "$@"', desc = "Edit", block = true },
 ]
 open = [
     { run = 'xdg-open "$1"', desc = "Open" },
@@ -36,8 +36,8 @@ extract = [
     { run = 'ya pub extract --list "$@"', desc = "Extract here" },
 ]
 play = [
-    { run = 'mpv --force-window "$@"', orphan = true },
-    { run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info" },
+    { run = 'mpv --force-window "$@"', orphan = true, desc = "Play" },
+    { run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show Media Info" },
 ]
 
 [open]
@@ -50,7 +50,6 @@ rules = [
     { mime = "image/*", use = ["open", "reveal"] },
     # Media
     { mime = "{audio,video}/*", use = ["play", "reveal"] },
-    { mime = "*.m3u", use = ["play", "edit", "reveal"] },
     # Archive
     { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = ["extract", "reveal"] },
     # JSON
