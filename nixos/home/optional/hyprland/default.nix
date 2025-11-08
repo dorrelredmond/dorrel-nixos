@@ -18,7 +18,7 @@
         };
 
         #".config/quickshell" = {
-            source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/optional/hyprland/quickshell";
+        #    source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/optional/hyprland/quickshell";
         #};
 
         ".config/rofi" = {
