@@ -42,7 +42,7 @@ run  = "plugin compress -phl"
 desc = "Archive selected files (password+header+level)"
 
 [[mgr.prepend_keymap]]
-on = [ ".", "s" ]
+on = [ "g", "s" ]
 run  = "plugin what-size"
 desc = "Calc size of selection or cwd"
 
