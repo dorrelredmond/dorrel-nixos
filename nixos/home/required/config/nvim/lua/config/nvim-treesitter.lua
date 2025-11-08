@@ -84,6 +84,10 @@ configs.setup({
 	},
 })
 
+vim.filetype.add({
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
+
 -- Hints:
 --   A uppercase letter followed `z` means recursive
 --   zo: open one fold under the cursor
