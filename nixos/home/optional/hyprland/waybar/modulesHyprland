@@ -1,0 +1,28 @@
+{ 
+    "hyprland/workspaces": {
+    	"active-only": false,
+    	"all-outputs": false,
+	    "format": "{name}",
+	    "show-special": false,
+	    "on-click": "activate",
+        "persistent-workspaces": {
+			//"*": 5
+			"HDMI-A-1": [ 1, 2, 3, 4, 5 ],
+			"DP-1": [ "Browser", "Video", "Discord", "Email", "Music"]
+	    },
+    },
+
+	"hyprland/window": {
+    	"format": "{}",
+	    "max-length": 25,
+	    "separate-outputs": true,
+	    "offscreen-css": true,
+    	"offscreen-css-text": "(inactive)",
+	    "rewrite": {
+		    "(.*) — Mozilla Firefox": " $1",
+		    "(.*) - fish": "> [$1]",
+		    "(.*) - zsh": "> [$1]",
+		    "(.*) - $term": "> [$1]"
+	    }
+    }
+}

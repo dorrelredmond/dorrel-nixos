@@ -9,7 +9,6 @@
     ./mpv.nix
     ./nvim.nix
     ./rmpc.nix
-    ./rofi.nix
     ./starship.nix
     ./yazi.nix
   ];

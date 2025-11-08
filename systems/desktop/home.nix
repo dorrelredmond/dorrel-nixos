@@ -6,6 +6,7 @@
 }: {
   imports = [
     ../../nixos/home/required
+    ../../nixos/home/optional/hyprland
   ];
 
   home = {
