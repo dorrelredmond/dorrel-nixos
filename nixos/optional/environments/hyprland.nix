@@ -75,7 +75,7 @@
     # Clipboard Utils
     wl-clipboard # Command-line copy/paste utilities for Wayland
     wtype # fake keyboard/mouse input, window manager, etc for wayland
-    cliphist #clipboard manager
+    cliphist # clipboard manager
 
     # Notifications
     libnotify # notification daemon
@@ -90,12 +90,12 @@
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
-    wlogout
     hyprsunset
     hyprcursor
 
     # Misc Packages
     wayland-utils # Wayland utilities
+    wlsunset # day/night gamma settings
     speedcrunch # Calculator
     lxqt.pavucontrol-qt # Pulseaudio Mixer
   ];

@@ -91,6 +91,7 @@
 
     # Misc CLI Tools
     starship
+    gpu-screen-recorder
     wget # web downloads
     eza # ls alternative
     bat # cat alternative
