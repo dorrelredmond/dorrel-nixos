@@ -7,6 +7,7 @@
     ./kitty.nix
     ./mpd.nix
     ./mpv.nix
+    ./rmpc.nix
     ./starship.nix
   ];
 }
