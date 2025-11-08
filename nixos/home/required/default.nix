@@ -7,7 +7,10 @@
     ./kitty.nix
     ./mpd.nix
     ./mpv.nix
+    ./nvim.nix
     ./rmpc.nix
+    ./rofi.nix
     ./starship.nix
+    ./yazi.nix
   ];
 }
