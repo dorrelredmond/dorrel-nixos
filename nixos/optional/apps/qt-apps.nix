@@ -11,7 +11,6 @@
 
     # Misc
     tellico # collection management
-    kdePackages.arianna # epub reader
     kdePackages.kasts # Podcasts
     subtitlecomposer # subtitle editor
 
@@ -21,17 +20,12 @@
     kdePackages.kmahjongg # mahjongg
     kdePackages.ksudoku # sudoku
     kdePackages.knights #chess
-    kdePackages.palapeli # jigsaw puzzles
     kdePackages.kapman # Pac-Man clone
-    kdePackages.kolf # Mini golf
     kdePackages.kreversi # reversi
     kdePackages.knavalbattle # Battleship
-    kdePackages.kigo # Go
     kdePackages.kblocks # Tetris clone
     kdePackages.kbreakout # Breakout clone
-    kdePackages.ksquares # Dots and Boxes
     kdePackages.kdiamond # Bejeweled
     kdePackages.granatier # Bomberman
-    kdePackages.ksirk # Risk
   ];
 }
