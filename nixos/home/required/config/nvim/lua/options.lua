@@ -1,47 +1,34 @@
+local opt = vim.opt
+
 -- Hint: use `:h <option>` to figure out the meaning if needed
-vim.opt.clipboard = 'unnamedplus'   -- use system clipboard 
-vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
-vim.opt.mouse = 'a'                 -- allow the mouse to be used in Nvim
-vim.opt.scrolloff = 10              -- no less than 10 lines even if you keep scrolling down
-vim.opt.swapfile = false            -- no .swp file
+opt.clipboard = 'unnamedplus'   -- use system clipboard 
+opt.completeopt = {'menu', 'menuone', 'noselect'}
+opt.confirm = true              -- confirm to save changes before exiting modified buffer
+opt.mouse = 'a'                 -- allow the mouse to be used in Nvim
+opt.scrolloff = 10              -- lines of context
+opt.swapfile = false            -- no .swp file
 
 -- Indentation
-vim.opt.tabstop = 4 -- the number of visual spaces per TAB
-vim.opt.softtabstop = 4 -- number of spaces in tab when editing
-vim.opt.shiftwidth = 4 -- insert 4 spaces on a tab
-vim.opt.expandtab = true -- tabs are spaces, mainly because of Python
-
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "py", "lua" },
-	callback = function()
-		vim.opt.tabstop = 4 -- the number of visual spaces per TAB
-		vim.opt.softtabstop = 4 -- number of spaces in tab when editing
-		vim.opt.shiftwidth = 4 -- insert 4 spaces on a tab
-		vim.opt.expandtab = true -- tabs are spaces, mainly because of Python
-	end,
-})
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "c", "cpp", "ocaml" },
-	callback = function()
-		vim.opt.tabstop = 2 -- the number of visual spaces per TAB
-		vim.opt.softtabstop = 2 -- number of spacesin tab when editing
-		vim.opt.shiftwidth = 2 -- insert 2 spaces on a tab
-		vim.opt.expandtab = true -- tabs are spaces, mainly because of python
-	end,
-})
+opt.tabstop = 4 -- the number of visual spaces per TAB
+opt.softtabstop = 4 -- number of spaces in tab when editing
+opt.shiftwidth = 4 -- insert 4 spaces on a tab
+opt.expandtab = true -- tabs are spaces, mainly because of Python
+opt.smartindent = true -- insert indents automatically
 
 -- UI config
-vim.opt.number = true               -- show absolute number
-vim.opt.cursorline = true           -- highlight cursor line underneath the cursor horizontally
-vim.opt.splitbelow = true           -- open new vertical split bottom
-vim.opt.splitright = true           -- open new horizontal splits right
--- vim.opt.termguicolors = true        -- enable 24-bit RGB color in the TUI
-vim.opt.showmode = false            -- we are experienced, we don't need the "-- INSERT --" mode hint
-vim.opt.wrap = true                 -- text wrapping
-vim.opt.showmatch = true            -- show the matching brackets, curly braces or parentheses
+opt.number = true               -- show absolute number
+opt.relativenumber = true       -- show relative line number
+opt.cursorline = true           -- highlight cursor line underneath the cursor horizontally
+opt.splitbelow = true           -- open new vertical split bottom
+opt.splitright = true           -- open new horizontal splits right
+opt.termguicolors = true        -- enable 24-bit RGB color in the TUI
+opt.showmode = false            -- don't show mode since we have a statusline
+opt.wrap = true                 -- text wrapping
+opt.showmatch = true            -- show the matching brackets, curly braces or parentheses
+opt.smoothscroll = true
 
 -- Searching
-vim.opt.incsearch = true            -- search as characters are entered
-vim.opt.hlsearch = false            -- do not highlight matches
-vim.opt.ignorecase = true           -- ignore case in searches by default
-vim.opt.smartcase = true            -- but make it case sensitive if an uppercase is entered
+opt.incsearch = true            -- search as characters are entered
+opt.hlsearch = false            -- do not highlight matches
+opt.ignorecase = true           -- ignore case in searches by default
+opt.smartcase = true            -- but make it case sensitive if an uppercase is entered

@@ -11,6 +11,10 @@
     vscodium
     neovim
 
+    # Language Servers
+    lua-language-server
+    rust-analyzer
+
     # JetBrains IDEs
     jetbrains.rider
     jetbrains.clion

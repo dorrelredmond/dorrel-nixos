@@ -5,7 +5,7 @@ require("options")
 require("keymaps")
 
 -- load lazy.nvim (package manager)
-require("plugin_manager")
+require("config.lazy")
 
 -- Set colorscheme
 require("colorscheme")
