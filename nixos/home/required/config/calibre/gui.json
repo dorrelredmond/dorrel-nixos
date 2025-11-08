@@ -246,6 +246,57 @@
       }
     }
   },
+  "geometry-of-plugin config dialog:Device interface:KoboTouch": {
+    "frame_geometry": {
+      "height": 651,
+      "width": 1033,
+      "x": -2560,
+      "y": -720
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 651,
+      "width": 1033,
+      "x": -2560,
+      "y": -720
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 651,
+      "width": 1033,
+      "x": -2560,
+      "y": -720
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///YA///9MP//+gj///+6///2AP///TD///oI////ugAAAAACAAAACgD///YA///9MP//+gj///+6"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": -2560,
+        "y": -720
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "ASUSTek COMPUTER INC",
+      "model": "PA278QV",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4000,
+        "x": -2560,
+        "y": -720
+      }
+    }
+  },
   "geometry-of-preferences dialog geometry": {
     "frame_geometry": {
       "height": 879,
@@ -297,9 +348,60 @@
       }
     }
   },
+  "geometry-of-quickview_dialog_geometry": {
+    "frame_geometry": {
+      "height": 1394,
+      "width": 1268,
+      "x": -2560,
+      "y": -720
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1394,
+      "width": 1268,
+      "x": -2560,
+      "y": -720
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1394,
+      "width": 1268,
+      "x": -2560,
+      "y": -720
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAD///YA///9MP//+vMAAAKh///2AP///TD///rzAAACoQAAAAACAAAACgD///YA///9MP//+vMAAAKh"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": -2560,
+        "y": -720
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "ASUSTek COMPUTER INC",
+      "model": "PA278QV",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4000,
+        "x": -2560,
+        "y": -720
+      }
+    }
+  },
   "grid view visible": false,
   "library_usage_stats": {
-    "/home/dorrel/Dropbox/Calibre Library": 9
+    "/home/dorrel/Dropbox/Calibre Library": 11
   },
   "light_palette_name": "__current__",
   "light_palettes": {
@@ -345,7 +447,7 @@
     },
     "wide_desires": {
       "book_details_width": 0.09793351302785265,
-      "cover_browser_height": 0.2858575727181545,
+      "cover_browser_height": 0.28526148969889065,
       "quick_view_height": 0.23771313941825475,
       "tag_browser_width": 0.11365678346810422
     },
@@ -358,6 +460,11 @@
     }
   },
   "quick_start_guide_added": true,
+  "quickview_dialog_books_table_widths": [
+    296,
+    296,
+    296
+  ],
   "qv_open_at_shutdown": false,
   "search bar visible": true,
   "tag browser search box visible": false
