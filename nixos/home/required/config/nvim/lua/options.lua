@@ -23,7 +23,7 @@ opt.splitbelow = true           -- open new vertical split bottom
 opt.splitright = true           -- open new horizontal splits right
 opt.termguicolors = true        -- enable 24-bit RGB color in the TUI
 opt.showmode = false            -- don't show mode since we have a statusline
-opt.wrap = true                 -- text wrapping
+opt.wrap = false                -- text wrapping
 opt.showmatch = true            -- show the matching brackets, curly braces or parentheses
 opt.smoothscroll = true
 
