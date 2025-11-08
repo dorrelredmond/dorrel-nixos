@@ -33,5 +33,9 @@
             source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/optional/hyprland/swappy";
         };
 
+        ".config/swaync" = {
+            source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/optional/hyprland/swaync";
+        };
+
     };
 }
