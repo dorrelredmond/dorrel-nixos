@@ -97,12 +97,12 @@
             "enabled": false
         },
         "BetterSessions": {
-            "enabled": true,
+            "enabled": false,
             "backgroundCheck": false,
             "checkInterval": 20
         },
         "BetterSettings": {
-            "enabled": true,
+            "enabled": false,
             "disableFade": true,
             "organizeMenu": true,
             "eagerLoad": true
@@ -121,7 +121,7 @@
             "enabled": false
         },
         "ClearURLs": {
-            "enabled": true
+            "enabled": false
         },
         "ClientTheme": {
             "enabled": false
@@ -157,7 +157,7 @@
             "enabled": false
         },
         "Dearrow": {
-            "enabled": true,
+            "enabled": false,
             "hideButton": false,
             "replaceElements": 0,
             "dearrowByDefault": true
@@ -638,7 +638,7 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1762967190283
+        "settingsSyncVersion": 1762979644009
     },
     "notifyAboutUpdates": true
 }
