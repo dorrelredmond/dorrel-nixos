@@ -1,8 +1,8 @@
-import "modules/bar"
+import "modules/bars"
 import "modules/osd"
 import Quickshell
 
 Scope {
-    Bar {}
+    TopBar {}
     Volume {}
 }

@@ -1,6 +1,8 @@
 // Bar.qml
 import Quickshell
 
+import "./widgets"
+
 Scope {
 
   Variants {
