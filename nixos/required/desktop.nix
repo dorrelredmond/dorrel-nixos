@@ -38,6 +38,7 @@
     # Office and Productivity
     libreoffice
     obsidian
+    basalt # Manage Obsidian in the terminal
     calibre
 
     # Graphics

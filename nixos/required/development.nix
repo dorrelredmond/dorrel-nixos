@@ -5,7 +5,10 @@
     git
     gh
     lazygit
-    sourcegit # GUI git client (FOSS)
+
+    # Charm Tools
+    gum # glamorous shell scripts
+    glow # nicer markdown renderer
 
     # Text Editors
     vscodium

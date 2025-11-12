@@ -71,6 +71,8 @@
     # Fun Utilities
     sl
     lolcat
+    cowsay
+    figlet
 
     # File Management
     yazi # terminal file manager
