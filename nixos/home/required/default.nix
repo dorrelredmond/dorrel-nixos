@@ -10,6 +10,8 @@
     ./nvim.nix
     ./rmpc.nix
     ./starship.nix
+    ./vencord.nix
     ./yazi.nix
+    ./yt-x.nix
   ];
 }
