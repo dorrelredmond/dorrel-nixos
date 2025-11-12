@@ -59,5 +59,6 @@
     wireplumber
     playerctl
     pamixer
+    easyeffects
   ];
 }
