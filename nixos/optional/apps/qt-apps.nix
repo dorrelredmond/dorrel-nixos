@@ -7,9 +7,9 @@
 
     # Communication
     kdePackages.konversation # IRC client
-    kdePackages.tokodon # Mastodon client
 
     # Misc
+    qdirstat # disk usage analyzer
     tellico # collection management
     kdePackages.kasts # Podcasts
     subtitlecomposer # subtitle editor

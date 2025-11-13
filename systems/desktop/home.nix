@@ -7,6 +7,7 @@
   imports = [
     ../../nixos/home/required
     ../../nixos/home/optional/hyprland
+    ../../nixos/home/optional/vr
   ];
 
   home = {

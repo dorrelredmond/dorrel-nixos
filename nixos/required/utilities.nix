@@ -61,6 +61,10 @@
   };
 
   environment.systemPackages = with pkgs; [
+    # Password manager
+    bitwarden-desktop
+    bitwarden-cli
+
     kitty # terminal emulator
     qbittorrent
 
@@ -99,6 +103,9 @@
     bat # cat alternative
     fzf # fuzzyfinder
     zoxide # smarter cd command (inspired by z and autojump)
+    
+    # Misc TUI Tools
+    impala
 
     # Android Debugging
     android-tools

@@ -5,9 +5,6 @@
 }: {
   # VR Specific Packages
   environment.systemPackages = with pkgs; [
-    # Launcher and Desktop Overlay
-    wlx-overlay-s
-
     sidequest # App Store for Android-based VR Devices
     bs-manager # Beat Saber Mod Manager
 

@@ -21,11 +21,11 @@
     xivlauncher # Final Fantasy XIV Launcher
     airshipper # Veloren Launcher
     luanti # formerly Minetest
-    modrinth-app # Minecraft Launcher
+    #modrinth-app # Minecraft Launcher
 
     # Prism Launcher Settings for Minecraft
     (prismlauncher.override {
-      # Add binary required by some mod
+      # Add binary required by some mods
       additionalPrograms = [ffmpeg];
 
       # Change Java runtimes available to Prism Launcher

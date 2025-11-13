@@ -18,6 +18,14 @@
     };
   };
 
+  # Audio Related Packages
+  environment.systemPackages = with pkgs; [
+    wireplumber
+    playerctl
+    pamixer
+    noisetorch
+  ];
+
   #services.pipewire.extraConfig.pipewire."91-null-sinks" = {
   #  "context.objects" = [
   #    {
@@ -53,12 +61,4 @@
   #  ];
   #};
 
-  # Audio Related Packages
-  environment.systemPackages = with pkgs; [
-    qpwgraph # PipeWire graph manager
-    wireplumber
-    playerctl
-    pamixer
-    easyeffects
-  ];
 }

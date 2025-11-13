@@ -40,6 +40,7 @@
     obsidian
     basalt # Manage Obsidian in the terminal
     calibre
+    typora # markdown editor
 
     # Graphics
     blender

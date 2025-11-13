@@ -12,11 +12,11 @@
   # Enable the KDE Plasma Desktop Environment
   services.desktopManager.plasma6.enable = true;
 
-  # Exclude Specific KDE Packages
-  environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    elisa
-    kate
-  ];
+  ## Exclude Specific KDE Packages
+  #environment.plasma6.excludePackages = with pkgs.kdePackages; [
+  #  elisa
+  #  kate
+  #];
 
   environment.systemPackages = with pkgs; [
     # KDE Packages
