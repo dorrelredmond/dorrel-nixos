@@ -18,12 +18,14 @@
     };
   };
 
+  # Enable Noisetorch for Easy Noise Removal
+  programs.noisetorch.enable = true;
+
   # Audio Related Packages
   environment.systemPackages = with pkgs; [
     wireplumber
     playerctl
     pamixer
-    noisetorch
   ];
 
   #services.pipewire.extraConfig.pipewire."91-null-sinks" = {
