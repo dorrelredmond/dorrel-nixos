@@ -8,7 +8,7 @@
   imports = [
     ../apps/qt-apps.nix
   ];
-  
+
   # Environment Variables
   environment.variables.QT_QPA_PLATFORMTHEME = "qt5ct";
 
@@ -91,7 +91,7 @@
     hyprlock # lock screen
     hypridle # idle daemon
     hyprpicker # color picker
-    hyprsunset 
+    hyprsunset
     hyprcursor
 
     # Misc Packages

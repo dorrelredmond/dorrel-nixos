@@ -103,7 +103,7 @@
     bat # cat alternative
     fzf # fuzzyfinder
     zoxide # smarter cd command (inspired by z and autojump)
-    
+
     # Misc TUI Tools
     impala
 

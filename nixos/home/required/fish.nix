@@ -6,7 +6,6 @@
   home.packages = with pkgs; [
     fish
   ];
-  
 
   programs.fish = {
     enable = true;
@@ -74,7 +73,6 @@
       "mp3list" = "ls *.mp3 | sort -V > playlist.m3u";
       "opuslist" = "ls *.opus | sort -V > playlist.m3u";
       "wavlist" = "ls *.wav | sort -V > playlist.m3u";
-      
     };
 
     shellAbbrs = {

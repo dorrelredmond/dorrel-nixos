@@ -6,7 +6,7 @@
   imports = [
     ../apps/gtk-apps.nix
   ];
-  
+
   services.desktopManager.gnome.enable = true;
 
   # To disable installing GNOME's suite of applications

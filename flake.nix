@@ -58,7 +58,6 @@
       repo = "nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
   };
 
   outputs = {
