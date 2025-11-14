@@ -71,7 +71,6 @@
     # Menus
     rofi # powerful app launcher and menu
     rofimoji # emote picker using rofi
-    bitwarden-menu # password manager integration
 
     # Clipboard Utils
     wl-clipboard # Command-line copy/paste utilities for Wayland
