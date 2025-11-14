@@ -8,7 +8,8 @@
     		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
     	],
     	//"on-click-right": "kitty --class=floating_waybar -e nmtui"
-		"on-click-right": "~/.config/rofi/scripts/rofi-wifi-menu.sh"
+		//"on-click-right": "~/.config/rofi/scripts/rofi-wifi-menu.sh"
+        "on-click-right": "kitty --class=floating_waybar -e impala"
     },
 
     "tray": {
