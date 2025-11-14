@@ -59,12 +59,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      type = "github";
-      owner = "nix-community";
-      repo = "stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
@@ -73,7 +67,6 @@
     nixos-hardware,
     home-manager,
     catppuccin,
-    stylix,
     ...
   } @ inputs: let
     user = "dorrel";
@@ -87,7 +80,6 @@
           specialArgs = {inherit inputs user;};
           modules = [
             catppuccin.nixosModules.catppuccin
-            stylix.nixosModules.stylix
             nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
             ./systems/desktop/configuration.nix
 
