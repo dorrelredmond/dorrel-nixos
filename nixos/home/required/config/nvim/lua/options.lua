@@ -9,9 +9,9 @@ opt.scrolloff = 10              -- lines of context
 opt.swapfile = false            -- no .swp file
 
 -- Indentation
-opt.tabstop = 4 -- the number of visual spaces per TAB
-opt.softtabstop = 4 -- number of spaces in tab when editing
-opt.shiftwidth = 4 -- insert 4 spaces on a tab
+opt.tabstop = 2 -- the number of visual spaces per TAB
+opt.softtabstop = 2 -- number of spaces in tab when editing
+opt.shiftwidth = 2 -- insert 4 spaces on a tab
 opt.expandtab = true -- tabs are spaces, mainly because of Python
 opt.smartindent = true -- insert indents automatically
 
