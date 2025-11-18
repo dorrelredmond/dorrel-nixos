@@ -10,6 +10,7 @@
     ./nvim.nix
     ./rmpc.nix
     ./starship.nix
+    ./typora.nix
     ./vencord.nix
     ./yazi.nix
     ./yt-x.nix
