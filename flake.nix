@@ -50,6 +50,15 @@
       repo = "nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ### Misc
+    aagl = {
+      type = "github";
+      owner = "ezKEa";
+      repo = "aagl-gtk-on-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs = {
@@ -58,6 +67,7 @@
     nixos-hardware,
     home-manager,
     catppuccin,
+    aagl,
     ...
   } @ inputs: let
     user = "dorrel";
@@ -72,6 +82,8 @@
           modules = [
             catppuccin.nixosModules.catppuccin
             nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
+            aagl.nixosModules.default
+
             ./systems/desktop/configuration.nix
 
             # Home Manager Settings
