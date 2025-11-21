@@ -11,7 +11,7 @@ scrolloff = 5
 mouse_events =["click", "scroll"]
 
 [preview]
-cache_dir = ""
+cache_dir = "/home/dorrel/Pictures/.yazi-cache"
 image_filter = "lanczos3"
 image_quality = 90
 max_height = 1440
