@@ -25,12 +25,6 @@ This repo may go through many restructures as I attempt to modularize and config
 ## Scripts
 
 ```bash
-./config-link.sh
-``` 
-
-This script will take the various home/config files and quickly create symlinks to the user's home directory
-
-```bash
 ./upgrade.sh
 ```
 
