@@ -5,7 +5,7 @@ I am still very new to Nix as a whole, and as such, many things likely will not 
 This repo may go through many restructures as I attempt to modularize and configure as many aspects as possible of my various machines.
 
 ## Basic Folder Structure
- **nixos:** Configurations for NixOS systems
+- **nixos:** Configurations for NixOS systems
     - **home:** Home Manager Configurations for NixOS based systems
         - **optional:** Optional Configs to be symlinked as needed
         - **required:** Core Required Configs managed with Home Manager
