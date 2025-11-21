@@ -110,7 +110,7 @@
     jq # JSON processor
     resvg # SVG rendering library
     poppler # PDF rendering library
-    
+
     # Misc TUI Tools
     impala
 
@@ -121,6 +121,7 @@
     home-manager
     font-manager
     protonvpn-gui
+    gnome-software # strictly for browsing and installing flatpaks
 
     # System Information and Monitoring
     hardinfo2

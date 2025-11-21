@@ -13,6 +13,10 @@ in {
 
   # Media Packages
   environment.systemPackages = with pkgs; [
+    # Reading
+    calibre
+    hakuneko
+
     # Music
     spotify
     mpd # music player daemon (required backend for rmpc)
@@ -22,6 +26,7 @@ in {
     # Video
     mpv
     inputs.yt-x.packages."${system}".default # YouTube in the Terminal
+    ani-cli # CLI tool to browse and play anime
   ];
 
   # Spicetify Configuration
