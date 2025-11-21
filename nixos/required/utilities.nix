@@ -103,7 +103,14 @@
     bat # cat alternative
     fzf # fuzzyfinder
     zoxide # smarter cd command (inspired by z and autojump)
+    ripgrep # better search command
+    fd #  simple and faster alternative to find
 
+    # REndering Libraries
+    jq # JSON processor
+    resvg # SVG rendering library
+    poppler # PDF rendering library
+    
     # Misc TUI Tools
     impala
 
