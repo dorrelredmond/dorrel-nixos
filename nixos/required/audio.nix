@@ -18,9 +18,6 @@
     };
   };
 
-  # Enable Noisetorch for Easy Noise Removal
-  programs.noisetorch.enable = true;
-
   # Audio Related Packages
   environment.systemPackages = with pkgs; [
     wireplumber
