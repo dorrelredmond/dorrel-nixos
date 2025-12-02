@@ -17,6 +17,7 @@
     # Language Servers
     lua-language-server
     rust-analyzer
+    typst
 
     # JetBrains IDEs
     jetbrains.rider
