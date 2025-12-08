@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     # Git Packages
     git
+    git-lfs
     gh
     lazygit
 

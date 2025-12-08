@@ -237,7 +237,7 @@
 
       ytarchive = ''
         function ytarchive
-        yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
+        yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(title)s.%(ext)s' \
         --sponsorblock-mark "all" \
         --geo-bypass \
         --sub-langs 'all' \
@@ -250,7 +250,7 @@
 
       ytarchivevideo = ''
         function ytarchivevideo
-          yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
+          yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(title)s.%(ext)s' \
         --sponsorblock-mark "all" \
         --geo-bypass \
         --sub-langs 'all' \
@@ -262,7 +262,7 @@
 
       ytd = ''
         function ytd
-        yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(id)s - %(title)s.%(ext)s' \
+        yt-dlp -f bestvideo[height<=1440][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best -o '%(upload_date)s - %(channel)s - %(title)s.%(ext)s' \
         --sponsorblock-mark "all" \
         --geo-bypass \
         --sub-langs 'all' \
