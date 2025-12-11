@@ -40,7 +40,9 @@
     nvidiaSettings = true; # Nvidia Settings Menu accessible via `nvidia-settings`
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    #package = config.boot.kernelPackages.nvidiaPackages.stable;
+    #package = config.boot.kernelPackages.nvidiaPackages.production; # more conservative, well-tested stable version at cost of being behind on new features
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
 
     # https://nixos.wiki/wiki/Nvidia
   };
