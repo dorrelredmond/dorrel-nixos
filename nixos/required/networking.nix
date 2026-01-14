@@ -8,9 +8,12 @@
   # iNet Wireless Daemon
   networking.wireless.iwd.enable = true;
 
-  # Open Ports for Local Send
+  # Tailscale Client for Peer to Peer VPN
+  services.tailscale.enable = true;
+
+  # Open Ports for Local Send & Hytale
   networking.firewall = {
-    allowedTCPPorts = [53317];
-    allowedUDPPorts = [53317];
+    allowedTCPPorts = [53317 5520];
+    allowedUDPPorts = [53317 5520];
   };
 }
