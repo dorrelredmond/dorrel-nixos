@@ -2,11 +2,8 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Cloudfare DNS Servers and Google DNS as secondary
-  networking.nameservers = ["1.1.1.1" "8.8.8.8"];
-
-  # iNet Wireless Daemon
-  networking.wireless.iwd.enable = true;
+  # Google DNS Servers
+  networking.nameservers = ["8.8.8.8" "8.8.4.4"];
 
   # Tailscale Client for Peer to Peer VPN
   services.tailscale.enable = true;

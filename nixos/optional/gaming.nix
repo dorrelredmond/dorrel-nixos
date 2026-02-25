@@ -4,10 +4,6 @@
   ...
 }: {
 
-  imports = [ 
-    #aagl.nixosModules.default 
-  ];
-
   nix.settings = {
     substituters = ["https://ezkea.cachix.org"];
     trusted-public-keys = ["ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="];
@@ -19,14 +15,6 @@
   # Enable Waydroid for Android app support
   virtualisation.waydroid.enable = true;
 
-  # An Anime Team Game Launchers - Adds launcher and /etc/hosts rules
-  #programs.anime-games-launcher.enable = true; # Universal Launcher
-  programs.anime-game-launcher.enable = true;
-  programs.honkers-railway-launcher.enable = true;
-  programs.honkers-launcher.enable = true;
-  programs.sleepy-launcher.enable = true;
-  #programs.wavey-launcher.enable = true;
-
   # Gaming Related Packages
   environment.systemPackages = with pkgs; [
     # Generic Game Launchers
@@ -37,9 +25,6 @@
     osu-lazer
     vintagestory # voxel sandbox adventure
     xivlauncher # Final Fantasy XIV Launcher
-    airshipper # Veloren Launcher
-    luanti # formerly Minetest
-    #modrinth-app # Minecraft Launcher
 
     # Prism Launcher Settings for Minecraft
     (prismlauncher.override {
@@ -61,14 +46,6 @@
     waydroid-helper
     sgdboop
 
-    # Emulators
-    #retroarch-full
-    #ryubing
-    #dolphin-emu
-    #cemu
-    #ppsspp
-    #pcsx2
-    #desmume
   ];
 
   # Steam Settings

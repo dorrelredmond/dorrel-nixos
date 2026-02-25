@@ -7,9 +7,6 @@
     };
   };
 
-  # Enable ADB support
-  programs.adb.enable = true;
-
   services = {
     udisks2.enable = true;
     devmon.enable = true;
@@ -110,9 +107,6 @@
     jq # JSON processor
     resvg # SVG rendering library
     poppler # PDF rendering library
-
-    # Misc TUI Tools
-    impala
 
     # Android Debugging
     android-tools

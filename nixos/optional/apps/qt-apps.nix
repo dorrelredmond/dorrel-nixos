@@ -11,22 +11,8 @@
 
     # Misc
     qdirstat # disk usage analyzer
-    tellico # collection management
     kdePackages.kasts # Podcasts
     subtitlecomposer # subtitle editor
 
-    # KDE Games
-    kdePackages.kpat # patience
-    kdePackages.kmines # minesweeper
-    kdePackages.kmahjongg # mahjongg
-    kdePackages.ksudoku # sudoku
-    kdePackages.knights #chess
-    kdePackages.kapman # Pac-Man clone
-    kdePackages.kreversi # reversi
-    kdePackages.knavalbattle # Battleship
-    kdePackages.kblocks # Tetris clone
-    kdePackages.kbreakout # Breakout clone
-    kdePackages.kdiamond # Bejeweled
-    kdePackages.granatier # Bomberman
   ];
 }
