@@ -5,7 +5,7 @@
     "themeLinks": [],
     "eagerPatches": false,
     "enabledThemes": [
-        "system24-catppuccin-mocha.theme.css"
+        "mocha.theme.css"
     ],
     "enableReactDevtools": false,
     "frameless": false,
@@ -626,6 +626,9 @@
         },
         "NoSystemBadge": {
             "enabled": false
+        },
+        "MoreQuickReactions": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -638,7 +641,11 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1768030504626
+        "settingsSyncVersion": 1769481173368
     },
-    "notifyAboutUpdates": true
+    "notifyAboutUpdates": true,
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
+    }
 }
