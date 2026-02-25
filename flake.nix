@@ -37,7 +37,7 @@
           modules = [
             catppuccin.nixosModules.catppuccin
 
-            ./systems/desktop/configuration.nix
+            ./desktop/configuration.nix
 
             # Home Manager Settings
             home-manager.nixosModules.home-manager
