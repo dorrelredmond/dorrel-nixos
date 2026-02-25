@@ -1,5 +1,6 @@
 {
   imports = [
+    ./hyprland
     ./catppuccin.nix
     ./firefox.nix
     ./fish.nix
@@ -10,6 +11,7 @@
     ./nvim.nix
     ./rmpc.nix
     ./starship.nix
+    ./symlinks.nix
     ./typora.nix
     ./vencord.nix
     ./yazi.nix

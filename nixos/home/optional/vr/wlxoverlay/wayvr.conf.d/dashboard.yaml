@@ -1,4 +1,0 @@
-dashboard:
-  exec: "/home/dorrel/Applications/wayvr-dashboard.AppImage"
-  args: ""
-  env: [ "GDK_BACKEND=wayland" ]
