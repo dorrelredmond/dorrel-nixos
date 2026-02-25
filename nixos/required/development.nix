@@ -26,8 +26,8 @@
     jetbrains.goland
     jetbrains.webstorm
     jetbrains.rust-rover
-    jetbrains.idea-community
-    jetbrains.pycharm-community
+    jetbrains.idea
+    jetbrains.pycharm
 
     # Unity
     unityhub
