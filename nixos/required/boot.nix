@@ -12,7 +12,7 @@
   boot.supportedFilesystems = ["ntfs"];
 
   # Use Latest Linux Kernel
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # TTY Settings
   console = {
