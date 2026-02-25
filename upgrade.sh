@@ -1,7 +1,4 @@
 #! /run/current-system/sw/bin/bash
-echo -e "\nEnter System Configuration to use (i.e., desktop or laptop)"
-read systemConfig
-
 echo -e "\nNotice\nRequesting Latest Build Configuration"
 if git pull ; then
     echo -e "\nRequest Confirmed: Acquisition of the Latest System Configuration Successful"
@@ -20,7 +17,7 @@ fi
 
 echo -e "\nNotice\nRequesting Updates: System Packages\n"
 
-if sudo nixos-rebuild switch --flake .#$systemConfig --upgrade; then
+if sudo nixos-rebuild switch --flake .#desktop; then
     echo -e "\nRequest Confirmed\nUpdates: System Packages Acquisition Successful"
 else
     echo -e "\nNotice\nAn Error Has Occurred"
