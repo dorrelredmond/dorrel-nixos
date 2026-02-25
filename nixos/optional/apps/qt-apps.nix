@@ -13,6 +13,5 @@
     qdirstat # disk usage analyzer
     kdePackages.kasts # Podcasts
     subtitlecomposer # subtitle editor
-
   ];
 }

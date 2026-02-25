@@ -3,7 +3,6 @@
   config,
   ...
 }: {
-
   nix.settings = {
     substituters = ["https://ezkea.cachix.org"];
     trusted-public-keys = ["ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="];
@@ -45,7 +44,6 @@
     mangohud
     waydroid-helper
     sgdboop
-
   ];
 
   # Steam Settings
