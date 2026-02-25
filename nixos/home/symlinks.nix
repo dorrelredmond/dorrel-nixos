@@ -44,6 +44,10 @@
       source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/rofimoji.rc";
     };
 
+    ".config/starship.toml" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/starship.toml";
+    };
+
     ".config/swappy" = {
       source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/swappy/";
     };
@@ -52,12 +56,12 @@
       source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/swaync/";
     };
     
-    ".config/Typora" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/Typora/";
+    ".config/Typora/themes" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/Typora/themes/";
     };
 
-    ".config/Vencord" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/Vencord/";
+    ".config/Vencord/themes" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/Vencord/themes/";
     };
 
     ".config/waybar" = {
