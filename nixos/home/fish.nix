@@ -11,7 +11,6 @@
     enable = true;
 
     loginShellInit = ''
-      fish_add_path --move --prepend --path $HOME/.nix-profile/bin /run/wrappers/bin /etc/profiles/per-user/$USER/bin /run/current-system/sw/bin /nix/var/nix/profiles/default/bin $HOME/.spicetify
     '';
 
     shellInit = ''
@@ -21,6 +20,7 @@
       set -g theme_display_date no
       set -g theme_nerd_fonts yes
       set -g theme_newline_cursor yes
+      starship init fish | source
     '';
 
     shellAliases = {

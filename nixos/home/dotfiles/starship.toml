@@ -1,15 +1,20 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-format = "$all"
 palette = "catppuccin_mocha"
 
 [aws]
-symbol = "  "
+symbol = " "
 
 [buf]
 symbol = " "
 
+[bun]
+symbol = " "
+
 [c]
 symbol = " "
+
+[cpp]
+symbol = " "
 
 [cmake]
 symbol = " "
@@ -22,6 +27,9 @@ symbol = " "
 
 [dart]
 symbol = " "
+
+[deno]
+symbol = " "
 
 [directory]
 read_only = " 󰌾"
@@ -38,14 +46,20 @@ symbol = " "
 [fennel]
 symbol = " "
 
+[fortran]
+symbol = " "
+
 [fossil_branch]
 symbol = " "
+
+[gcloud]
+symbol = " "
 
 [git_branch]
 symbol = " "
 
 [git_commit]
-tag_symbol = "  "
+tag_symbol = '  '
 
 [golang]
 symbol = " "
@@ -99,16 +113,19 @@ symbol = " "
 symbol = " "
 
 [os.symbols]
-AlmaLinux = " "
 Alpaquita = " "
 Alpine = " "
+AlmaLinux = " "
 Amazon = " "
 Android = " "
+AOSC = " "
 Arch = " "
 Artix = " "
+CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
+Elementary = " "
 Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
@@ -117,6 +134,7 @@ Garuda = "󰛓 "
 Gentoo = " "
 HardenedBSD = "󰞌 "
 Illumos = "󰈸 "
+Ios = "󰀷 "
 Kali = " "
 Linux = " "
 Mabox = " "
@@ -129,20 +147,21 @@ NetBSD = " "
 NixOS = " "
 Nobara = " "
 OpenBSD = "󰈺 "
+openSUSE = " "
 OracleLinux = "󰌷 "
 Pop = " "
 Raspbian = " "
-RedHatEnterprise = " "
 Redhat = " "
-Redox = "󰀘 "
+RedHatEnterprise = " "
 RockyLinux = " "
-SUSE = " "
+Redox = "󰀘 "
 Solus = "󰠳 "
+SUSE = " "
 Ubuntu = " "
 Unknown = " "
 Void = " "
 Windows = "󰍲 "
-openSUSE = " "
+Zorin = " "
 
 [package]
 symbol = "󰏗 "
@@ -155,6 +174,9 @@ symbol = " "
 
 [pijul_channel]
 symbol = " "
+
+[pixi]
+symbol = "󰏗 "
 
 [python]
 symbol = " "
@@ -171,8 +193,14 @@ symbol = "󱘗 "
 [scala]
 symbol = " "
 
+[status]
+symbol = " "
+
 [swift]
 symbol = " "
+
+[xmake]
+symbol = " "
 
 [zig]
 symbol = " "
