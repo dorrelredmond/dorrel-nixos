@@ -144,20 +144,6 @@ in {
           updates_disabled = true;
         };
 
-        # Return YouTube Dislike
-        "{762f9885-5a13-4abd-9c77-433dcd38b8fd}" = {
-          install_url = moz "return-youtube-dislikes";
-          installation_mode = "force_installed";
-          updates_disabled = true;
-        };
-
-        # YouTube Search Fixer
-        "MinYT@example.org" = {
-          install_url = moz "youtube-suite-search-fixer";
-          installation_mode = "force_installed";
-          updates_disabled = true;
-        };
-
         # Unhook: Remove YouTube Recommended Videos
         "myallychou@gmail.com" = {
           install_url = moz "youtube-recommended-videos";
@@ -246,7 +232,7 @@ in {
     };
 
     profiles.default = {
-      # force override extentions
+      # force override extensions
       extensions.force = true;
 
       # Search Settings
@@ -261,10 +247,10 @@ in {
               {
                 template = "https://search.nixos.org/packages";
                 params = [
-                  {
-                    name = "channel";
-                    value = "unstable";
-                  }
+                  #{
+                  #  name = "channel";
+                  #  value = "unstable";
+                  #}
                   {
                     name = "query";
                     value = "{searchTerms}";
@@ -281,10 +267,10 @@ in {
               {
                 template = "https://search.nixos.org/options";
                 params = [
-                  {
-                    name = "channel";
-                    value = "unstable";
-                  }
+                  #{
+                  #  name = "channel";
+                  #  value = "unstable";
+                  #}
                   {
                     name = "query";
                     value = "{searchTerms}";
