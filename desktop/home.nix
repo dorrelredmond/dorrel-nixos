@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    ../../nixos/home/
+    ../nixos/home
   ];
 
   home = {

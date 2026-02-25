@@ -49,7 +49,7 @@
                 extraSpecialArgs = {inherit inputs user;};
                 users.${user} = {
                   imports = [
-                    ./systems/desktop/home.nix
+                    ./desktop/home.nix
                     catppuccin.homeModules.catppuccin
                   ];
                 };

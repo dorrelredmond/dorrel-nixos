@@ -6,7 +6,7 @@
   imports = [
     ./hardware-configuration.nix
     ./mounts.nix
-    ../../nixos/modules
+    ../nixos/modules
   ];
 
   networking.hostName = "desktop";
