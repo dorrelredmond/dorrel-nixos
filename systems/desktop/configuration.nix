@@ -14,7 +14,7 @@
     ../../nixos/optional/environments/hyprland.nix
 
     # Misc Packages
-    ../../nixos/optional/vr
+    #../../nixos/optional/vr
     ../../nixos/optional/gaming.nix
     ../../nixos/optional/services.nix
   ];
