@@ -7,7 +7,7 @@
 
     "custom/power": {
         "tooltip": false,
-        "on-click": "qs -p /home/dorrel/dorrel-nixos/nixos/home/optional/hyprland/quickshell/modules/wlogout/shell.qml",
+        "on-click": "qs -p /home/dorrel/dorrel-nixos/nixos/home/dotfiles/quickshell/modules/wlogout/shell.qml",
         "format": ""
     },
 
