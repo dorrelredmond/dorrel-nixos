@@ -1,0 +1,5 @@
+use_skybox: true
+#use_passthrough: false
+
+# for a custom skybox texture
+#skybox_texture: "my-skybox.dds"

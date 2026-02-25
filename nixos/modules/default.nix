@@ -14,11 +14,17 @@
     ./communication.nix
     ./desktop.nix
     ./development.nix
+    ./hyprland.nix
+    ./gaming.nix
     ./lix.nix
     ./locale.nix
     ./media.nix
     ./networking.nix
     ./nix.nix
+    ./nvidia.nix
+    ./qt-apps.nix
+    ./services.nix
+    ./sddm.nix
     ./user.nix
     ./utilities.nix
   ];

@@ -1,0 +1,201 @@
+# looking to make changes?
+# drop me in ~/.config/wlxoverlay/watch.yaml
+#
+
+width: 0.115
+
+size: [400, 200]
+
+elements:
+  # background panel
+  - type: Panel
+    rect: [0, 30, 400, 130]
+    corner_radius: 20
+    bg_color: "#1e1e2e"
+
+  - type: Button
+    rect: [2, 162, 26, 36]
+    corner_radius: 4
+    font_size: 15
+    bg_color: "#f5c2e7"
+    fg_color: "#313244"
+    text: " ⚙ "
+    click_up: # destroy if exists, otherwise create
+      - type: Window
+        target: settings
+        action: ShowUi # only triggers if not exists
+      - type: Window
+        target: settings
+        action: Destroy # only triggers if exists since before current frame
+
+  # Dashboard toggle button
+  - type: Button
+    rect: [32, 162, 48, 36]
+    corner_radius: 4
+    font_size: 15
+    bg_color: "#89dceb"
+    fg_color: "#313244"
+    text: "󰹑"
+    click_up:
+      - type: WayVR
+        action: ToggleDashboard
+
+  # Keyboard button
+  - type: Button
+    rect: [84, 162, 48, 36]
+    corner_radius: 4
+    font_size: 15
+    bg_color: "#a6e3a1"
+    fg_color: "#313244"
+    text: "󰧹"
+    click_up:
+      - type: Overlay
+        target: "kbd"
+        action: ToggleVisible
+    long_click_up:
+      - type: Overlay
+        target: "kbd"
+        action: Reset
+    right_up:
+      - type: Overlay
+        target: "kbd" 
+        action: ToggleImmovable
+    middle_up:
+      - type: Overlay
+        target: "kbd"
+        action: ToggleInteraction
+    scroll_up:
+      - type: Overlay
+        target: "kbd"
+        action:
+          Opacity: { delta: 0.025 }
+    scroll_down:
+      - type: Overlay
+        target: "kbd"
+        action:
+          Opacity: { delta: -0.025 }
+
+  # bottom row, of keyboard + overlays
+  - type: OverlayList
+    rect: [134, 160, 266, 40]
+    corner_radius: 4
+    font_size: 15
+    fg_color: "#cad3f5"
+    bg_color: "#1e2030"
+    layout: Horizontal
+    click_up: ToggleVisible
+    long_click_up: Reset
+    right_up: ToggleImmovable
+    middle_up: ToggleInteraction
+    scroll_up:
+      Opacity: { delta: 0.025 }
+    scroll_down:
+      Opacity: { delta: -0.025 }
+
+  # local clock
+  - type: Label
+    rect: [5, 80, 200, 50]
+    corner_radius: 0
+    font_size: 46 # Use 32 for 12-hour time
+    fg_color: "#cdd6f4"
+    source: Clock
+    format: "%H:%M:%S" # 23:59:59
+ 
+  # local date
+  - type: Label
+    rect: [5, 100, 200, 20]
+    corner_radius: 0
+    font_size: 14
+    fg_color: "#cdd6f4"
+    source: Clock
+    format: "%Y-%m-%d"
+
+  # local day-of-week
+  - type: Label
+    rect: [5, 120, 200, 50]
+    corner_radius: 0
+    font_size: 14
+    fg_color: "#cdd6f4"
+    source: Clock
+    format: "%a" # Tuesday
+
+  # batteries
+  - type: BatteryList
+    rect: [0, 5, 400, 30]
+    corner_radius: 0
+    font_size: 16
+    fg_color: "#cdd6f4"
+    fg_color_low: "#f38ba8"
+    fg_color_charging: "#a6e3a1"
+    num_devices: 9
+    layout: Horizontal
+    low_threshold: 33
+
+  # Media Controls
+  - type: Button
+    rect: [355, 40, 35, 32]
+    corner_radius: 0
+    font_size: 13
+    bg_color: "#89b4fa"
+    fg_color: "#313244"
+    text: "󰝝"
+    click_down:
+      - type: Exec
+        command: ["pamixer", "-i", "5"]
+  - type: Button
+    rect: [315, 40, 35, 32]
+    corner_radius: 0
+    font_size: 13
+    bg_color: "#f38ba8"
+    fg_color: "#313244"
+    text: "󰝞"
+    click_down:
+      - type: Exec
+        command: ["pamixer", "-d", "5"]
+  - type: Button
+    rect: [355, 80, 35, 32]
+    corner_radius: 0
+    font_size: 13
+    bg_color: "#fab387"
+    fg_color: "#313244"
+    text: "󰒭"
+    click_down:
+      - type: Exec
+        command: ["bash", "-c", "playerctl next"]
+  - type: Button
+    rect: [315, 80, 35, 32]
+    corner_radius: 0
+    font_size: 13
+    bg_color: "#a6e3a1"
+    fg_color: "#313244"
+    text: "󰐎"
+    click_down:
+      - type: Exec
+        command: ["bash", "-c", "playerctl play-pause"]
+  - type: Label
+    rect: [305, 125, 75, 32]
+    font_size: 9
+    fg_color: "#cdd6f4"
+    source: Exec
+    command: [ "bash", "-c", "echo 🎶 $(playerctl -s metadata artist) - $(playerctl -s metadata title)"]
+    interval: 0.5
+
+  # restart button
+  - type: Button
+    rect: [270, 40, 35, 32]
+    corner_radius: 0
+    font_size: 13
+    bg_color: "#f9e2af"
+    fg_color: "#313244"
+    text: "󰜉"
+    click_down:
+      - type: Exec
+        command: [ "wlx-overlay-s", "--openxr", "--show", "--replace" ]
+    
+  # distro
+  - type: Label
+    rect: [370, 27, 40, 32]
+    font_size: 20
+    fg_color: "#74c7ec"
+    source: Static
+    text: 

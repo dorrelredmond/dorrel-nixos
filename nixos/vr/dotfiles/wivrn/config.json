@@ -1,0 +1,31 @@
+{
+  "application": [
+    "/home/dorrel/Applications/WlxOverlay-S-v25.4.2-x86_64.AppImage"
+  ],
+  "bitrate": 120000000,
+  "debug-gui": false,
+  "encoders": [
+    {
+      "height": 0.25,
+      "offset_x": 0.0,
+      "offset_y": 0.75,
+      "width": 0.5
+    },
+    {
+      "height": 0.75,
+      "offset_x": 0.0,
+      "offset_y": 0.0,
+      "width": 0.5
+    },
+    {
+      "codec": "h264",
+      "encoder": "x264",
+      "height": 1.0,
+      "offset_x": 0.5,
+      "offset_y": 0.0,
+      "width": 0.5
+    }
+  ],
+  "scale": 0.800000011920929,
+  "use-steamvr-lh": false
+}
