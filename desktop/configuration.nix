@@ -15,12 +15,12 @@
   hardware.logitech.wireless.enable = true;
 
   # Enable ratbagd mouse support for MMO mouse
-  services.ratbagd.enable = true;
+  #services.ratbagd.enable = true;
 
   # Machine Specific Packages
   environment.systemPackages = with pkgs; [
     solaar # logitech unified receiver settings
-    piper # gtk frontend for ratbagd mouse configs
+    #piper # gtk frontend for ratbagd mouse configs
     kdePackages.kdenlive # KDE Video Editor
   ];
 
