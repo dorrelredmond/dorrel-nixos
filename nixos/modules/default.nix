@@ -16,7 +16,7 @@
     ./development.nix
     ./hyprland.nix
     ./gaming.nix
-    ./kde.nix
+    #./kde.nix
     ./lix.nix
     ./locale.nix
     ./media.nix
