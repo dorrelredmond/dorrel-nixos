@@ -2,8 +2,8 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Google DNS Servers
-  networking.nameservers = ["8.8.8.8" "8.8.4.4"];
+  # Cloudflare DNS Servers
+  networking.nameservers = ["1.1.1.1" "1.0.0.1"];
 
   # Tailscale Client for Peer to Peer VPN
   services.tailscale.enable = true;
