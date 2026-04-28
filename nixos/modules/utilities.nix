@@ -84,6 +84,7 @@
     trash-cli # recycle bin, but terminal
     dust # terminal disk usage calculator
     vimv-rs # batch rename files
+    filezilla
 
     # Media Tools
     ffmpeg
