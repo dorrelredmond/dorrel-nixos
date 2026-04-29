@@ -56,6 +56,9 @@ in {
       */
       # Check about:config for options.
       Preferences = {
+        # Styling
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true; # custom userChrome
+
         # Performance settings
         "media.ffmpeg.vaapi.enabled" = true;
         "widget.dmabuf.force-enabled" = true; # Required in recent Firefox
