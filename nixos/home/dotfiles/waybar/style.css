@@ -20,7 +20,7 @@
   background: @base;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border: 1px solid @mauve;
+  border: 1px solid @pink;
   border-radius: 10px;
 }
 
