@@ -13,8 +13,9 @@
     thunderbird
 
     # Chat and Messaging
-    (discord.override {withVencord = true;})
+    discord
     vesktop
+    kdePackages.konversation # IRC client
 
     # File Sharing
     dropbox

@@ -38,7 +38,6 @@
     # Office and Productivity
     libreoffice
     obsidian
-    basalt # Manage Obsidian in the terminal
     typora # markdown editor
 
     # Graphics
@@ -47,6 +46,7 @@
     darktable
     inkscape
     davinci-resolve
+    kdePackages.kdenlive # KDE Video Editor
     krita
     gimp3
   ];

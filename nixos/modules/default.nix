@@ -23,7 +23,6 @@
     ./networking.nix
     ./nix.nix
     ./nvidia.nix
-    ./qt-apps.nix
     ./services.nix
     ./sddm.nix
     ./user.nix

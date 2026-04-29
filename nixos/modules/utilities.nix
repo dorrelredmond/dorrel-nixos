@@ -85,6 +85,7 @@
     dust # terminal disk usage calculator
     vimv-rs # batch rename files
     filezilla
+    qdirstat # disk usage analyzer
 
     # Media Tools
     ffmpeg
@@ -92,6 +93,7 @@
     yt-dlp
     tenacity
     mediainfo
+    subtitlecomposer # subtitle editor
 
     # Misc CLI Tools
     starship

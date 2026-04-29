@@ -21,7 +21,6 @@
   environment.systemPackages = with pkgs; [
     solaar # logitech unified receiver settings
     #piper # gtk frontend for ratbagd mouse configs
-    kdePackages.kdenlive # KDE Video Editor
   ];
 
   system.stateVersion = "25.05";

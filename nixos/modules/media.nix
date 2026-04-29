@@ -10,9 +10,14 @@
     mpd # music player daemon (required backend for rmpc)
     rmpc # Terminal Based Music Player
     cava # audio visualizer
+    strawberry # music player
+    kdePackages.kasts # Podcasts
 
     # Video
     mpv
-    ani-cli # CLI tool to browse and play anime
+
+    # Editing
+    kdePackages.k3b # CD/DVD burning & ripping
+    kid3-qt # audio tag editor
   ];
 }
