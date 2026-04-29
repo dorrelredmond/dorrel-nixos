@@ -4,6 +4,10 @@
   ...
 }: {
   home.file = {
+    ".config/fastfetch" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/fastfetch/";
+    };
+
     ".mozilla/firefox/default/chrome/userChrome.css" = {
       source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/firefox/userChrome.css";
     };
