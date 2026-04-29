@@ -76,10 +76,6 @@
       source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/waybar/";
     };
 
-    ".config/wlogout" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/wlogout/";
-    };
-
     ".config/yazi" = {
       source = config.lib.file.mkOutOfStoreSymlink "/home/dorrel/dorrel-nixos/nixos/home/dotfiles/yazi/";
     };
