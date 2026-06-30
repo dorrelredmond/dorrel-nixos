@@ -9,7 +9,7 @@
     ../nixos/modules
   ];
 
-  networking.hostName = "desktop";
+  networking.hostName = "Amethyst";
 
   # Enable Logitech Hardware Support
   hardware.logitech.wireless.enable = true;
