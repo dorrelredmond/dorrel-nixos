@@ -36,16 +36,15 @@
   # Common Desktop Packages
   environment.systemPackages = with pkgs; [
     # Office and Productivity
-    libreoffice
+    #libreoffice
     obsidian
     typora # markdown editor
 
     # Graphics
-    blender
-    scribus
-    darktable
-    inkscape
-    davinci-resolve
+    #blender
+    #scribus
+    #darktable
+    #inkscape
     kdePackages.kdenlive # KDE Video Editor
     krita
     gimp3

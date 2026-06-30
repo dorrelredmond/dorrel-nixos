@@ -58,10 +58,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # Password manager
-    bitwarden-desktop
-    bitwarden-cli
-
     kitty # terminal emulator
     qbittorrent
 
@@ -83,7 +79,6 @@
     gvfs # various drive support
     trash-cli # recycle bin, but terminal
     dust # terminal disk usage calculator
-    vimv-rs # batch rename files
     filezilla
     qdirstat # disk usage analyzer
 
@@ -106,7 +101,7 @@
     ripgrep # better search command
     fd #  simple and faster alternative to find
 
-    # REndering Libraries
+    # Rendering Libraries
     jq # JSON processor
     resvg # SVG rendering library
     poppler # PDF rendering library

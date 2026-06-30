@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     # Git Packages
     git
-    git-lfs
     gh
     lazygit
 
@@ -20,20 +19,11 @@
     rust-analyzer
     typst
 
-    # JetBrains IDEs
-    jetbrains.rider
-    jetbrains.clion
-    jetbrains.goland
-    jetbrains.webstorm
-    jetbrains.rust-rover
-    jetbrains.idea
-    jetbrains.pycharm
-
-    # Unity
-    unityhub
-
-    # Godot
-    godot-mono
+    # JDK
+    jdk
+    jdk8 
+    jdk17
+    jdk21
 
     # Other Development Tools
     alejandra

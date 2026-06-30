@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     # Reading
     calibre
-    hakuneko
+    #hakuneko
 
     # Music
     spotify

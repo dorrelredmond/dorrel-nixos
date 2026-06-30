@@ -14,7 +14,6 @@
 
     # Chat and Messaging
     discord
-    vesktop
     kdePackages.konversation # IRC client
 
     # File Sharing
